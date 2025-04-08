@@ -1,0 +1,15 @@
+name: Only allow dev to merge into main
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  restrict-branch-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Block if source branch is not dev
+        if: github.head_ref != 'dev'
+        run: |
+          echo "⛔️ Seules les PR venant de 'dev' peuvent être mergées dans 'main'."
+          exit 1
