@@ -17,7 +17,6 @@
 | Hooks personnalisés  | `useFetch.ts`          | camelCase      |
 | Services             | `userService.ts`       | camelCase      |
 | Types TypeScript     | `User.ts`              | PascalCase     |
-| Fonctions utilitaires| `formatDate.ts`        | camelCase      |
 | Assets `/public`     | `logo-dark.svg`, `background-home.jpg` | kebab-case  |
 
 ---
@@ -38,7 +37,7 @@
 Ce dossier contient toute la **logique métier réutilisable** qui n'est pas directement liée au cycle de vie de React.
 
 #### ✅ Utilisation typique :
-- Appels `fetch` ou `axios` vers des APIs internes ou externes
+- Appels `fetch` vers des APIs internes ou externes
 - Fonctions de transformation ou de validation de données
 - Logique réutilisable dans plusieurs composants ou hooks
 
