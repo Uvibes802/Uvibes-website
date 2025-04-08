@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Bevellier";
+  src: url("/fonts/Bevellier-Black.woff2") format("woff2"),
+    url("/fonts/Bevellier-Black.woff") format("woff"),
+    url("/fonts/Bevellier-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --title-font: "Bevellier";
+  --text-font: "Inter";
+  --bckgColor: #f8f9fa;
+  --mainColor: #fd6e00;
+  --secondaryColor: #d90a5c;
+  --gradientColor: linear-gradient(90deg, #fd6e00 0%, #d90a5c 100%);
+  --font-size-ref: 1rem;
+  --font-size-h1: calc(var(--font-size-ref) * 8);
+  --font-size-h2: calc(var(--font-size-ref) * 6);
+  --font-size-h3: calc(var(--font-size-ref) * 4);
+  --font-size-title-text: calc(var(--font-size-ref) * 3);
+  --font-size-text: calc(var(--font-size-ref) * 2);
+  --border-ref: 1px solid var(--gradientColor);
+  --border-radius: 12px;
+  --spacing-letter: 1px;
+  --spacing-ref: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bckgColor);
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: var(--font-size-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
