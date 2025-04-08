@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧭 Convention de nommage et d'architecture du projet
 
-## Getting Started
+## 🎨 Nommage des classes CSS
 
-First, run the development server:
+- ✔️ `top-section` → **Bloc**
+- ✔️ `--text-font` → **Variable CSS**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> 📌 Utiliser le kebab-case pour les classes CSS et les variables personnalisées.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 Nommage des fichiers
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Type de fichier      | Exemple               | Convention    |
+|----------------------|------------------------|----------------|
+| Composants React     | `Button.tsx`           | PascalCase     |
+| Hooks personnalisés  | `useFetch.ts`          | camelCase      |
+| Services             | `userService.ts`       | camelCase      |
+| Types TypeScript     | `User.ts`              | PascalCase     |
+| Assets `/public`     | `logo-dark.svg`, `background-home.jpg` | kebab-case  |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📘 Règles TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✔️ Tous les types sont centralisés dans le dossier `/types`
+  - Ex. : `User.ts`, `Product.ts`, etc.
+- ❌ **Interdiction d’utiliser `any`**
+  - 👉 Favoriser un typage strict et explicite
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Structure des dossiers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `/services` — Logique métier & appels API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce dossier contient toute la **logique métier réutilisable** qui n'est pas directement liée au cycle de vie de React.
+
+#### ✅ Utilisation typique :
+- Appels `fetch` vers des APIs internes ou externes
+- Fonctions de transformation ou de validation de données
+- Logique réutilisable dans plusieurs composants ou hooks
+
+---
+
+### `/hooks` — Hooks personnalisés React
+
+Ce dossier regroupe les **custom hooks** créés pour factoriser la logique liée à React (effets, états, contexte, etc.).
+
+#### ✅ Utilisation typique :
+- Gestion d’état local (`useState`, `useReducer`)
+- Comportements complexes (scroll, media query, formulaires, etc.)
+- Abstractions pour logique répétitive
+
+---
+
+_Nino — Convention mise à jour le 08/04/2025_
