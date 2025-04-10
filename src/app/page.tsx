@@ -1,6 +1,6 @@
 "use client";
 
-import FloatingMenu from "@/components/FloatingMenu";
+import FloatingMenu from "@/components/menu/FloatingMenu";
 
 export default function Home() {
 	return (
