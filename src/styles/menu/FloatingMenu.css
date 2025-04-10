@@ -1,7 +1,7 @@
 .menu-items-container {
 	position: absolute;
 	bottom: calc(var(--spacing-ref) * 6);
-	right: calc(var(--spacing-ref) * 2);
+	right: calc(var(--spacing-ref) * 1.75);
 	width: 100%;
 	height: 100%;
 	display: flex;
