@@ -13,21 +13,21 @@
 }
 
 .menu-items {
-	gap: 1rem;
+	gap: 0.5rem;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.items-label {
-	font-size: calc(var(--font-size-text) / 1.5);
-	font-family: var(--text-font);
-	font-weight: 550;
-}
-
 @media screen and (min-width: 768px) {
 	.menu-items-container {
 		display: none;
+	}
+	.menu-items-bottom-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }

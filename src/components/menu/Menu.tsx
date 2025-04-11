@@ -1,13 +1,13 @@
 "use client";
-
-import { menuItems } from "@/components/menu/menuItems";
+import { StyledBottomNavigation } from "@/styles/menu/StyledBottomNavigation";
 import { StyledFloatButton } from "@/styles/menu/styledFloatingMenu";
 import { AlignJustify, X } from "lucide-react";
-
 import { useState } from "react";
-import "../../styles/menu/FloatingMenu.css";
+import { Items } from "../menu/Items";
+import MenuItems from "./MenuItems";
+import "../../styles/menu/Menu.css";
 
-export default function FloatingMenu() {
+export default function Menu() {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 	const handleClick = () => {
 		setIsOpen(!isOpen);
@@ -27,18 +27,34 @@ export default function FloatingMenu() {
 					<AlignJustify size={32} color="#32BDCA" />
 				)}
 			</StyledFloatButton>
+
 			{isOpen && (
 				<div className="menu-items-container">
-					{menuItems.map((item) => (
-						<div className="menu-items" key={item.id}>
-							{item.icon}
-							<p className="items-label" style={{ color: item.color }}>
-								{item.label}
-							</p>
-						</div>
+					{Items.map((item) => (
+						<MenuItems
+							id={item.id}
+							key={item.id}
+							icon={item.icon}
+							label={item.label}
+							color={item.color}
+							className="menu-items"
+						/>
 					))}
 				</div>
 			)}
+
+			<StyledBottomNavigation>
+				{Items.map((item) => (
+					<MenuItems
+						id={item.id}
+						key={item.id}
+						icon={item.icon}
+						label={item.label}
+						color={item.color}
+						className="menu-items-bottom-nav"
+					/>
+				))}
+			</StyledBottomNavigation>
 		</>
 	);
 }

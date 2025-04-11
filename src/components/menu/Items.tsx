@@ -1,16 +1,13 @@
 import {
-	AlignJustify,
-	Bold,
 	CalendarDays,
 	House,
 	ListCheck,
 	Newspaper,
 	Puzzle,
 	Users,
-	X,
 } from "lucide-react";
 
-export const menuItems = [
+export const Items = [
 	{
 		id: 1,
 		icon: <House size={32} color="#78C751" />,
