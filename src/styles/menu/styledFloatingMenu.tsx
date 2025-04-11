@@ -7,8 +7,8 @@ export const StyledFloatButton = styled(Fab)(({ theme }) => ({
 	right: 0,
 	margin: 16,
 	zIndex: 1000,
-	backgroundColor: "#ffffff",
-	dropshadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
+	backgroundColor: theme.palette.background.paper,
+	dropshadow: theme.shadows[4],
 
 	[theme.breakpoints.up(768)]: {
 		display: "none",

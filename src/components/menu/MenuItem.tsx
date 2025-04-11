@@ -1,4 +1,4 @@
-import "../../styles/menu/MenuItems.css";
+import "../../styles/menu/MenuItem.css";
 import type { MenuItemProps } from "@/types/MenuItemProps";
 
 export default function MenuItems({

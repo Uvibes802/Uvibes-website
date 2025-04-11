@@ -3,8 +3,9 @@ import { StyledBottomNavigation } from "@/styles/menu/StyledBottomNavigation";
 import { StyledFloatButton } from "@/styles/menu/styledFloatingMenu";
 import { AlignJustify, X } from "lucide-react";
 import { useState } from "react";
-import { Items } from "../menu/Items";
-import MenuItems from "./MenuItems";
+import { Items } from "./MenuData";
+import MenuItem from "./MenuItem";
+import MenuList from "./MenuList";
 import "../../styles/menu/Menu.css";
 
 export default function Menu() {
@@ -17,9 +18,7 @@ export default function Menu() {
 		<>
 			<StyledFloatButton
 				onClick={handleClick}
-				onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
-					if (e.key === "Enter") handleClick();
-				}}
+				onKeyDown={(e) => e.key === "Enter" && handleClick()}
 			>
 				{isOpen ? (
 					<X size={32} color="#32BDCA" />
@@ -30,30 +29,12 @@ export default function Menu() {
 
 			{isOpen && (
 				<div className="menu-items-container">
-					{Items.map((item) => (
-						<MenuItems
-							id={item.id}
-							key={item.id}
-							icon={item.icon}
-							label={item.label}
-							color={item.color}
-							className="menu-items"
-						/>
-					))}
+					<MenuList className="menu-items" />
 				</div>
 			)}
 
 			<StyledBottomNavigation>
-				{Items.map((item) => (
-					<MenuItems
-						id={item.id}
-						key={item.id}
-						icon={item.icon}
-						label={item.label}
-						color={item.color}
-						className="menu-items-bottom-nav"
-					/>
-				))}
+				<MenuList className="menu-items-bottom-nav" />
 			</StyledBottomNavigation>
 		</>
 	);
