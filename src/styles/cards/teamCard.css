@@ -18,7 +18,7 @@
   & img {
     border-radius: 50%;
     width: 50%;
-    height: 40%;
+    height: 50%;
     object-fit: cover;
     position: absolute;
     top: 40%;
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-ref);
+  padding-top: var(--spacing-ref);
 
   & p:first-child {
     font-size: calc(var(--font-size-ref) * 1.5);
