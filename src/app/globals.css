@@ -25,6 +25,7 @@
   --border-radius: 12px;
   --spacing-letter: 1px;
   --spacing-ref: 1rem;
+  --input-width: 7rem;
 }
 
 * {
