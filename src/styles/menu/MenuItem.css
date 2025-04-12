@@ -1,0 +1,11 @@
+.items-label {
+	font-size: calc(var(--font-size-text) * 0.6);
+	font-family: var(--text-font);
+	font-weight: 550;
+}
+
+@media screen and (min-width: 768px) {
+	.items-label {
+		font-size: calc(var(--font-size-text) * 0.3);
+	}
+}
