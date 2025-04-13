@@ -2,10 +2,8 @@
 
 import FloatingMenu from "@/components/menu/Menu";
 import type { TeamProps } from "@/types/team/teamProps";
-import type { StaticImageData } from "next/image";
-import delphine from "../../public/images/delphine.jpg";
 
-export default function Home(teamProps: TeamProps) {
+export default function Home() {
 	return (
 		<div>
 			<h1>Hello World</h1>
