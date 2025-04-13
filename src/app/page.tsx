@@ -1,21 +1,21 @@
 "use client";
 
+import { PartnerBanner } from "@/components/banner/partnerBanner";
 import TeamCards from "@/components/cards/teamCards";
 import FloatingMenu from "@/components/menu/Menu";
+import type { TeamProps } from "@/types/team/teamProps";
+import type { StaticImageData } from "next/image";
+import delphine from "../../public/images/delphine.jpg";
 
-export default function Home() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <TeamCards
-        image="/images/testcard.jpg"
-        name="Delphine Boyer"
-        role="Présidente"
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      </p>
-      <FloatingMenu />
-    </div>
-  );
+export default function Home(teamProps: TeamProps) {
+	return (
+		<div>
+			<h1>Hello World</h1>
+
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+			</p>
+			<FloatingMenu />
+		</div>
+	);
 }
