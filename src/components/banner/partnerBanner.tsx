@@ -10,8 +10,8 @@ export function PartnerBanner() {
 				<div className="partner-banner-text">
 					<p className="partner-banner-description">
 						Rejoignez les organisations qui utilisent déjà Uvibes pour
-						encourager et valoriser l’intelligence émotionnelle au sein de leur
-						collectif
+						encourager et valoriser l&aposintelligence émotionnelle au sein de
+						leur collectif
 					</p>
 					<div className="partner-info">
 						<PartnerGroup />

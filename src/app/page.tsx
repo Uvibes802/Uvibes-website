@@ -1,7 +1,6 @@
 "use client";
 
 import FloatingMenu from "@/components/menu/Menu";
-import type { TeamProps } from "@/types/team/teamProps";
 
 export default function Home() {
 	return (
