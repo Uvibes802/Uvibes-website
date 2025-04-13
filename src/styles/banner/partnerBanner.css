@@ -38,7 +38,11 @@
 	padding-top: var(--spacing-ref);
 }
 
+<<<<<<< HEAD
 .number-user {
+=======
+& p {
+>>>>>>> 5ea7655ee65005c5bc5c022d91404efead13935d
 	font-family: var(--text-font);
 	font-size: calc(var(--font-size-text) / 2);
 	color: white;
@@ -49,7 +53,11 @@
 	& h2 {
 		font-size: var(--font-size-h2);
 	}
+<<<<<<< HEAD
 	.partner-banner-description {
+=======
+	& .partner-banner-description {
+>>>>>>> 5ea7655ee65005c5bc5c022d91404efead13935d
 		font-size: var(--font-size-text);
 	}
 
@@ -61,7 +69,11 @@
 		gap: var(--spacing-ref);
 		width: 50%;
 	}
+<<<<<<< HEAD
 	.number-user {
+=======
+	& .number-user {
+>>>>>>> 5ea7655ee65005c5bc5c022d91404efead13935d
 		text-align: center;
 		font-size: var(--font-size-text);
 	}
