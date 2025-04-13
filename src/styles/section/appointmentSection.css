@@ -1,0 +1,30 @@
+h3 {
+	font-family: var(--text-font);
+	font-size: calc(var(--font-size-h3) / 3);
+	color: var(--mainColor);
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: var(--spacing-ref);
+	padding: calc(var(--spacing-ref) * 2) var(--spacing-ref)
+		calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2);
+}
+
+.appointment-button {
+	display: flex !important;
+	justify-content: center !important;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	h3 {
+		font-size: calc(var(--font-size-h3) / 1.5);
+	}
+
+	.appointment-section {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: var(--spacing-ref);
+	}
+}

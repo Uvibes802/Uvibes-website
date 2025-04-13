@@ -1,4 +1,5 @@
 export type ButtonProps = {
-  title: string;
-  type: "button" | "submit" | "reset";
+	title: string;
+	type: "button" | "submit" | "reset";
+	onClick?: () => void;
 };
