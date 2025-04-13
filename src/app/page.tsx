@@ -1,7 +1,5 @@
 "use client";
 
-import { PartnerBanner } from "@/components/banner/partnerBanner";
-import TeamCards from "@/components/cards/teamCards";
 import FloatingMenu from "@/components/menu/Menu";
 import type { TeamProps } from "@/types/team/teamProps";
 import type { StaticImageData } from "next/image";
