@@ -16,7 +16,7 @@ export function AppointmentSection() {
 
 	return (
 		<section className="appointment-section">
-			<h3>Découvrez comment Uvibes peut s'adapter à vos besoins</h3>
+			<h3>Découvrez comment Uvibes peut s&apos;adapter à vos besoins</h3>
 			<div className="appointment-button">
 				<PopupButton
 					url="https://calendly.com/justine-cousin-wbx/demo-uvibes" //A remplacer//
