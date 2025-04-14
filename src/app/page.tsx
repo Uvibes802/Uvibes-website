@@ -1,6 +1,7 @@
 "use client";
 
 import FloatingMenu from "@/components/menu/Menu";
+import { AppointmentSection } from "@/components/section/appointmentSection";
 
 export default function Home() {
 	return (
@@ -10,7 +11,7 @@ export default function Home() {
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
 			</p>
-
+			<AppointmentSection />
 			<FloatingMenu />
 		</div>
 	);
