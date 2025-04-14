@@ -1,5 +1,5 @@
 import "../../styles/menu/MenuItem.css";
-import type { MenuItemProps } from "@/types/MenuItemProps";
+import type { MenuItemProps } from "@/types/menu/MenuItemProps";
 
 export default function MenuItems({
 	icon,
