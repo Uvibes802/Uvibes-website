@@ -9,10 +9,26 @@ h3 {
 		calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2);
 }
 
-.appointment-button {
+.appointment-button-container {
 	display: flex !important;
 	justify-content: center !important;
 	width: 100%;
+}
+
+.calendly-button {
+	display: flex !important;
+	justify-content: center !important;
+	width: 100%;
+	color: white;
+	background: var(--gradientColor);
+	border-radius: calc(var(--border-radius) * 3);
+	padding: var(--spacing-ref);
+	border: none;
+	width: 15rem;
+	height: 3rem;
+	font-family: var(--title-font);
+	font-size: calc(var(--font-size-ref) * 1);
+	box-shadow: 1px 3px 10px 0px #0000006b;
 }
 
 @media screen and (min-width: 768px) {

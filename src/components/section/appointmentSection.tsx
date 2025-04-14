@@ -17,23 +17,12 @@ export function AppointmentSection() {
 	return (
 		<section className="appointment-section">
 			<h3>Découvrez comment Uvibes peut s&apos;adapter à vos besoins</h3>
-			<div className="appointment-button">
+			<div className="appointment-button-container">
 				<PopupButton
 					url="https://calendly.com/justine-cousin-wbx/demo-uvibes" //A remplacer//
 					rootElement={document.body}
+					className="calendly-button"
 					text="Parler à un conseiller"
-					styles={{
-						color: "white",
-						background: "var(--gradientColor)",
-						borderRadius: "calc(var(--border-radius) * 3)",
-						padding: "var(--spacing-ref)",
-						border: "none",
-						width: "15rem",
-						height: "3rem",
-						fontFamily: "var(--title-font)",
-						fontSize: "calc(var(--font-size-ref) * 1)",
-						boxShadow: "1px 3px 10px 0px #0000006b",
-					}}
 				/>
 			</div>
 		</section>
