@@ -1,0 +1,108 @@
+.hero-banner-container {
+	position: relative;
+	background: var(--gradientColor-card);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: calc(var(--spacing-ref) * 1.5);
+	padding: calc(var(--spacing-ref) * 1.5) var(--spacing-ref)
+		calc(var(--spacing-ref) * 6) calc(var(--spacing-ref) * 1.5);
+	width: 100%;
+	overflow: visible;
+	padding-bottom: 200px;
+}
+
+.hero-banner-logo-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.logo_desktop {
+	display: none;
+}
+
+.hero-banner-content-container {
+	position: relative;
+	width: 100%;
+	z-index: 3;
+}
+
+.hero-banner-content {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+
+	padding: calc(var(--spacing-ref) * 1);
+	gap: calc(var(--spacing-ref) * 1.5);
+	position: relative;
+}
+
+.hero-banner-subtitle {
+	font-family: var(--text-font);
+	font-size: calc(var(--font-size-h2) / 4);
+	color: var(--bckgColor);
+	text-align: flex-start;
+}
+
+.hero-banner-title {
+	font-size: calc(var(--font-size-h1) / 2);
+	color: var(--bckgColor);
+	text-align: flex-start;
+	letter-spacing: var(--spacing-letter);
+	line-height: 1;
+}
+
+.hero-banner-description {
+	font-family: var(--text-font);
+	font-size: calc(var(--font-size-h2) / 4);
+	font-weight: 600;
+	color: var(--bckgColor);
+	text-align: flex-start;
+}
+.hero-banner-image-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: -100px;
+	z-index: 1;
+}
+
+.hero-banner-image {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.hero-banner-logo-button {
+		align-items: center;
+	}
+
+	.logo_mobile {
+		display: none;
+	}
+
+	.logo_desktop {
+		display: block;
+	}
+
+	.hero-banner-content-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: calc(var(--spacing-ref) * 1.5);
+	}
+
+	.hero-banner-content {
+		width: 50%;
+		margin-bottom: calc(var(--spacing-ref) * 1);
+	}
+}
