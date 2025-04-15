@@ -14,6 +14,7 @@
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
   --secondaryColor: #d90a5c;
+  --gradientColor-button: linear-gradient(90deg, #f76213 53%, #f62570 100%);
   --gradientColor: linear-gradient(90deg, #fd6e00 0%, #f62570 100%);
   --gradientColor-card: linear-gradient(180deg, #fd6e00 0%, #f62570 100%);
   --font-size-ref: 1rem;

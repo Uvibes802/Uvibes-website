@@ -1,16 +1,17 @@
 "use client";
 
+import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 
 export default function Home() {
-	return (
-		<div>
-			<h1>Hello World</h1>
-
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-			</p>
-			<FloatingMenu />
-		</div>
-	);
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+      </p>
+      <FloatingMenu />
+      <Footer />
+    </div>
+  );
 }
