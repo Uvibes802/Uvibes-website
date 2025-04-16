@@ -13,7 +13,7 @@ export function HeroBanner({
 	alt,
 }: HeroBannerProps) {
 	return (
-		<>
+		<div className="hero-banner-wrapper">
 			<div className="hero-banner-container">
 				<div className="hero-banner-logo-button">
 					<Image
@@ -30,28 +30,24 @@ export function HeroBanner({
 					/>
 					<WhiteButton title="Connectez-vous à Uvibes" type="button" />
 				</div>
-				<div className="hero-banner-content-container">
 					<div className="hero-banner-content">
 						<h2 className="hero-banner-subtitle">{subtitle}</h2>
 						<h1 className="hero-banner-title">{title}</h1>
 						<p className="hero-banner-description">{description}</p>
 					</div>
-				</div>
+	
 			</div>
+			
 			<div className="hero-banner-image-container">
 				<Image
 					src={image}
 					alt={alt}
 					className="hero-banner-image"
+					width={600}
+					height={900}
 					priority
-					width={500}
-					height={450}
-					style={{
-						objectFit: "contain",
-						maxWidth: "100%",
-					}}
 				/>
 			</div>
-		</>
+		</div>
 	);
 }
