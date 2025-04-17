@@ -25,6 +25,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .inspiration-section-container {
+    justify-content: center;
+  }
   .inspiration-section {
     display: flex;
     flex-direction: column;
@@ -35,12 +38,10 @@
     }
 
     & p:first-of-type {
-      text-align: start;
       width: 80ch;
     }
 
     & p:last-of-type {
-      text-align: start;
       width: 40ch;
     }
   }

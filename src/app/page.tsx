@@ -3,20 +3,9 @@
 import FloatingMenu from "@/components/menu/Menu";
 import UserNumberCard from "@/components/cards/userNumberCard";
 import InspirationSection from "@/components/section/inspirationSection";
-import { useEffect, useState } from "react";
+import Resize from "@/services/resize/resize";
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const { isMobile } = Resize();
   return (
     <div>
       <FloatingMenu />
