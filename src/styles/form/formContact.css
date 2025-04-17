@@ -1,5 +1,5 @@
 .form-contact {
-  & fieldset {
+  & fieldset:first-of-type {
     display: flex;
     justify-content: center;
     border: none;
@@ -7,6 +7,7 @@
       width: 100%;
     }
   }
+
   & #email {
     width: 100%;
   }
@@ -37,7 +38,11 @@
     }
 
     & .input-container {
-      width: 60%;
+      width: clamp(
+        calc(var(--input-width) * 3),
+        80%,
+        calc(var(--input-width) * 7)
+      );
     }
 
     & input {

@@ -27,12 +27,16 @@
   }
 
   .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     & h3 {
       font-size: var(--font-size-h3);
     }
 
     & p {
       width: 35ch;
+      font-size: calc(var(--font-size-text) / 1.5);
     }
   }
 }
