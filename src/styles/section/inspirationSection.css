@@ -1,4 +1,5 @@
 .inspiration-section-container {
+  margin-top: calc(var(--spacing-ref) * 4);
   background: var(--gradientColor-card);
   display: flex;
   align-items: center;
