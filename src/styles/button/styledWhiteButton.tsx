@@ -2,10 +2,10 @@
 
 import { Button, styled } from "@mui/material";
 
-export const StyledButton = styled(Button)(
-  `
-  background: var(--gradientColor-button);
-  color: #F4ECEC;
+export const StyledWhiteButton = styled(Button)(
+	`
+  background:  #F4ECEC;
+  color:var(--mainColor);
   border-radius: calc(var(--border-radius) * 3);
   padding: var(--spacing-ref);
   border: none;
@@ -19,5 +19,5 @@ export const StyledButton = styled(Button)(
   &:hover {
   opacity: 0.9;
   };
-  `
+  `,
 );
