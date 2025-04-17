@@ -1,46 +1,46 @@
 h3 {
-	font-family: var(--text-font);
-	font-size: calc(var(--font-size-h3) / 3);
-	color: var(--mainColor);
-	align-items: flex-start;
-	justify-content: flex-start;
-	gap: var(--spacing-ref);
-	padding: calc(var(--spacing-ref) * 2) var(--spacing-ref)
-		calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2);
+  font-family: var(--text-font);
+  font-size: calc(var(--font-size-h3) / 3);
+  color: var(--mainColor);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-ref);
+  padding: calc(var(--spacing-ref) * 2) var(--spacing-ref)
+    calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2);
 }
 
 .appointment-button-container {
-	display: flex !important;
-	justify-content: center !important;
-	width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
 }
 
 .calendly-button {
-	display: flex !important;
-	justify-content: center !important;
-	width: 100%;
-	color: white;
-	background: var(--gradientColor);
-	border-radius: calc(var(--border-radius) * 3);
-	padding: var(--spacing-ref);
-	border: none;
-	width: 15rem;
-	height: 3rem;
-	font-family: var(--title-font);
-	font-size: calc(var(--font-size-ref) * 1);
-	box-shadow: 1px 3px 10px 0px #0000006b;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
+  color: white;
+  background: var(--gradientColor);
+  border-radius: calc(var(--border-radius) * 3);
+  padding: var(--spacing-ref);
+  border: none;
+  width: 15rem;
+  height: 3rem;
+  font-family: var(--title-font);
+  font-size: calc(var(--font-size-ref) * 1);
+  box-shadow: 1px 3px 10px 0px #0000006b;
 }
 
 @media screen and (min-width: 768px) {
-	h3 {
-		font-size: calc(var(--font-size-h3) / 1.5);
-	}
+  h3 {
+    font-size: calc(var(--font-size-h3) / 1.5);
+  }
 
-	.appointment-section {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		gap: var(--spacing-ref);
-	}
+  .appointment-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-ref);
+  }
 }
