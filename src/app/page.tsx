@@ -2,7 +2,7 @@
 import mockupHome from "../../public/images/mockupHome.png";
 import { HeroBanner } from "@/components/banner/heroBanner";
 import FloatingMenu from "@/components/menu/Menu";
-import { BeneficesHomeSection } from "@/components/section/BeneficesHomeSection";
+import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
 
 export default function Home() {
   return (
