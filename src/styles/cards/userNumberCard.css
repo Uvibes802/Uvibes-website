@@ -1,0 +1,34 @@
+.user-number-card {
+  border: 1px solid var(--mainColor);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-ref);
+  margin: calc(var(--spacing-ref) * 2);
+
+  & h4 {
+    color: var(--mainColor);
+    font-family: var(--title-font);
+    font-size: calc(var(--font-size-ref) * 3);
+  }
+
+  & p {
+    color: var(--secondaryColor);
+    font-weight: 700;
+    font-size: calc(var(--font-size-ref) * 3);
+    text-align: center;
+    width: 15ch;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-number-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    height: calc(var(--input-width) * 3);
+    width: calc(var(--input-width) * 4);
+  }
+}
