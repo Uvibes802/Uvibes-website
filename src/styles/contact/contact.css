@@ -1,0 +1,38 @@
+.contact-section {
+  padding: calc(var(--spacing-ref) * 2);
+  background: var(--gradientColor-card);
+  color: white;
+
+  & h3 {
+    font-size: calc(var(--font-size-h3) / 1.5);
+    text-align: center;
+    padding-bottom: var(--spacing-ref);
+  }
+
+  & p {
+    padding-bottom: var(--spacing-ref);
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-ref) * 0.5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    height: 50vh;
+  }
+
+  .contact-section {
+    & h3 {
+      font-size: var(--font-size-h3);
+    }
+
+    & p {
+      width: 35ch;
+    }
+  }
+}
