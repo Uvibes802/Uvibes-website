@@ -37,11 +37,15 @@
     }
 
     & .input-container {
-      width: 80%;
+      width: 60%;
+    }
+
+    & input {
+      height: 4rem;
     }
 
     & #message {
-      height: calc(var(--input-height) * 3);
+      height: calc(var(--input-height) * 5);
     }
   }
 }
