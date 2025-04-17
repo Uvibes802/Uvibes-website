@@ -7,10 +7,10 @@ import Resize from "@/services/resize/resize";
 export default function Home() {
   const { isMobile } = Resize();
   return (
-    <div>
+    <main>
       <FloatingMenu />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
-    </div>
+    </main>
   );
 }
