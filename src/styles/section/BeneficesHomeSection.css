@@ -1,0 +1,59 @@
+.benefices-home-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: calc(var(--spacing-ref) * 2);
+  gap: calc(var(--spacing-ref) * 4);
+}
+
+.benefices-home-title {
+  font-family: var(--title-font);
+  font-size: calc(var(--font-size-h2) / 2);
+  color: var(--mainColor);
+}
+
+#benefices-home-title-word {
+  color: var(--bckgColor);
+  background-color: var(--mainColor);
+  padding: calc(var(--spacing-ref) * 0.5);
+}
+
+.benefices-home-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.benefices-home-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing-ref) * 2);
+}
+
+.benefices-home-button {
+  justify-content: center;
+}
+
+.benefices-home-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .benefices-home-section-container {
+    padding: calc(var(--spacing-ref) * 2) var(--spacing-ref)
+      calc(var(--spacing-ref) * 6) calc(var(--spacing-ref) * 1.5);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+
+  .benefices-home-title {
+    font-size: var(--font-size-h2);
+    padding: calc(var(--spacing-ref) * 1);
+  }
+}

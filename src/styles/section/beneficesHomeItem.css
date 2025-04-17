@@ -1,0 +1,25 @@
+.benefices-home-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: calc(var(--spacing-ref) / 2);
+}
+
+.benefices-home-item-icon {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefices-home-data-title {
+  font-family: var(--text-font);
+  font-size: calc(var(--font-size-text) / 2);
+  color: #585c5f;
+}
