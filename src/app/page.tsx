@@ -1,6 +1,7 @@
 "use client";
 import mockupHome from "../../public/images/mockupHome.png";
 import { HeroBanner } from "@/components/banner/heroBanner";
+import Contact from "@/components/contact/contact";
 import FloatingMenu from "@/components/menu/Menu";
 import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
 
@@ -18,5 +19,7 @@ export default function Home() {
       <BeneficesHomeSection />
       <FloatingMenu />
     </>
+      <Contact />
+    </div>
   );
 }
