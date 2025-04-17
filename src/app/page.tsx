@@ -1,5 +1,6 @@
 "use client";
 
+import Contact from "@/components/contact/contact";
 import FloatingMenu from "@/components/menu/Menu";
 import UserNumberCard from "@/components/cards/userNumberCard";
 import InspirationSection from "@/components/section/inspirationSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <FloatingMenu />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
+      <Contact />
     </div>
   );
 }
