@@ -5,7 +5,12 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
+
+import Uvibes from "@/components/uvibes/uvibes";
+
+
 import FunctSection from "@/components/section/functSection";
+
 export default function Home() {
   return (
     <main>
@@ -21,6 +26,7 @@ export default function Home() {
         <BeneficesHomeSection />
         <FloatingMenu />
       </>
+      <Uvibes />
       <Contact />
       <Footer />
     </main>
