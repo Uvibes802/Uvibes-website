@@ -30,14 +30,6 @@
     color: #95a1bb;
   }
 
-  & p:last-of-type {
-    color: var(--mainColor);
-    position: absolute;
-    bottom: 0;
-    right: 10;
-    font-size: calc(var(--font-size-ref) * 0.8);
-  }
-
   & button {
     margin: var(--spacing-ref);
   }
@@ -47,6 +39,7 @@
   display: flex;
   flex-direction: column;
   padding: calc(var(--spacing-ref) * 0.5);
+
   & p:nth-child(3) {
     font-size: calc(var(--font-size-ref) * 1);
     color: var(--mainColor);
@@ -63,10 +56,5 @@
 @media screen and (min-width: 768px) {
   .footer {
     align-items: center;
-
-    & p:last-of-type {
-      position: absolute;
-      bottom: 50%;
-    }
   }
 }

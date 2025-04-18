@@ -10,6 +10,7 @@ export const StyledButton = styled(Button)(
   padding: var(--spacing-ref);
   border: none;
   width: 15rem;
+  cursor: pointer;
   height: 3rem;
   font-family: var(--title-font);
   font-size: calc(var(--font-size-ref) * 1);
