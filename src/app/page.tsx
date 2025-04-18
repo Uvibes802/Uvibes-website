@@ -4,6 +4,7 @@ import { HeroBanner } from "@/components/banner/heroBanner";
 import Contact from "@/components/contact/contact";
 import FloatingMenu from "@/components/menu/Menu";
 import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
+import Uvibes from "@/components/uvibes/uvibes";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <BeneficesHomeSection />
         <FloatingMenu />
       </>
+      <Uvibes />
       <Contact />
     </main>
   );
