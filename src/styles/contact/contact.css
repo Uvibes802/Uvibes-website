@@ -35,6 +35,7 @@
     }
 
     & p {
+      font-size: calc(var(--font-size-text) / 1.5);
       width: 35ch;
       font-size: calc(var(--font-size-text) / 1.5);
     }

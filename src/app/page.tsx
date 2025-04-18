@@ -2,9 +2,10 @@
 import mockupHome from "../../public/images/mockupHome.png";
 import { HeroBanner } from "@/components/banner/heroBanner";
 import Contact from "@/components/contact/contact";
+import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
-
+import FunctSection from "@/components/section/functSection";
 export default function Home() {
   return (
     <main>
@@ -16,10 +17,12 @@ export default function Home() {
           image={mockupHome}
           alt="visuel application"
         />
+        <FunctSection />
         <BeneficesHomeSection />
         <FloatingMenu />
       </>
       <Contact />
+      <Footer />
     </main>
   );
 }
