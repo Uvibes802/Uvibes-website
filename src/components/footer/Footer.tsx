@@ -19,7 +19,6 @@ export default function Footer() {
             <Image src={iconInsta} alt="Instagram" width={50} height={50} />
           </Link>
         </div>
-        <p>Copyright © 2025. All rights reserved.</p>
       </div>
 
       <Button title="Connectez-vous à Uvibes" type="button" />
