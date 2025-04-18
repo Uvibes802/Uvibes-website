@@ -9,7 +9,9 @@ import Resize from "@/services/resize/resize";
 import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
 import mockupHome from "../../public/images/mockupHome.png";
 import Contact from "@/components/contact/contact";
+import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
+
 export default function Home() {
   const { isMobile } = Resize();
   return (
@@ -32,6 +34,7 @@ export default function Home() {
         <BeneficesHomeSection />
         <FloatingMenu />
       </>
+      <Uvibes />
       <Contact />
       <Footer />
     </main>
