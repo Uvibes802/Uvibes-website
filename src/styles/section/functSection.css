@@ -18,7 +18,6 @@
 
 @media screen and (min-width: 768px) {
   .funct-section {
-    padding-top: calc(var(--spacing-ref) * 2);
     padding-bottom: calc(var(--spacing-ref) * 2);
     & h2 {
       font-size: var(--font-size-h2);
