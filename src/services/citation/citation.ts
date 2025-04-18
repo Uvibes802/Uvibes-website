@@ -5,6 +5,8 @@ export default function FetchCitation() {
   const [citation, setCitation] = useState<string>("");
   const [authorCitation, setAuthorCitation] = useState<string>("");
   const [roleAuthor, setRoleAuthor] = useState<string>("");
+  const [userNumber, setUserNumber] = useState<string>("");
+  const [userNumberTitle, setUserNumberTitle] = useState<string>("");
   useEffect(() => {
     const sanitizeText = (text: string) => {
       const tempDiv = document.createElement("p");
@@ -40,7 +42,13 @@ export default function FetchCitation() {
       .then((data) => {
         setRoleAuthor(sanitizeText(data[0].content.rendered));
       });
+    fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=15")
+      .then((response) => response.json())
+      .then((data) => {
+        setUserNumber(sanitizeText(data[0].content.rendered));
+        setUserNumberTitle(sanitizeText(data[0].title.rendered));
+      });
   }, []);
 
-  return { citation, authorCitation, roleAuthor };
+  return { citation, authorCitation, roleAuthor, userNumber, userNumberTitle };
 }

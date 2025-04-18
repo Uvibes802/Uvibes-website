@@ -1,10 +1,12 @@
 import "../../styles/cards/userNumberCard.css";
+import FetchCitation from "@/services/citation/citation";
 
 export default function UserNumberCard() {
+  const { userNumber, userNumberTitle } = FetchCitation();
   return (
     <article className="user-number-card">
-      <h4>En 2025, Uvibes c’est</h4>
-      <p>37 500 utilisateurs</p>
+      <h4>{userNumberTitle}</h4>
+      <p>{userNumber}</p>
     </article>
   );
 }
