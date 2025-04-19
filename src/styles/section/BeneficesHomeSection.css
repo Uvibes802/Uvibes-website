@@ -40,6 +40,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: calc(var(--spacing-ref) * 3);
 }
 
 @media screen and (min-width: 768px) {

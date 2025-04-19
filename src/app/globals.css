@@ -13,10 +13,13 @@
   --text-font: "Inter";
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
+  --mainColor-opacity: #fd6e0075;
   --secondaryColor: #d90a5c;
+  --cardsOpacity: rgba(255, 255, 255, 0.808);
   --gradientColor-button: linear-gradient(90deg, #f76213 53%, #f62570 100%);
   --gradientColor: linear-gradient(90deg, #fd6e00 0%, #f62570 100%);
   --gradientColor-card: linear-gradient(180deg, #fd6e00 0%, #f62570 100%);
+  --gradientColor-white: linear-gradient(120deg, #fd6e0017 0%, #ffffff 100%);
   --font-size-ref: 1rem;
   --font-size-h1: calc(var(--font-size-ref) * 8);
   --font-size-h2: calc(var(--font-size-ref) * 6);
@@ -28,6 +31,7 @@
   --spacing-letter: 1px;
   --spacing-ref: 1rem;
   --input-width: 7rem;
+  --input-height: 2rem;
 }
 
 * {
