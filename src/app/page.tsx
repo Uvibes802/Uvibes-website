@@ -6,7 +6,7 @@ import FloatingMenu from "@/components/menu/Menu";
 import UserNumberCard from "@/components/cards/userNumberCard";
 import InspirationSection from "@/components/section/inspirationSection";
 import Resize from "@/services/resize/resize";
-import { BeneficesHomeSection } from "@/components/section/beneficesHomeSection";
+import { BeneficesHomeSection } from "../components/section/BenefitsHomeSection";
 import mockupHome from "../../public/images/mockupHome.png";
 import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
@@ -27,8 +27,6 @@ export default function Home() {
       <FloatingMenu />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
-      <BeneficesHomeSection />
-      <FloatingMenu />
       <Uvibes />
       <Contact />
       <Footer />
