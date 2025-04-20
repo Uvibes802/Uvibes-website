@@ -7,7 +7,7 @@ import {
   Zap,
 } from "lucide-react";
 
-export const beneficesData = [
+export const benefitsData = [
   { id: 1, icon: <Smile size="50%" color="#fd6e00" />, title: "Optimiste" },
   {
     id: 2,

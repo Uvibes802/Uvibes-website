@@ -4,7 +4,7 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import Resize from "@/services/resize/resize";
-import { BeneficesHomeSection } from "../components/section/BenefitsHomeSection";
+import { BenefitsHomeSection } from "../components/section/BenefitsHomeSection";
 import mockupHome from "../../public/images/mockupHome.png";
 import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
@@ -33,7 +33,7 @@ export default function Home() {
           layout="responsive"
         />
       </div>
-      <BeneficesHomeSection />
+      <BenefitsHomeSection />
       <FloatingMenu />
 
       <div style={{ position: "relative", width: "100%", height: "auto" }}>

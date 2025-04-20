@@ -1,9 +1,9 @@
-import { beneficesData } from "../../features/benefits/benefitsData";
+import { benefitsData } from "../../features/benefits/benefitsData";
 import "../../styles/section/BenefitsHomeSection.css";
-import { BeneficesHomeItem } from "./benefitsHomeItem";
+import { BenefitsHomeItem } from "./benefitsHomeItem";
 import Button from "../button/Button";
 
-export function BeneficesHomeSection() {
+export function BenefitsHomeSection() {
   return (
     <section className="benefices-home-section-container">
       <div className="benefices-home-header-and-data">
@@ -14,8 +14,8 @@ export function BeneficesHomeSection() {
 
         <div className="benefices-home-data-container">
           <div className="benefices-home-data">
-            {beneficesData.map((item) => (
-              <BeneficesHomeItem key={item.id} {...item} />
+            {benefitsData.map((item) => (
+              <BenefitsHomeItem key={item.id} {...item} />
             ))}
           </div>
         </div>
