@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main>
       <HeroBanner
-        subtitle=""
+        subtitle="test"
         title="Ouvrir notre esprit à des visions nouvelles"
         description="La première application qui transforme notre perception de l'autre et nous inspire"
         image={mockupHome}
@@ -37,8 +37,7 @@ export default function Home() {
       </div>
       <BeneficesHomeSection />
       <FloatingMenu />
-      <InspirationSection />
-      {isMobile && <UserNumberCard />}
+
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
           src={imageFemmeAge}
