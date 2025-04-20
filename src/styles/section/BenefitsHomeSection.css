@@ -13,12 +13,6 @@
   gap: calc(var(--spacing-ref) * 3);
 }
 
-.benefices-home-title {
-  font-family: var(--title-font);
-  font-size: calc(var(--font-size-h2) / 2);
-  color: var(--mainColor);
-}
-
 #benefices-home-title-word {
   color: var(--bckgColor);
   background-color: var(--mainColor);

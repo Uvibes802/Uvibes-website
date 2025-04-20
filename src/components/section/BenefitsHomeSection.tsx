@@ -1,5 +1,5 @@
 import { beneficesData } from "../../features/benefits/benefitsData";
-import "../../styles/section/BeneficesHomeSection.css";
+import "../../styles/section/BenefitsHomeSection.css";
 import { BeneficesHomeItem } from "./benefitsHomeItem";
 import Button from "../button/Button";
 
@@ -7,7 +7,7 @@ export function BeneficesHomeSection() {
   return (
     <section className="benefices-home-section-container">
       <div className="benefices-home-header-and-data">
-        <h2 className="benefices-home-title">
+        <h2 className="title-h2">
           <span id="benefices-home-title-word">Transformez</span> votre
           quotidien
         </h2>

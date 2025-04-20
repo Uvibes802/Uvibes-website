@@ -32,6 +32,9 @@
   --spacing-ref: 1rem;
   --input-width: 7rem;
   --input-height: 2rem;
+  --icon-min-size: 50px;
+  --icon-max-size: 100px;
+  --icon-size: 12vw;
 }
 
 * {
@@ -78,10 +81,19 @@ h3 {
 .title-h2 {
   font-size: var(--font-size-h2);
   font-family: var(--title-font);
-  color: var(--bckgColor);
+  color: var(--mainColor);
   text-align: left;
   letter-spacing: var(--spacing-letter);
-  line-height: 1;
+  line-height: 1.5;
+}
+
+.title-h3 {
+  font-size: var(--font-size-h3);
+  font-family: var(--title-font);
+  color: var(--mainColor);
+  text-align: left;
+  letter-spacing: var(--spacing-letter);
+  line-height: 1.5;
 }
 
 .title-text {
@@ -90,4 +102,12 @@ h3 {
   font-weight: 600;
   color: var(--bckgColor);
   text-align: left;
+}
+
+.text {
+  font-size: var(--font-size-text);
+  font-family: var(--text-font);
+  line-height: 1.6;
+  font-weight: 400;
+  color: #585c5f;
 }

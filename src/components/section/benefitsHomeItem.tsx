@@ -1,11 +1,11 @@
 import type { BeneficesItemProps } from "@/types/section/BeneficesItemProps";
-import "../../styles/section/beneficesHomeItem.css";
+import "../../styles/section/benefitsHomeItem.css";
 
 export function BeneficesHomeItem({ icon, title }: BeneficesItemProps) {
   return (
     <article className="benefices-home-item-container">
       <div className="benefices-home-item-icon">{icon}</div>
-      <h3 className="benefices-home-data-title">{title}</h3>
+      <h3 className="text">{title}</h3>
     </article>
   );
 }
