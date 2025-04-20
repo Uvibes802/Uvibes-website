@@ -10,6 +10,9 @@ import { BeneficesHomeSection } from "../components/section/BenefitsHomeSection"
 import mockupHome from "../../public/images/mockupHome.png";
 import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
+import imageHomme from "../../public/images/homme_phone.jpg";
+import imageFemmeAge from "../../public/images/femme_age_phone.jpg";
+import Image from "next/image";
 
 export default function Home() {
   const { isMobile } = Resize();
@@ -23,10 +26,28 @@ export default function Home() {
         alt="visuel application"
       />
       <FunctSection />
+      <div style={{ position: "relative", width: "100%", height: "auto" }}>
+        <Image
+          src={imageHomme}
+          alt="visuel homme avec téléphone"
+          width={600}
+          height={450}
+          layout="responsive"
+        />
+      </div>
       <BeneficesHomeSection />
       <FloatingMenu />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
+      <div style={{ position: "relative", width: "100%", height: "auto" }}>
+        <Image
+          src={imageFemmeAge}
+          alt="visuel femme avec téléphone"
+          width={600}
+          height={450}
+          layout="responsive"
+        />
+      </div>
       <Uvibes />
       <Contact />
       <Footer />
