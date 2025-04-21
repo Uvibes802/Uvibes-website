@@ -9,7 +9,8 @@ export function HeroBanner({
   title,
   subtitle,
   description,
-  image,
+  imageDesktop,
+  imageMobile,
   alt,
 }: HeroBannerProps) {
   return (
@@ -41,7 +42,7 @@ export function HeroBanner({
 
           <figure className="hero-banner-image-container desktop-only">
             <Image
-              src={image}
+              src={imageDesktop}
               alt={alt}
               className="hero-banner-image-desktop"
               width={600}
@@ -54,7 +55,7 @@ export function HeroBanner({
 
       <figure className="hero-banner-image-container mobile-only">
         <Image
-          src={image}
+          src={imageMobile}
           alt={alt}
           className="hero-banner-image"
           width={600}

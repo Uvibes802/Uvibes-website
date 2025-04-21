@@ -2,14 +2,13 @@
   width: 100%;
   background: var(--gradientColor-card);
   position: relative;
-  padding-bottom: -2rem;
 }
 
 .hero-banner-container {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem 25rem 1rem;
-  gap: 2rem;
+  padding: 0 1rem;
+  gap: var(--spacing-ref);
 }
 
 .hero-banner-header-top {
@@ -33,25 +32,14 @@
   gap: 1.5rem;
 }
 
-.hero-banner-image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  overflow: visible;
-  position: relative;
-}
-
 .hero-banner-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -90%) scale(1.1);
-  width: auto;
+  position: relative;
+  width: 100vw;
   height: auto;
-  max-width: 90vw;
   object-fit: contain;
   z-index: 0;
   pointer-events: none;
+  transform: translateY(2rem);
 }
 
 .logo_mobile {
@@ -74,14 +62,14 @@
 }
 
 .mobile-only {
-  display: block;
   width: 100%;
   max-width: 100%;
   position: relative;
-  height: 0;
   z-index: 0;
   overflow: visible;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .desktop-only {
@@ -91,12 +79,13 @@
 @media screen and (min-width: 768px) {
   .hero-banner-container {
     padding: calc(var(--spacing-ref) * 2);
+    overflow: hidden;
   }
 
   .hero-banner-body {
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: var(--spacing-ref);
   }
 
   .hero-banner-content {
@@ -109,13 +98,8 @@
     left: auto;
     bottom: auto;
     transform: none;
-    width: 30%;
+    width: 40%;
     justify-content: flex-end;
-  }
-
-  .hero-banner-image {
-    max-width: 100%;
-    height: auto;
   }
 
   .logo_mobile {
