@@ -8,12 +8,6 @@
 }
 
 .benefices-home-item-icon {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  max-width: var(--icon-max-size);
-  max-height: var(--icon-max-size);
-  min-width: var(--icon-min-size);
-  min-height: var(--icon-min-size);
   background-color: white;
   border-radius: 50%;
   display: flex;

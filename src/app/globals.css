@@ -111,3 +111,12 @@ h3 {
   font-weight: 400;
   color: #585c5f;
 }
+
+.icon-size {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  max-width: var(--icon-max-size);
+  max-height: var(--icon-max-size);
+  min-width: var(--icon-min-size);
+  min-height: var(--icon-min-size);
+}

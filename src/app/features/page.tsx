@@ -1,18 +1,20 @@
 import { HeroBanner } from "@/components/banner/heroBanner";
-import mockupFonctionnalites from "../../../public/images/mockupFonctionnality.png";
-import mockupFonctionnalitesDesktop from "../../../public/images/mockupFonctionnalityDesktop.png";
+import mockupFeature from "../../../public/images/mockupFeature.png";
+import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
+import { FeaturesCard } from "@/components/cards/FeaturesCard";
 
-export default function FonctionnalitesPage() {
+export default function FeaturesPage() {
   return (
-    <div>
+    <>
       <HeroBanner
         subtitle="LES FONCTIONNALITÉS"
         title="Uvibes, activateur d'intelligence émotionnelle"
         description="Au sein de votre collectif, l’application qui révolutionne les interactions grâce à des fonctionnalités innovantes"
-        imageDesktop={mockupFonctionnalitesDesktop}
-        imageMobile={mockupFonctionnalites}
+        imageDesktop={mockupFeatureDesktop}
+        imageMobile={mockupFeature}
         alt="Fonctionnalités de l'application"
       />
-    </div>
+      <FeaturesCard />
+    </>
   );
 }
