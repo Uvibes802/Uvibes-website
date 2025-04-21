@@ -11,6 +11,8 @@ import FunctSection from "@/components/section/functSection";
 import imageHomme from "../../public/images/homme_phone.jpg";
 import imageFemmeAge from "../../public/images/femme_age_phone.jpg";
 import Image from "next/image";
+import InspirationSection from "@/components/section/inspirationSection";
+import UserNumberCard from "@/components/cards/userNumberCard";
 
 export default function Home() {
   const { isMobile } = Resize();
@@ -34,6 +36,8 @@ export default function Home() {
         />
       </div>
       <BenefitsHomeSection />
+      <InspirationSection />
+      {isMobile && <UserNumberCard />}
       <FloatingMenu />
 
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
