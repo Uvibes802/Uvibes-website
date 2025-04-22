@@ -1,0 +1,136 @@
+.features-card-container {
+  padding: calc(var(--spacing-ref) * 2) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-ref);
+}
+
+.features-card {
+  width: 80%;
+  border: 1px solid;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-ref);
+  height: auto;
+}
+
+/* Variante ORANGE */
+.features-card.orange {
+  border-color: var(--mainColor);
+}
+
+.features-card.orange .feature-title {
+  color: var(--mainColor);
+}
+
+.features-card.orange .features-video {
+  border-color: var(--mainColor);
+}
+
+.orange-icon {
+  color: var(--mainColor);
+}
+
+.orange-video-icon {
+  fill: var(--mainColor);
+  color: var(--bckgColor);
+}
+
+.features-card.pink {
+  border-color: var(--secondaryColor);
+}
+
+.features-card.pink .feature-title {
+  color: var(--secondaryColor);
+}
+
+.features-card.pink .features-video {
+  border-color: var(--secondaryColor);
+}
+
+.pink-icon {
+  color: var(--secondaryColor);
+}
+
+.pink-video-icon {
+  fill: var(--secondaryColor);
+  color: var(--bckgColor);
+}
+.feature-title {
+  padding: var(--spacing-ref) 0;
+}
+
+.feature-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: var(--spacing-ref);
+  gap: var(--spacing-ref);
+}
+
+.features-item-icon,
+.features-video-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.features-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.features-video {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1rem solid var(--mainColor);
+  object-fit: cover;
+}
+
+.features-video.playing {
+  width: 240px;
+  height: 240px;
+  border-width: 1.5rem;
+}
+
+.features-video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .features-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: center;
+    gap: 0;
+    padding: calc(var(--spacing-ref) * 2);
+  }
+
+  .features-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+  }
+
+  .features-item-icon,
+  .features-video-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

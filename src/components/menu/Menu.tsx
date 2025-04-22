@@ -26,9 +26,9 @@ export default function Menu() {
       </StyledFloatButton>
 
       {isOpen && (
-        <div className="menu-items-container">
+        <nav className="menu-items-container">
           <MenuList className="menu-items" />
-        </div>
+        </nav>
       )}
 
       <StyledBottomNavigation>
