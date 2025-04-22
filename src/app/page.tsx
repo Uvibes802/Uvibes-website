@@ -37,6 +37,8 @@ export default function Home() {
         />
       </div>
       <BenefitsHomeSection />
+      <InspirationSection />
+      {isMobile && <UserNumberCard />}
 
       <FloatingMenu />
 

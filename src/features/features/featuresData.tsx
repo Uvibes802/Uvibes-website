@@ -8,10 +8,11 @@ export const FeaturesData = [
       { id: 3, item: "Sur un temps court, de 6 à 20 minutes" },
       {
         id: 4,
-        item: "Un Amenant à partager des témoignages positifs de groupe",
+        item: "Amenant à partager des témoignages positifs de groupe",
       },
       { id: 5, item: "En Sur un nombre infini de sujets" },
     ],
+    video: "/videos/testTémoignage.mp4",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const FeaturesData = [
       },
       { id: 3, item: "L'émergence de nouvelles réflexions et propositions" },
     ],
+    video: "/videos/testTémoignage.mp4",
   },
   {
     id: 3,
@@ -39,5 +41,6 @@ export const FeaturesData = [
       { id: 2, item: "Portant sur des sujets intéressant votre collectif" },
       { id: 3, item: "Avec une valorisation à la fin" },
     ],
+    video: "/videos/testTémoignage.mp4",
   },
 ];
