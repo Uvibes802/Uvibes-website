@@ -9,17 +9,19 @@ export default function InspirationSection() {
   if (!mounted) return null;
 
   return (
-    <main className="inspiration-section-container">
+    <article className="inspiration-section-container">
       <section className="inspiration-section">
-        <h3>
-          Uvibes, le premier activateur de renouveau relationnel , au sein de
-          votre collectif
-        </h3>
-        <p>{citation}</p>
-        <p>{authorCitation}</p>
-        <p>{roleAuthor}</p>
+        <div className="inspiration-section-text">
+          <h2>
+            Uvibes, le premier activateur de renouveau relationnel , au sein de
+            votre collectif
+          </h2>
+          <p>{citation}</p>
+          <p>{authorCitation}</p>
+          <p>{roleAuthor}</p>
+        </div>
+        {isDesktop && <UserNumberCard />}
       </section>
-      {isDesktop && <UserNumberCard />}
-    </main>
+    </article>
   );
 }

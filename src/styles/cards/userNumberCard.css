@@ -28,7 +28,19 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--cardsOpacity);
+    height: calc(var(--input-width) * 2);
+    width: 70%;
+    margin: calc(var(--spacing-ref) * 2) auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user-number-card {
+    max-width: calc(var(--input-width) * 4);
     height: calc(var(--input-width) * 3);
-    width: calc(var(--input-width) * 4);
+
+    & p:last-of-type {
+      font-size: calc(var(--font-size-ref) * 2.5);
+    }
   }
 }
