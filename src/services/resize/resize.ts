@@ -5,10 +5,10 @@ export default function Resize() {
   const [isDesktop, setIsDesktop] = useState(false);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 1024);
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -17,10 +17,10 @@ export default function Resize() {
 
   useEffect(() => {
     setMounted(true);
-    setIsDesktop(window.innerWidth > 768);
+    setIsDesktop(window.innerWidth >= 1024);
 
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768);
+      setIsDesktop(window.innerWidth >= 1024);
     };
 
     window.addEventListener("resize", handleResize);
