@@ -1,9 +1,10 @@
 import type { StaticImageData } from "next/image";
 
 export type HeroBannerProps = {
-	title: string;
-	subtitle: string;
-	description: string;
-	image: string | StaticImageData;
-	alt: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  imageDesktop: string | StaticImageData;
+  imageMobile: string | StaticImageData;
+  alt: string;
 };

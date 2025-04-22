@@ -21,9 +21,9 @@
   --gradientColor-card: linear-gradient(180deg, #fd6e00 0%, #f62570 100%);
   --gradientColor-white: linear-gradient(120deg, #fd6e0017 0%, #ffffff 100%);
   --font-size-ref: 1rem;
-  --font-size-h1: clamp(4rem, 1.5rem + 5vw, 8rem);
+  --font-size-h1: clamp(3rem, 1.5rem + 5vw, 8rem);
   --font-size-h2: clamp(2.5rem, 1rem + 3vw, 4rem);
-  --font-size-h3: clamp(2rem, 0.75rem + 2vw, 3rem);
+  --font-size-h3: clamp(1.5rem, 0.75rem + 2vw, 3rem);
   --font-size-title-text: clamp(1.5rem, 1rem + 1vw, 2rem);
   --font-size-text: clamp(1rem, 0.5rem + 1vw, 1.25rem);
   --border-ref: 1px solid var(--gradientColor);
@@ -84,7 +84,7 @@ h3 {
   color: var(--mainColor);
   text-align: left;
   letter-spacing: var(--spacing-letter);
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .title-h3 {
@@ -107,7 +107,16 @@ h3 {
 .text {
   font-size: var(--font-size-text);
   font-family: var(--text-font);
-  line-height: 1.6;
+  line-height: 1.2;
   font-weight: 400;
   color: #585c5f;
+}
+
+.icon-size {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  max-width: var(--icon-max-size);
+  max-height: var(--icon-max-size);
+  min-width: var(--icon-min-size);
+  min-height: var(--icon-min-size);
 }

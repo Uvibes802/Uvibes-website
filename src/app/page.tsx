@@ -19,10 +19,11 @@ export default function Home() {
   return (
     <main>
       <HeroBanner
-        subtitle="test"
+        subtitle=""
         title="Ouvrir notre esprit à des visions nouvelles"
         description="La première application qui transforme notre perception de l'autre et nous inspire"
-        image={mockupHome}
+        imageMobile={mockupHome}
+        imageDesktop={mockupHome}
         alt="visuel application"
       />
       <FunctSection />
@@ -38,6 +39,7 @@ export default function Home() {
       <BenefitsHomeSection />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
+
       <FloatingMenu />
 
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
