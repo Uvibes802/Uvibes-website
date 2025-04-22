@@ -13,6 +13,7 @@ import imageFemmeAge from "../../public/images/femme_age_phone.jpg";
 import Image from "next/image";
 import InspirationSection from "@/components/section/inspirationSection";
 import UserNumberCard from "@/components/cards/userNumberCard";
+import { PartnerCarousel } from "@/components/carousel/PartnerCarousel";
 
 export default function Home() {
   const { isMobile } = Resize();
@@ -51,6 +52,7 @@ export default function Home() {
           layout="responsive"
         />
       </div>
+      <PartnerCarousel />
       <Uvibes />
       <Contact />
       <Footer />
