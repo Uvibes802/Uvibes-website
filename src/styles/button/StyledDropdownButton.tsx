@@ -18,8 +18,14 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   overflow: "hidden",
   transition: "all 0.3s ease",
 
+  "& h3": {
+    fontSize: "var(--font-size-h3)",
+    fontFamily: "var(--text-font)",
+  },
+
   "& h4": {
-    fontSize: "calc(var(--font-size-ref) * 1.2)",
+    fontSize: "var(--font-size-h3)",
+    textAlign: "left",
   },
 
   "&:hover": {
@@ -38,8 +44,8 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
 
   [theme.breakpoints.up(768)]: {
     flex: "1 ",
-    width: "auto",
-    margin: 0,
+    width: "100vw",
+    margin: "auto",
   },
 }));
 

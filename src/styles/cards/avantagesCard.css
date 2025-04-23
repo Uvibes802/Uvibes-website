@@ -9,9 +9,8 @@
 
   & h5 {
     color: var(--secondaryColor);
-    font-size: calc(var(--font-size-text) * 1);
+    font-size: var(--font-size-h3);
     text-align: left;
-    width: 30ch;
     padding-left: calc(var(--spacing-ref) * 0.5);
   }
 
@@ -19,7 +18,7 @@
     color: #212121;
     letter-spacing: 0.5px;
     padding-top: calc(var(--spacing-ref) * 1);
-    font-size: calc(var(--font-size-text) * 0.8);
+    font-size: calc(var(--font-size-text) * 1);
     text-align: left;
   }
 
@@ -31,15 +30,15 @@
   }
 
   & div:nth-child(3) {
-    & p {
+    & p:first-of-type {
       margin-top: calc(var(--spacing-ref) * 1.5);
       border-radius: var(--border-radius);
-      padding: calc(var(--spacing-ref) * 1);
-      border: 1px solid transparent;
       background: linear-gradient(white, white) padding-box,
         var(--gradientColor) border-box;
+      padding: calc(var(--spacing-ref) * 1);
+      border: 1px solid transparent;
       color: var(--secondaryColor);
-      font-size: calc(var(--font-size-text) * 1);
+      font-size: var(--font-size-title-text);
       text-align: left;
     }
   }

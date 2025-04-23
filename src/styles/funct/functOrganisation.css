@@ -24,6 +24,7 @@
   & div:first-of-type {
     display: flex;
     align-items: center;
+    gap: calc(var(--spacing-ref) * 0.5);
     color: var(--secondaryColor);
   }
 }
