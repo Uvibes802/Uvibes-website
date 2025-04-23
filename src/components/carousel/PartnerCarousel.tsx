@@ -7,6 +7,7 @@ import "../../styles/carousel/PartnerCarousel.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 export function PartnerCarousel() {
   const partnerLogos = [
@@ -63,10 +64,12 @@ export function PartnerCarousel() {
         {partnerLogos.map((logo) => (
           <SwiperSlide key={logo.index} className="swiper-slide">
             <div key={logo.index} className="slide-wrapper">
-              <img
+              <Image
                 src={logo.src.src}
                 alt={logo.alt}
                 className="partner-logo"
+                width={300}
+                height={300}
                 style={{ objectFit: "contain", width: "100%", height: "100%" }}
               />
             </div>
