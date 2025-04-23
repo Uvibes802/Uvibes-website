@@ -1,11 +1,24 @@
 "use client";
 
-import AvantagesButton from "@/components/avantages/avantagesContent";
+import AvantagesContent from "@/components/avantages/avantagesContent";
+import { HeroBanner } from "@/components/banner/heroBanner";
+import mockupAvantages from "../../../public/images/mockupAvantages.png";
+import mockupAvantagesDesktop from "../../../public/images/mockupAvantageDesktop.png";
 
 export default function Avantages() {
   return (
-    <main className="avantages-main-container">
-      <AvantagesButton />
-    </main>
+    <>
+      <HeroBanner
+        subtitle="Les avantages"
+        title="Uvibes , moteur d’une dynamique positive"
+        description="L’application qui répond aux objectifs de votre organisation"
+        imageDesktop={mockupAvantagesDesktop}
+        imageMobile={mockupAvantages}
+        alt="Fonctionnalités de l'application"
+      />
+      <main>
+        <AvantagesContent />
+      </main>
+    </>
   );
 }

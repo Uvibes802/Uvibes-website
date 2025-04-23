@@ -8,7 +8,7 @@ export default function FeaturesPage() {
   return (
     <>
       <HeroBanner
-        subtitle="LES FONCTIONNALITÉS"
+        subtitle="Les fonctionnalités"
         title="Uvibes, activateur d'intelligence émotionnelle"
         description="Au sein de votre collectif, l’application qui révolutionne les interactions grâce à des fonctionnalités innovantes"
         imageDesktop={mockupFeatureDesktop}

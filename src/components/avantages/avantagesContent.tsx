@@ -7,10 +7,13 @@ import {
   Smile,
   Home,
   UsersIcon,
+  Handshake,
+  DotIcon,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesContent.css";
 import AvantagesCard from "../cards/avantagesCard";
+import LastAvantagesCard from "../cards/LastAvantagesCard";
 export default function AvantagesContent() {
   return (
     <div className="avantage-button-container">
@@ -34,6 +37,36 @@ export default function AvantagesContent() {
           stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
         />
+        <LastAvantagesCard
+          icone={
+            <Handshake size={50} style={{ color: "var(--secondaryColor)" }} />
+          }
+          title="Répondre aux enjeux de sa RSE"
+          stats={
+            <ul>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Satisfaire les besoins relationnels des collaborateurs
+                </li>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Alléger les managers de la gestion émotionnelle de leurs
+                  équipes
+                </li>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Favoriser une intégration rapide et harmonieuse des nouveaux
+                  arrivants
+                </li>
+              </div>
+            </ul>
+          }
+        />
       </DropdownButton>
       <DropdownButton
         title="Pour votre établissement d'enseignement"
@@ -55,6 +88,40 @@ export default function AvantagesContent() {
           title="Développer les savoir-agir relationnels"
           stats="62 % des managers sont prêts à recruter un  collaborateur sur la base de ses soft skills, même si ses compétences  techniques ne correspondent pas entièrement au poste"
           content="Uvibes est le premier service qui offre un espace d'entraînement continu et de valorisation des compétences interpersonnelles."
+        />
+        <LastAvantagesCard
+          icone={
+            <Handshake size={50} style={{ color: "var(--secondaryColor)" }} />
+          }
+          title="Renforcer le lien avec ses apprenants"
+          stats={
+            <ul>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Booster leur participation et disposer d’informations inédites
+                </li>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Répondre à leur envie d’échanges gamifiés et bienveillants 
+                </li>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Faire vivre son réseau alumni
+                </li>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <li className="last-avantages-list">
+                  Initier des mentorats enrichissants
+                </li>
+              </div>
+            </ul>
+          }
         />
       </DropdownButton>
       <DropdownButton
