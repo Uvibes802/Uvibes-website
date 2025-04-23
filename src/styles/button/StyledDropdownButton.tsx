@@ -44,7 +44,7 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
 
   [theme.breakpoints.up(768)]: {
     flex: "1 ",
-    width: "100vw",
+    width: "auto",
     margin: "auto",
   },
 }));
