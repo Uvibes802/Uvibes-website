@@ -9,7 +9,7 @@ export default function Avantages() {
   return (
     <>
       <HeroBanner
-        subtitle="LES AVANTAGES"
+        subtitle="Les avantages"
         title="Uvibes , moteur d’une dynamique positive"
         description="L’application qui répond aux objectifs de votre organisation"
         imageDesktop={mockupAvantagesDesktop}

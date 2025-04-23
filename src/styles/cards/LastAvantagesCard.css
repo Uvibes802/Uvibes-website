@@ -25,4 +25,11 @@
     display: flex;
     align-items: flex-start;
   }
+
+  .last-avantages-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--spacing-ref) * 0.5);
+  }
 }

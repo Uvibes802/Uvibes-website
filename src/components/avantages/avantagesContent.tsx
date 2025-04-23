@@ -8,6 +8,7 @@ import {
   Home,
   UsersIcon,
   Handshake,
+  DotIcon,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesButton.css";
@@ -37,15 +38,30 @@ export default function AvantagesContent() {
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
         />
         <LastAvantagesCard
-          icone={<Handshake />}
+          icone={
+            <Handshake size={50} style={{ color: "var(--secondaryColor)" }} />
+          }
           title="Répondre aux enjeux de sa RSE"
           stats={
             <>
-              Satisfaire les besoins relationnels des collaborateurs <br />
-              Alléger les managers de la gestion émotionnelle de leurs équipes
-              <br />
-              Favoriser une intégration rapide et harmonieuse des nouveaux
-              arrivants
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>Satisfaire les besoins relationnels des collaborateurs</p>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>
+                  Alléger les managers de la gestion émotionnelle de leurs
+                  équipes
+                </p>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>
+                  Favoriser une intégration rapide et harmonieuse des nouveaux
+                  arrivants
+                </p>
+              </div>
             </>
           }
         />
@@ -70,6 +86,36 @@ export default function AvantagesContent() {
           title="Développer les savoir-agir relationnels"
           stats="62 % des managers sont prêts à recruter un  collaborateur sur la base de ses soft skills, même si ses compétences  techniques ne correspondent pas entièrement au poste"
           content="Uvibes est le premier service qui offre un espace d'entraînement continu et de valorisation des compétences interpersonnelles."
+        />
+        <LastAvantagesCard
+          icone={
+            <Handshake size={50} style={{ color: "var(--secondaryColor)" }} />
+          }
+          title="Renforcer le lien avec ses apprenants"
+          stats={
+            <>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>
+                  Booster leur participation et disposer d’informations inédites
+                </p>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>
+                  Répondre à leur envie d’échanges gamifiés et bienveillants 
+                </p>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>Faire vivre son réseau alumni</p>
+              </div>
+              <div className="last-avantages-card-content">
+                <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+                <p>Initier des mentorats enrichissants</p>
+              </div>
+            </>
+          }
         />
       </DropdownButton>
       <DropdownButton
