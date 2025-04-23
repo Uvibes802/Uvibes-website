@@ -14,7 +14,7 @@ export default function AvantagesCard({
       </div>
       <p>{stats}</p>
       <div>
-        <p>{content}</p>
+        <p className="avantages-card-content">{content}</p>
       </div>
     </article>
   );

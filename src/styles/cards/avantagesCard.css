@@ -29,17 +29,15 @@
     justify-content: center;
   }
 
-  & div:nth-child(3) {
-    & p:first-of-type {
-      margin-top: calc(var(--spacing-ref) * 1.5);
-      border-radius: var(--border-radius);
-      background: linear-gradient(white, white) padding-box,
-        var(--gradientColor) border-box;
-      padding: calc(var(--spacing-ref) * 1);
-      border: 1px solid transparent;
-      color: var(--secondaryColor);
-      font-size: var(--font-size-title-text);
-      text-align: left;
-    }
+  .avantages-card-content {
+    margin-top: calc(var(--spacing-ref) * 1.5);
+    border-radius: var(--border-radius);
+    background: linear-gradient(white, white) padding-box,
+      var(--gradientColor) border-box;
+    padding: calc(var(--spacing-ref) * 1);
+    border: 1px solid transparent;
+    color: var(--secondaryColor);
+    font-size: var(--font-size-title-text);
+    text-align: left;
   }
 }
