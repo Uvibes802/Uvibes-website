@@ -19,8 +19,8 @@ export function DropdownButton({
       <StyledDropdownButton>
         <StyledAccordionSummary expandIcon={<StyledExpandIcon />}>
           <StyledSummaryContent>
-            {icon} {/* definir une taille pour l'icône à 3rem */}
-            <span>{title}</span>
+            {icon}
+            <h4>{title}</h4>
           </StyledSummaryContent>
         </StyledAccordionSummary>
 

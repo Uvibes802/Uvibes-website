@@ -7,15 +7,5 @@
     & div:last-of-type {
       color: var(--mainColor);
     }
-
-    & svg {
-      color: var(--mainColor);
-    }
-  }
-
-  & .avantages-card-container:nth-child(even) {
-    & svg {
-      color: var(--secondaryColor);
-    }
   }
 }

@@ -18,6 +18,10 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   overflow: "hidden",
   transition: "all 0.3s ease",
 
+  "& h4": {
+    fontSize: "calc(var(--font-size-ref) * 1.2)",
+  },
+
   "&:hover": {
     opacity: 0.9,
   },

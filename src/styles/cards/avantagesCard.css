@@ -2,6 +2,7 @@
   margin-top: calc(var(--spacing-ref) * 2);
   border-radius: var(--border-radius);
   border: 1px solid transparent;
+  box-shadow: 1px 4px 7px 0px #00000029;
   background: linear-gradient(white, white) padding-box,
     var(--gradientColor) border-box;
   padding: calc(var(--spacing-ref) * 1);
@@ -18,7 +19,7 @@
     color: #212121;
     letter-spacing: 0.5px;
     padding-top: calc(var(--spacing-ref) * 0.5);
-    font-size: calc(var(--font-size-text) * 0.6);
+    font-size: calc(var(--font-size-text) * 0.7);
     text-align: left;
   }
 
@@ -29,7 +30,7 @@
     justify-content: center;
   }
 
-  & div:last-of-type {
+  & div:nth-child(3) {
     margin-top: calc(var(--spacing-ref) * 0.5);
     border-radius: var(--border-radius);
     padding: calc(var(--spacing-ref) * 0.5);
