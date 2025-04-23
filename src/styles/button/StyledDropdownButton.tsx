@@ -12,7 +12,7 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   cursor: "pointer",
   borderRadius: "calc(var(--border-radius)*1) !important",
   boxShadow: "1px 3px 10px 0px #0000006b",
-  width: "80%",
+  width: "90%",
   position: "relative",
   border: "1px solid var(--mainColor)",
   overflow: "hidden",
@@ -36,16 +36,20 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
     background: "var(--mainColor)",
     color: "white",
     [theme.breakpoints.up(768)]: {
-      margin: "0 !important",
-      width: "100% !important",
+      margin: "auto !important",
+      width: "90vw !important",
       order: 1,
     },
   },
 
   [theme.breakpoints.up(768)]: {
     flex: "1 ",
+    width: "90vw",
+    margin: "0 auto",
+  },
+
+  [theme.breakpoints.up(1024)]: {
     width: "auto",
-    margin: "auto",
   },
 }));
 
@@ -95,18 +99,16 @@ export const StyledDropdownButtonContainer = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   margin: "var(--spacing-ref) 0",
-  width: "100%",
 
   [theme.breakpoints.up(768)]: {
     margin: "var(--spacing-ref)",
-    width: "calc(33.33% - var(--spacing-ref) * 2)",
     maxWidth: "400px",
     alignSelf: "flex-start",
   },
 
   "&:has(.Mui-expanded)": {
-    [theme.breakpoints.up(768)]: {
-      width: "100%",
+    [theme.breakpoints.up(1024)]: {
+      width: "90%",
       maxWidth: "100%",
       order: 1,
     },
