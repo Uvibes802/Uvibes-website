@@ -13,7 +13,9 @@ export default function AvantagesCard({
         {icone} <h5>{title}</h5>
       </div>
       <p>{stats}</p>
-      <div>{content}</div>
+      <div>
+        <p>{content}</p>
+      </div>
     </article>
   );
 }

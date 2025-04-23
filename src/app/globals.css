@@ -8,9 +8,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Supreme-Light";
+  src: url("/fonts/Supreme-Light.woff2") format("woff2"),
+    url("/fonts/Supreme-Light.woff") format("woff"),
+    url("/fonts/Supreme-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
   --title-font: "Bevellier";
-  --text-font: "Inter";
+  --text-font: "Supreme-Light";
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
   --mainColor-opacity: #fd6e0075;
@@ -77,6 +87,11 @@ h3 {
 
 h4 {
   font-size: var(--font-size-h4);
+  font-family: var(--text-font);
+}
+
+h5 {
+  font-family: var(--text-font);
 }
 
 .title-h1 {
