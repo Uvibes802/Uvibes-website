@@ -21,6 +21,7 @@
   & p {
     width: 30ch;
     color: var(--mainColor);
+    font-size: calc(var(--font-size-text) / 1.2);
   }
   & a {
     color: var(--secondaryColor);
@@ -49,9 +50,6 @@
     height: 30vh;
     & h4 {
       font-size: calc(var(--font-size-ref) * 2);
-    }
-    & p {
-      font-size: calc(var(--font-size-text) / 1.5);
     }
   }
 }

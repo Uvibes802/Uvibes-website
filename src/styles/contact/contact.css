@@ -3,8 +3,7 @@
   background: var(--gradientColor-card);
   color: white;
 
-  & h3 {
-    font-size: calc(var(--font-size-h3) / 1.5);
+  & h2 {
     text-align: center;
     padding-bottom: var(--spacing-ref);
   }
@@ -35,9 +34,9 @@
     }
 
     & p {
-      font-size: calc(var(--font-size-text) / 1.5);
+      font-size: var(--font-size-text);
       width: 35ch;
-      font-size: calc(var(--font-size-text) / 1.5);
+      font-size: var(--font-size-text);
     }
   }
 }
