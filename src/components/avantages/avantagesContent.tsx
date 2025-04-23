@@ -6,11 +6,14 @@ import {
   Brain,
   Smile,
   Home,
+  Handshake,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesButton.css";
 import AvantagesCard from "../cards/avantagesCard";
 import UserIcon from "../../../public/assets/userIcon";
+import LastAvantagesCard from "../cards/LastAvantagesCard";
+
 export default function AvantagesContent() {
   return (
     <div className="avantage-button-container">
@@ -33,6 +36,19 @@ export default function AvantagesContent() {
           title="Améliorer sa prise de décision et augmenter sa performance"
           stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
+        />
+        <LastAvantagesCard
+          icone={<Handshake />}
+          title="Répondre aux enjeux de sa RSE"
+          stats={
+            <>
+              Satisfaire les besoins relationnels des collaborateurs <br />
+              Alléger les managers de la gestion émotionnelle de leurs équipes
+              <br />
+              Favoriser une intégration rapide et harmonieuse des nouveaux
+              arrivants
+            </>
+          }
         />
       </DropdownButton>
       <DropdownButton
