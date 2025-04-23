@@ -24,9 +24,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .avantages-main-container {
+  .avantage-button-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
   }
 }
