@@ -1,0 +1,21 @@
+.avantage-button-container {
+  & .avantages-card-container:nth-child(odd) {
+    & h5 {
+      color: var(--mainColor);
+    }
+
+    & div:last-of-type {
+      color: var(--mainColor);
+    }
+
+    & svg {
+      color: var(--mainColor);
+    }
+  }
+
+  & .avantages-card-container:nth-child(even) {
+    & svg {
+      color: var(--secondaryColor);
+    }
+  }
+}

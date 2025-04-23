@@ -1,0 +1,42 @@
+.avantages-card-container {
+  margin-top: calc(var(--spacing-ref) * 2);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    var(--gradientColor) border-box;
+  padding: calc(var(--spacing-ref) * 1);
+
+  & h5 {
+    color: var(--secondaryColor);
+    font-size: calc(var(--font-size-text) * 1);
+    text-align: left;
+    width: 30ch;
+    padding-left: calc(var(--spacing-ref) * 0.5);
+  }
+
+  & p:first-of-type {
+    color: #212121;
+    letter-spacing: 0.5px;
+    padding-top: calc(var(--spacing-ref) * 0.5);
+    font-size: calc(var(--font-size-text) * 0.6);
+    text-align: left;
+  }
+
+  & div:first-of-type {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  & div:last-of-type {
+    margin-top: calc(var(--spacing-ref) * 0.5);
+    border-radius: var(--border-radius);
+    padding: calc(var(--spacing-ref) * 0.5);
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      var(--gradientColor) border-box;
+    color: var(--secondaryColor);
+    font-size: calc(var(--font-size-text) * 0.8);
+  }
+}
