@@ -1,3 +1,5 @@
+"use client";
+
 import { StyledWhiteButton } from "../../styles/button/styledWhiteButton";
 import type { ButtonProps } from "@/types/button/button";
 
