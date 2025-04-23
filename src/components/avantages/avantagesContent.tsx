@@ -7,10 +7,12 @@ import {
   Smile,
   Home,
   UsersIcon,
+  Handshake,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesButton.css";
 import AvantagesCard from "../cards/avantagesCard";
+import LastAvantagesCard from "../cards/LastAvantagesCard";
 export default function AvantagesContent() {
   return (
     <div className="avantage-button-container">
