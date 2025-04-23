@@ -5,7 +5,7 @@
   box-shadow: 1px 4px 7px 0px #00000029;
   background: linear-gradient(white, white) padding-box,
     var(--gradientColor) border-box;
-  padding: calc(var(--spacing-ref) * 1);
+  padding: calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 1);
 
   & h5 {
     color: var(--secondaryColor);
@@ -18,8 +18,8 @@
   & p:first-of-type {
     color: #212121;
     letter-spacing: 0.5px;
-    padding-top: calc(var(--spacing-ref) * 0.5);
-    font-size: calc(var(--font-size-text) * 0.7);
+    padding-top: calc(var(--spacing-ref) * 1);
+    font-size: calc(var(--font-size-text) * 0.8);
     text-align: left;
   }
 
@@ -31,13 +31,16 @@
   }
 
   & div:nth-child(3) {
-    margin-top: calc(var(--spacing-ref) * 0.5);
-    border-radius: var(--border-radius);
-    padding: calc(var(--spacing-ref) * 0.5);
-    border: 1px solid transparent;
-    background: linear-gradient(white, white) padding-box,
-      var(--gradientColor) border-box;
-    color: var(--secondaryColor);
-    font-size: calc(var(--font-size-text) * 0.8);
+    & p {
+      margin-top: calc(var(--spacing-ref) * 1.5);
+      border-radius: var(--border-radius);
+      padding: calc(var(--spacing-ref) * 1);
+      border: 1px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+        var(--gradientColor) border-box;
+      color: var(--secondaryColor);
+      font-size: calc(var(--font-size-text) * 1);
+      text-align: left;
+    }
   }
 }
