@@ -10,7 +10,7 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   background: "white",
   color: "var(--mainColor)",
   cursor: "pointer",
-  borderRadius: "calc(var(--border-radius)*2) !important",
+  borderRadius: "calc(var(--border-radius)*1) !important",
   boxShadow: "1px 3px 10px 0px #0000006b",
   width: "80%",
   position: "relative",

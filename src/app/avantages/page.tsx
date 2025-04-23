@@ -1,6 +1,6 @@
 "use client";
 
-import AvantagesButton from "@/components/avantages/avantagesButton";
+import AvantagesButton from "@/components/avantages/avantagesContent";
 
 export default function Avantages() {
   return (

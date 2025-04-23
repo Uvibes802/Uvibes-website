@@ -1,11 +1,5 @@
+import type { AvantagesCardProps } from "@/types/avantages/avantagesCard";
 import "../../styles/cards/avantagesCard.css";
-
-type AvantagesCardProps = {
-  icone: React.ReactNode;
-  title: string;
-  stats: string;
-  content: string;
-};
 
 export default function AvantagesCard({
   icone,
