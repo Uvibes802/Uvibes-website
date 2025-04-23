@@ -34,9 +34,9 @@
     }
 
     & p {
-      font-size: calc(var(--font-size-text) / 1.5);
+      font-size: var(--font-size-text);
       width: 35ch;
-      font-size: calc(var(--font-size-text) / 1.5);
+      font-size: var(--font-size-text);
     }
   }
 }

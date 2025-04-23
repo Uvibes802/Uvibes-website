@@ -39,6 +39,10 @@
     max-width: calc(var(--input-width) * 4);
     height: calc(var(--input-width) * 3);
 
+    & h4 {
+      font-size: calc(var(--font-size-ref) * 3);
+    }
+
     & p:last-of-type {
       font-size: calc(var(--font-size-ref) * 2.5);
     }
