@@ -10,13 +10,23 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   background: "white",
   color: "var(--mainColor)",
   cursor: "pointer",
-  borderRadius: "calc(var(--border-radius)*2) !important",
+  borderRadius: "calc(var(--border-radius)*1) !important",
   boxShadow: "1px 3px 10px 0px #0000006b",
   width: "80%",
   position: "relative",
   border: "1px solid var(--mainColor)",
   overflow: "hidden",
   transition: "all 0.3s ease",
+
+  "& h3": {
+    fontSize: "var(--font-size-h3)",
+    fontFamily: "var(--text-font)",
+  },
+
+  "& h4": {
+    fontSize: "var(--font-size-h3)",
+    textAlign: "left",
+  },
 
   "&:hover": {
     opacity: 0.9,
@@ -35,7 +45,7 @@ export const StyledDropdownButton = styled(Accordion)(({ theme }) => ({
   [theme.breakpoints.up(768)]: {
     flex: "1 ",
     width: "auto",
-    margin: 0,
+    margin: "auto",
   },
 }));
 
