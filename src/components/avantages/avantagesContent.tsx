@@ -9,7 +9,7 @@ import {
   UsersIcon,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
-import "../../styles/avantages/avantagesButton.css";
+import "../../styles/avantages/avantagesContent.css";
 import AvantagesCard from "../cards/avantagesCard";
 export default function AvantagesContent() {
   return (
@@ -17,7 +17,7 @@ export default function AvantagesContent() {
       <DropdownButton
         title="Pour votre entreprise"
         subtitle="Dans le monde du travail, Uvibes stimule le bien-être individuel pour renforcer la performance collective"
-        icon={<Building size={30} />}
+        icon={<Building size={60} />}
       >
         <AvantagesCard
           icone={
@@ -38,7 +38,7 @@ export default function AvantagesContent() {
       <DropdownButton
         title="Pour votre établissement d'enseignement"
         subtitle="Dans la sphère éducative, Uvibes améliore la sociabilité des apprenants "
-        icon={<School size={50} />}
+        icon={<School size={80} />}
       >
         <AvantagesCard
           icone={
@@ -60,7 +60,7 @@ export default function AvantagesContent() {
       <DropdownButton
         title="Pour votre organisation en charge d'un collectif"
         subtitle="Dans la sphère du prendre soin, Uvibes est une nouvelle respiration "
-        icon={<Heart size={60} />}
+        icon={<Heart size={80} />}
       >
         <AvantagesCard
           icone={

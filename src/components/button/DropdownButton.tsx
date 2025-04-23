@@ -20,7 +20,7 @@ export function DropdownButton({
         <StyledAccordionSummary expandIcon={<StyledExpandIcon />}>
           <StyledSummaryContent>
             {icon}
-            <h4>{title}</h4>
+            <h3>{title}</h3>
           </StyledSummaryContent>
         </StyledAccordionSummary>
 
