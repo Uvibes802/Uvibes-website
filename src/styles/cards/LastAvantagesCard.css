@@ -32,4 +32,16 @@
     justify-content: flex-start;
     gap: calc(var(--spacing-ref) * 0.5);
   }
+
+  .last-avantages-list {
+    list-style: none;
+    color: #212121;
+    font-family: var(--text-font);
+    font-size: calc(var(--font-size-text) * 0.6);
+    text-align: left;
+    width: 40ch;
+  }
+  .last-avantages-card-title {
+    padding-bottom: var(--spacing-ref);
+  }
 }

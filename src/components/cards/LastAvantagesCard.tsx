@@ -11,7 +11,7 @@ export default function LastAvantagesCard({
       <div className="last-avantages-card-title">
         {icone} <h5>{title}</h5>
       </div>
-      <p>{stats}</p>
+      <div>{stats}</div>
     </article>
   );
 }

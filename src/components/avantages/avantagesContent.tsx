@@ -43,26 +43,28 @@ export default function AvantagesContent() {
           }
           title="Répondre aux enjeux de sa RSE"
           stats={
-            <>
+            <ul>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>Satisfaire les besoins relationnels des collaborateurs</p>
+                <li className="last-avantages-list">
+                  Satisfaire les besoins relationnels des collaborateurs
+                </li>
               </div>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>
+                <li className="last-avantages-list">
                   Alléger les managers de la gestion émotionnelle de leurs
                   équipes
-                </p>
+                </li>
               </div>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>
+                <li className="last-avantages-list">
                   Favoriser une intégration rapide et harmonieuse des nouveaux
                   arrivants
-                </p>
+                </li>
               </div>
-            </>
+            </ul>
           }
         />
       </DropdownButton>
@@ -93,28 +95,32 @@ export default function AvantagesContent() {
           }
           title="Renforcer le lien avec ses apprenants"
           stats={
-            <>
+            <ul>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>
+                <li className="last-avantages-list">
                   Booster leur participation et disposer d’informations inédites
-                </p>
+                </li>
               </div>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>
+                <li className="last-avantages-list">
                   Répondre à leur envie d’échanges gamifiés et bienveillants 
-                </p>
+                </li>
               </div>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>Faire vivre son réseau alumni</p>
+                <li className="last-avantages-list">
+                  Faire vivre son réseau alumni
+                </li>
               </div>
               <div className="last-avantages-card-content">
                 <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
-                <p>Initier des mentorats enrichissants</p>
+                <li className="last-avantages-list">
+                  Initier des mentorats enrichissants
+                </li>
               </div>
-            </>
+            </ul>
           }
         />
       </DropdownButton>
