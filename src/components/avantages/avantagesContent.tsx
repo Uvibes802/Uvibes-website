@@ -6,18 +6,18 @@ import {
   Brain,
   Smile,
   Home,
+  UsersIcon,
 } from "lucide-react";
 import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesButton.css";
 import AvantagesCard from "../cards/avantagesCard";
-import UserIcon from "../../../public/assets/userIcon";
 export default function AvantagesContent() {
   return (
     <div className="avantage-button-container">
       <DropdownButton
         title="Pour votre entreprise"
         subtitle="Dans le monde du travail, Uvibes stimule le bien-être individuel pour renforcer la performance collective"
-        icon={<Building />}
+        icon={<Building size={30} />}
       >
         <AvantagesCard
           icone={
@@ -29,7 +29,7 @@ export default function AvantagesContent() {
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
         />
         <AvantagesCard
-          icone={<UserIcon />}
+          icone={<UsersIcon size={50} />}
           title="Améliorer sa prise de décision et augmenter sa performance"
           stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
@@ -38,10 +38,12 @@ export default function AvantagesContent() {
       <DropdownButton
         title="Pour votre établissement d'enseignement"
         subtitle="Dans la sphère éducative, Uvibes améliore la sociabilité des apprenants "
-        icon={<School />}
+        icon={<School size={50} />}
       >
         <AvantagesCard
-          icone={<UserIcon />}
+          icone={
+            <UsersIcon style={{ color: "var(--secondaryColor)" }} size={50} />
+          }
           title="Soutenir le 
           bien-etre des jeunes"
           stats="41% des étudiants présentent des symptômes dépressifs contre 26% avant le COVID (Etude Université Bordeaux, 2024)."
@@ -58,10 +60,12 @@ export default function AvantagesContent() {
       <DropdownButton
         title="Pour votre organisation en charge d'un collectif"
         subtitle="Dans la sphère du prendre soin, Uvibes est une nouvelle respiration "
-        icon={<Heart />}
+        icon={<Heart size={60} />}
       >
         <AvantagesCard
-          icone={<UserIcon />}
+          icone={
+            <UsersIcon style={{ color: "var(--secondaryColor)" }} size={50} />
+          }
           title="Prévenir l'isolement social et maintenir les capacités cognitives"
           stats="Entretenir une vie sociale dynamique réduit de 38% le risque de démence (Rush University, 2025)"
           content="Uvibes nous redonne l’envie et la facilité de discuter"
@@ -73,7 +77,7 @@ export default function AvantagesContent() {
           content="En mettant en avant l'unicité de chacun, Uvibes nous amène à tisser de nouveaux liens avec notre entourage"
         />
         <AvantagesCard
-          icone={<Home size={50} />}
+          icone={<Home style={{ color: "var(--secondaryColor)" }} size={50} />}
           title="Créer des communautés d'entraide"
           stats="Partager une expérience commune, c’est mieux comprendre ce qu’on vit"
           content="En valorisant les savoirs issus de l'expérience, Uvibes nous donne la possibilité de créer des échanges entre pairs"
