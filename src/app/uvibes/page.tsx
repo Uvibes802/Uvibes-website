@@ -27,7 +27,9 @@ export default function uvibes() {
           <p className="text">
             Interagir avec des inconnus nous rend plus heureux et nous maintient
             en bonne santé physique. <br />
+            <br />
             Alors comment lancer cette discussion ? <br />
+            <br />
             Après 300 enquêtes de terrain, notre solution voit le jour, amènant
             à des échanges :
           </p>

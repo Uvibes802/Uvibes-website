@@ -1,5 +1,6 @@
 .uvibes-container {
   padding: 0 calc(var(--spacing-ref) * 2);
+  gap: var(--spacing-ref);
 }
 .uvibes-title {
   padding: var(--spacing-ref) 0;
@@ -35,4 +36,18 @@
 .uvibes-eclatens-logo {
   width: 80%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .uvibes-container {
+    gap: calc(var(--spacing-ref) * 2);
+  }
+
+  .uvibes-title {
+    padding: calc(var(--spacing-ref) * 2) 0;
+  }
+
+  .uvibes-eclatens-card {
+    padding: calc(var(--spacing-ref) * 2);
+  }
 }
