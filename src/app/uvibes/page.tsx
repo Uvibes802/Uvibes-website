@@ -9,6 +9,7 @@ import "../../styles/page/uvibes.css";
 import TeamCards from "@/components/cards/teamCards";
 import Image from "next/image";
 import TeamSection from "@/components/section/TeamSection";
+import FloatingMenu from "@/components/menu/Menu";
 
 export default function uvibes() {
   return (
@@ -21,6 +22,9 @@ export default function uvibes() {
         imageMobile={logoUvibes}
         alt="Fonctionnalités de l'application"
       />
+      <nav>
+        <FloatingMenu />
+      </nav>
       <main>
         <section className="uvibes-aboutUs uvibes-container">
           <h2 className="title-h2 uvibes-title">La naissance de l&apos;idée</h2>

@@ -3,6 +3,7 @@ import mockupFeature from "../../../public/images/mockupFeature.png";
 import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
 import { FeaturesCard } from "@/components/cards/FeaturesCard";
 import FunctOrganisation from "@/components/funct/functOrganisation";
+import FloatingMenu from "@/components/menu/Menu";
 
 export default function FeaturesPage() {
   return (
@@ -15,8 +16,13 @@ export default function FeaturesPage() {
         imageMobile={mockupFeature}
         alt="Fonctionnalités de l'application"
       />
-      <FeaturesCard />
-      <FunctOrganisation />
+      <nav>
+        <FloatingMenu />
+      </nav>
+      <main>
+        <FeaturesCard />
+        <FunctOrganisation />
+      </main>
     </>
   );
 }
