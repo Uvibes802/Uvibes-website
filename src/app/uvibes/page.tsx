@@ -8,6 +8,7 @@ import { DotIcon } from "lucide-react";
 import "../../styles/page/uvibes.css";
 import TeamCards from "@/components/cards/teamCards";
 import Image from "next/image";
+import TeamSection from "@/components/section/TeamSection";
 
 export default function uvibes() {
   return (
@@ -32,19 +33,19 @@ export default function uvibes() {
           </p>
           <ul>
             <div className="uvibes-list">
-              <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+              <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
               <li className="text">inattendus</li>
             </div>
             <div className="uvibes-list">
-              <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+              <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
               <li className="text">brefs</li>
             </div>
             <div className="uvibes-list">
-              <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+              <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
               <li className="text">ludiques et inspirants</li>
             </div>
             <div className="uvibes-list">
-              <DotIcon size={24} style={{ color: "var(--secondaryColor)" }} />
+              <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
               <li className="text">sans danger</li>
             </div>
           </ul>
@@ -52,6 +53,7 @@ export default function uvibes() {
         <section className="uvibes-container ">
           <h2 className="title-h2 uvibes-title">Le portage du projet</h2>
           <div className="uvibes-portage">
+            <TeamSection />
             <article className="uvibes-eclatens-card">
               <Image
                 src={logoEclatense}
