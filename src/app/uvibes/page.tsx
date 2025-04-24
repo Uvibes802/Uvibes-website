@@ -2,11 +2,9 @@
 
 import { HeroBanner } from "@/components/banner/heroBanner";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
-import delphine from "../../../public/images/delphine.jpg";
 import logoEclatense from "../../../public/images/LogoEclatens.png";
 import { DotIcon } from "lucide-react";
 import "../../styles/page/uvibes.css";
-import TeamCards from "@/components/cards/teamCards";
 import Image from "next/image";
 import TeamSection from "@/components/section/TeamSection";
 
