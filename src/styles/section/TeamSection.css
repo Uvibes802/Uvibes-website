@@ -1,0 +1,55 @@
+.uvibes-teamSection-button {
+  position: relative;
+  display: flex;
+  height: 48px;
+  border: 1px solid var(--mainColor);
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: var(--bckgColor);
+}
+
+.uvibes-button {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--mainColor);
+  font-family: var(--text-font);
+  font-size: var(--font-size-text);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.uvibes-button-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--gradientColor-button);
+  border-radius: 999px;
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.uvibes-button:hover {
+  color: var(--bckgColor);
+}
+
+.uvibes-button.active {
+  background-image: var(--gradientColor-button);
+  color: var(--bckgColor);
+  border-radius: calc(var(--border-radius) * 4);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.uvibes-teamSection-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-ref);
+  padding-top: var(--spacing-ref);
+}

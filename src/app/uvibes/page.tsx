@@ -53,7 +53,6 @@ export default function uvibes() {
         <section className="uvibes-container ">
           <h2 className="title-h2 uvibes-title">Le portage du projet</h2>
           <div className="uvibes-portage">
-            <TeamSection />
             <article className="uvibes-eclatens-card">
               <Image
                 src={logoEclatense}
@@ -73,12 +72,7 @@ export default function uvibes() {
         </section>
         <section className="uvibes-container">
           <h2 className="title-h2 uvibes-title">Sa concrétisation</h2>
-          <TeamCards
-            image={delphine}
-            alt="Photo de Delphine Boyrie"
-            name="Delphine Boyrie"
-            position="Présidente"
-          />
+          <TeamSection />
         </section>
       </main>
     </>

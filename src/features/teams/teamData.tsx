@@ -1,48 +1,51 @@
-import Delphine from "@/assets/images/teams/delphine.jpg";
-import logoEclatens from "@/assets/images/teams/logoEclatens.png";
-import logouVibes from "@/assets/images/teams/logoUvibes.png";
+import Delphine from "../../../public/images/delphine.jpg";
+import logoEclatens from "../../../public/images/LogoEclatens.png";
+import logouVibes from "../../../public/images/Logo UVIBES.png";
+import nino from "../../../public/images/nino.jpeg";
+import justine from "../../../public/images/justine.jpg";
+import sophie from "../../../public/images/avatarTeamTest.png";
 
 export const teamData = [
   {
-    image: { Delphine },
+    image: Delphine,
     alt: "photo de Delphine",
     name: "delphine",
     position: "Présidente",
-    team: "équipe projet",
+    team: "Equipe projet",
   },
   {
-    image: { Delphine },
+    image: Delphine,
     alt: "photo de Delphine",
-    name: "delphine",
+    name: "Sophie",
     position: "Présidente",
-    team: "équipe projet",
+    team: "Equipe projet",
   },
   {
-    image: { logoEclatens },
+    image: sophie,
     alt: "photo de Delphine",
     name: "Sophie",
     position: "chargée de com'",
     team: "Les chargés de com'",
   },
   {
-    image: { logoEclatens },
+    image: sophie,
     alt: "photo de Delphine",
-    name: "Sophie",
+    name: "Delphine",
     position: "chargée de com'",
     team: "Les chargés de com'",
   },
   {
-    image: { logouVibes },
+    image: nino,
     alt: "photo de Delphine",
     name: "Nino",
     position: "développeur",
     team: "Les architectes du code",
   },
   {
-    image: { logouVibes },
+    image: justine,
     alt: "photo de Delphine",
-    name: "Nino",
-    position: "Développeur",
+    name: "Justine",
+    position: "Développeuse",
     team: "Les architectes du code",
   },
 ];
