@@ -31,11 +31,10 @@ export default function FunctSection() {
           subtitle={"Disposer d'une cité des savoirs sur-mesure"}
         />
       </div>
-      <div className="benefices-home-button-container">
+      <div className="funct-button-container">
         <Button
           title="Découvrir les fonctionnalités"
           type="button"
-          className="benefices-home-button"
           href="/features"
         />
       </div>

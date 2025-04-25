@@ -15,14 +15,21 @@
   align-items: center;
   padding: 0 calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2)
     calc(var(--spacing-ref) * 2);
-  gap: var(--spacing-ref);
+  gap: calc(var(--spacing-ref) * 2);
+}
+
+.funct-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: calc(var(--spacing-ref) * 2);
 }
 
 @media screen and (min-width: 768px) {
   .funct-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     gap: calc(var(--spacing-ref) * 2);
     width: 100%;
   }
