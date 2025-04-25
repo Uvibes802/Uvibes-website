@@ -16,7 +16,7 @@
   & p {
     color: var(--secondaryColor);
     font-weight: 700;
-    font-size: calc(var(--font-size-ref) * 3);
+    font-size: calc(var(--font-size-text) * 2);
     text-align: center;
     width: 15ch;
   }
@@ -28,7 +28,27 @@
     flex-direction: column;
     justify-content: space-evenly;
     background-color: var(--cardsOpacity);
+    height: calc(var(--input-width) * 2);
+    width: 70%;
+    margin: calc(var(--spacing-ref) * 2) auto;
+
+    & p:last-of-type {
+      font-size: calc(var(--font-size-ref) * 2.5);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user-number-card {
+    max-width: calc(var(--input-width) * 4);
     height: calc(var(--input-width) * 3);
-    width: calc(var(--input-width) * 4);
+
+    & h4 {
+      font-size: calc(var(--font-size-ref) * 3);
+    }
+
+    & p:last-of-type {
+      font-size: calc(var(--font-size-ref) * 2.5);
+    }
   }
 }

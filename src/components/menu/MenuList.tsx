@@ -1,16 +1,16 @@
-import { Items } from "./MenuData";
+import { Items } from "../../features/menu/MenuData";
 import MenuItem from "./MenuItem";
 
 type MenuListProps = {
-	className: string;
+  className: string;
 };
 
 export default function MenuList({ className }: MenuListProps) {
-	return (
-		<>
-			{Items.map((item) => (
-				<MenuItem key={item.id} {...item} className={className} />
-			))}
-		</>
-	);
+  return (
+    <>
+      {Items.map((item) => (
+        <MenuItem key={item.id} {...item} className={className} />
+      ))}
+    </>
+  );
 }
