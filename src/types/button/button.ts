@@ -3,4 +3,5 @@ export type ButtonProps = {
   type: "button" | "submit" | "reset";
   onClick?: () => void;
   className?: string;
+  href?: string;
 };

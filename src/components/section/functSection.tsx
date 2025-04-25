@@ -1,6 +1,7 @@
 import FunctCards from "../cards/functCards";
 import "../../styles/section/functSection.css";
 import { BookOpenText, HeartHandshake, MessagesSquare } from "lucide-react";
+import Button from "../button/Button"; // Adjust the path if necessary
 export default function FunctSection() {
   return (
     <section className="funct-section">
@@ -28,6 +29,14 @@ export default function FunctSection() {
           }
           title={"Ressources"}
           subtitle={"Disposer d'une cité des savoirs sur-mesure"}
+        />
+      </div>
+      <div className="benefices-home-button-container">
+        <Button
+          title="Découvrir les fonctionnalités"
+          type="button"
+          className="benefices-home-button"
+          href="/features"
         />
       </div>
     </section>
