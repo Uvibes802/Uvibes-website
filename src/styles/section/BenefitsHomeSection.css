@@ -3,14 +3,15 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding: calc(var(--spacing-ref) * 2);
-  gap: calc(var(--spacing-ref) * 3);
+  padding: calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2) 0
+    calc(var(--spacing-ref) * 2);
+  gap: calc(var(--spacing-ref) * 2);
 }
 
 .benefices-home-header-and-data {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing-ref) * 3);
+  gap: calc(var(--spacing-ref) * 2);
 }
 
 #benefices-home-title-word {
@@ -36,7 +37,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: calc(var(--spacing-ref) * 3);
 }
 
 .benefices-home-button {

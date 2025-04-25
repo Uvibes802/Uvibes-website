@@ -12,10 +12,7 @@ export default function InspirationSection() {
     <article className="inspiration-section-container">
       <section className="inspiration-section">
         <div className="inspiration-section-text">
-          <h2>
-            Uvibes, le premier activateur de renouveau relationnel , au sein de
-            votre collectif
-          </h2>
+          <h2>Uvibes, la solution qui réinvente les intéractions</h2>
           <p>{citation}</p>
           <p>{authorCitation}</p>
           <p>{roleAuthor}</p>
