@@ -11,6 +11,15 @@ export default function Footer() {
         <h4>Uvibes</h4>
         <p>Contact us</p>
         <p>contact@uvibes.fr</p>
+        <div className="footer-links">
+          <Link href="/mention-legale">Mentions légales</Link>
+          <Link href="/conditions-dutilisation">
+            Conditions d&apos;utilisation
+          </Link>
+          <Link href="/politique-de-confidentialite">
+            Politique de confidentialité
+          </Link>
+        </div>
         <div className="footer-icons">
           <Link href="https://www.linkedin.com/company/uvibes">
             <Image src={iconLinkedIn} alt="LinkedIn" width={40} height={40} />
