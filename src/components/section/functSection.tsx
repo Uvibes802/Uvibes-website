@@ -2,6 +2,8 @@ import FunctCards from "../cards/functCards";
 import "../../styles/section/functSection.css";
 import { BookOpenText, HeartHandshake, MessagesSquare } from "lucide-react";
 import Button from "../button/Button"; // Adjust the path if necessary
+import Link from "next/link";
+
 export default function FunctSection() {
   return (
     <section className="funct-section">
@@ -32,11 +34,9 @@ export default function FunctSection() {
         />
       </div>
       <div className="funct-button-container">
-        <Button
-          title="Découvrir les fonctionnalités"
-          type="button"
-          href="/features"
-        />
+        <Link href="/features">
+          <Button title="Découvrir les fonctionnalités" type="button" />
+        </Link>
       </div>
     </section>
   );
