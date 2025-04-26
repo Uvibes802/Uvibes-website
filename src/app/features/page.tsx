@@ -1,9 +1,13 @@
+"use client";
 import { HeroBanner } from "@/components/banner/heroBanner";
 import mockupFeature from "../../../public/images/mockupFeature.png";
 import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
 import { FeaturesCard } from "@/components/cards/FeaturesCard";
 import FunctOrganisation from "@/components/funct/functOrganisation";
 import FloatingMenu from "@/components/menu/Menu";
+import Footer from "@/components/footer/Footer";
+import { PartnerBanner } from "@/components/banner/partnerBanner";
+import { AppointmentSection } from "@/components/section/appointmentSection";
 
 export default function FeaturesPage() {
   return (
@@ -22,7 +26,10 @@ export default function FeaturesPage() {
       <main>
         <FeaturesCard />
         <FunctOrganisation />
+        <PartnerBanner />
+        <AppointmentSection />
       </main>
+      <Footer />
     </>
   );
 }

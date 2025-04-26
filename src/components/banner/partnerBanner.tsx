@@ -15,9 +15,7 @@ export function PartnerBanner() {
           </p>
           <div className="partner-info">
             <PartnerGroup />
-            <p className="number-user">
-              Rejoignez plus de 37 500 utilisateurs .
-            </p>
+            <p className="number-user">Rejoignez plus de 37 500 utilisateurs</p>
           </div>
         </div>
       </div>
