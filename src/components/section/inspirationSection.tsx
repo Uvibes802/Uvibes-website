@@ -13,9 +13,13 @@ export default function InspirationSection() {
       <section className="inspiration-section">
         <div className="inspiration-section-text">
           <h2>Uvibes, la solution qui réinvente les intéractions</h2>
-          <p>{citation}</p>
-          <p>{authorCitation}</p>
-          <p>{roleAuthor}</p>
+          <p className="inspiration-text inspiration-text-citation">
+            {citation}
+          </p>
+          <p className="inspiration-text inspiration-text-autor">
+            {authorCitation}
+          </p>
+          <p className="inspiration-text inspiration-text-work">{roleAuthor}</p>
         </div>
         {isDesktop && <UserNumberCard />}
       </section>
