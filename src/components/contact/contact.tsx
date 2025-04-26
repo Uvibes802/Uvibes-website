@@ -1,6 +1,7 @@
-import { EmailOutlined } from "@mui/icons-material";
 import "../../styles/contact/contact.css";
 import FormContact from "../form/formContact";
+import { Mail } from "lucide-react";
+
 export default function Contact() {
   return (
     <main className="contact-container">
@@ -11,7 +12,7 @@ export default function Contact() {
           équipe est à votre disposition pour vous répondre.
         </p>
         <div>
-          <EmailOutlined />
+          <Mail size={32} />
           contact@uvibes.com
         </div>
       </section>
