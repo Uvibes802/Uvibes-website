@@ -1,22 +1,21 @@
 .features-card-container {
-  padding: calc(var(--spacing-ref) * 2) 0;
+  padding: calc(var(--spacing-ref) * 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   gap: var(--spacing-ref);
 }
 
 .features-card {
-  width: 80%;
+  width: 100%;
   border: 1px solid;
   border-radius: var(--border-radius);
   padding: var(--spacing-ref);
   height: auto;
+  gap: var(--spacing-ref);
 }
 
-/* Variante ORANGE */
 .features-card.orange {
   border-color: var(--mainColor);
 }
@@ -116,8 +115,6 @@
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-items: center;
-    gap: 0;
-    padding: calc(var(--spacing-ref) * 2);
   }
 
   .features-card {

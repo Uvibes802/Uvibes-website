@@ -127,7 +127,7 @@ h5 {
   color: var(--mainColor);
   text-align: left;
   letter-spacing: var(--spacing-letter);
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .title-text {
