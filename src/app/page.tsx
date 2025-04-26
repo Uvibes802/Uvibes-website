@@ -9,7 +9,7 @@ import mockupHome from "../../public/images/mockupHome.png";
 import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
 import visuelHome1 from "../../public/images/visuel-homepage1.jpg";
-import imageFemmeAge from "../../public/images/femme_age_phone.jpg";
+import visuelHome2 from "../../public/images/visuel-homepage2.jpg";
 import Image from "next/image";
 import InspirationSection from "@/components/section/inspirationSection";
 import UserNumberCard from "@/components/cards/userNumberCard";
@@ -43,7 +43,7 @@ export default function Home() {
       <FloatingMenu />
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
-          src={imageFemmeAge}
+          src={visuelHome2}
           alt="visuel femme avec téléphone"
           width={600}
           height={450}
