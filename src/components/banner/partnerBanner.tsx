@@ -6,7 +6,9 @@ export function PartnerBanner() {
   return (
     <div className="partner-banner-container">
       <div className="partner-banner-content">
-        <h2>Prêt à un boost d&apos;énergie positive ?</h2>
+        <h2 className="title-h2-white">
+          Prêt à un boost d&apos;énergie positive ?
+        </h2>
         <div className="partner-banner-text">
           <p className="partner-banner-description">
             Rejoignez les organisations qui utilisent déjà Uvibes pour

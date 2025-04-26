@@ -1,25 +1,19 @@
-h3 {
-  font-family: var(--text-font);
-  font-size: calc(var(--font-size-h3) / 3);
-  color: var(--mainColor);
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--spacing-ref);
-  padding: calc(var(--spacing-ref) * 2) var(--spacing-ref)
-    calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 2);
+.appointment-section {
+  padding: calc(var(--spacing-ref) * 2);
 }
 
 .appointment-button-container {
   display: flex !important;
   justify-content: center !important;
   width: 100%;
+  padding-top: calc(var(--spacing-ref) * 2);
 }
 
 .calendly-button {
   display: flex !important;
   justify-content: center !important;
   width: 100%;
-  color: white;
+  color: #f4ecec;
   background: var(--gradientColor);
   border-radius: calc(var(--border-radius) * 3);
   padding: var(--spacing-ref);
@@ -28,19 +22,21 @@ h3 {
   height: 3rem;
   font-family: var(--title-font);
   font-size: calc(var(--font-size-ref) * 1);
+  letter-spacing: var(--spacing-letter);
   box-shadow: 1px 3px 10px 0px #0000006b;
 }
 
 @media screen and (min-width: 768px) {
-  h3 {
-    font-size: calc(var(--font-size-h3) / 1.5);
-  }
-
   .appointment-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: var(--spacing-ref);
+  }
+
+  .appointment-button-container {
+    padding-top: 0;
+    width: 40%;
   }
 }

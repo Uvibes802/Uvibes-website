@@ -13,15 +13,6 @@
   height: 100%;
 }
 
-& h2 {
-  color: white;
-  text-align: left;
-  font-size: var(--font-size-h2);
-  font-family: var(--title-font);
-  letter-spacing: var(--spacing-letter);
-  line-height: 1;
-}
-
 .partner-banner-description {
   font-size: var(--font-size-text);
   font-family: var(--text-font);

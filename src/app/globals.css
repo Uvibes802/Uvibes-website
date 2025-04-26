@@ -103,10 +103,19 @@ h5 {
   line-height: 1;
 }
 
-.title-h2 {
+.title-h2-orange {
   font-size: var(--font-size-h2);
   font-family: var(--title-font);
   color: var(--mainColor);
+  text-align: left;
+  letter-spacing: var(--spacing-letter);
+  line-height: 1;
+}
+
+.title-h2-white {
+  font-size: var(--font-size-h2);
+  font-family: var(--title-font);
+  color: var(--bckgColor);
   text-align: left;
   letter-spacing: var(--spacing-letter);
   line-height: 1;
