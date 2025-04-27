@@ -230,11 +230,3 @@ h5 {
   min-width: var(--icon-min-size);
   min-height: var(--icon-min-size);
 }
-
-.glass-effect {
-  background: var(--glass-background);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: var(--glass-border);
-  box-shadow: var(--glass-shadow);
-}

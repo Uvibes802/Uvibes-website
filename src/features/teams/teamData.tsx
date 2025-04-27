@@ -1,6 +1,4 @@
 import Delphine from "../../../public/images/delphine.jpg";
-import logoEclatens from "../../../public/images/LogoEclatens.png";
-import logouVibes from "../../../public/images/Logo UVIBES.png";
 import nino from "../../../public/images/nino.jpeg";
 import justine from "../../../public/images/justine.jpg";
 import sophie from "../../../public/images/avatarTeamTest.png";
