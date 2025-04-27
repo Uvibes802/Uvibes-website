@@ -8,6 +8,8 @@ import FloatingMenu from "@/components/menu/Menu";
 import Footer from "@/components/footer/Footer";
 import { PartnerBanner } from "@/components/banner/partnerBanner";
 import { AppointmentSection } from "@/components/section/appointmentSection";
+import visuelFeature1 from "../../../public/images/visuel-featurespage1.jpg";
+import Image from "next/image";
 
 export default function FeaturesPage() {
   return (
@@ -25,6 +27,21 @@ export default function FeaturesPage() {
       </nav>
       <main>
         <FeaturesCard />
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "auto",
+          }}
+        >
+          <Image
+            src={visuelFeature1}
+            alt="visuel femme avec téléphone"
+            width={600}
+            height={450}
+            layout="responsive"
+          />
+        </div>
         <FunctOrganisation />
         <PartnerBanner />
         <AppointmentSection />
