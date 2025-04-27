@@ -129,8 +129,59 @@ h5 {
   letter-spacing: var(--spacing-letter);
   line-height: 1;
 }
+.title-h3-white {
+  font-size: var(--font-size-h3);
+  font-family: var(--title-font);
+  color: var(--bckgColor);
+  text-align: left;
+  letter-spacing: var(--spacing-letter);
+  line-height: 1;
+}
+
+.title-h4 {
+  font-size: var(--font-size-h4);
+  font-family: var(--title-font);
+  color: var(--bckgColor);
+  text-align: left;
+  letter-spacing: var(--spacing-letter);
+  line-height: 1;
+}
+
+.title-h4-orange {
+  font-size: var(--font-size-h4);
+  font-family: var(--title-font);
+  color: var(--mainColor);
+  text-align: left;
+  letter-spacing: var(--spacing-letter);
+  line-height: 1;
+}
 
 .title-text {
+  font-size: var(--font-size-title-text);
+  font-family: var(--text-font);
+  font-weight: 600;
+  color: var(--bckgColor);
+  text-align: left;
+}
+
+.title-text-orange {
+  font-size: var(--font-size-title-text);
+  font-family: var(--text-font);
+  font-weight: 600;
+  color: var(--mainColor);
+  text-align: left;
+}
+
+.title-text-gray {
+  font-size: var(--font-size-title-text);
+  font-family: var(--text-font);
+  font-weight: 600;
+  color: #212121;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.title-text-white {
   font-size: var(--font-size-title-text);
   font-family: var(--text-font);
   font-weight: 600;
@@ -146,6 +197,31 @@ h5 {
   color: #585c5f;
 }
 
+.text-white {
+  font-size: var(--font-size-text);
+  font-family: var(--text-font);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--bckgColor);
+}
+
+.text-orange {
+  font-size: var(--font-size-text);
+  font-family: var(--text-font);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--mainColor);
+}
+
+.text-italic {
+  font-size: calc(var(--font-size-text) * 0.8);
+  font-family: var(--text-font);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--bckgColor);
+  font-style: italic;
+}
+
 .icon-size {
   width: var(--icon-size);
   height: var(--icon-size);
@@ -153,4 +229,12 @@ h5 {
   max-height: var(--icon-max-size);
   min-width: var(--icon-min-size);
   min-height: var(--icon-min-size);
+}
+
+.glass-effect {
+  background: var(--glass-background);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
