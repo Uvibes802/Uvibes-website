@@ -8,8 +8,8 @@ import { BenefitsHomeSection } from "../components/section/BenefitsHomeSection";
 import mockupHome from "../../public/images/mockupHome.png";
 import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
-import imageHomme from "../../public/images/homme_phone.jpg";
-import imageFemmeAge from "../../public/images/femme_age_phone.jpg";
+import visuelHome1 from "../../public/images/visuel-homepage1.jpg";
+import visuelHome2 from "../../public/images/visuel-homepage2.jpg";
 import Image from "next/image";
 import InspirationSection from "@/components/section/inspirationSection";
 import UserNumberCard from "@/components/cards/userNumberCard";
@@ -30,7 +30,7 @@ export default function Home() {
       <FunctSection />
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
-          src={imageHomme}
+          src={visuelHome1}
           alt="visuel homme avec téléphone"
           width={600}
           height={450}
@@ -40,12 +40,10 @@ export default function Home() {
       <BenefitsHomeSection />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
-
       <FloatingMenu />
-
       <div style={{ position: "relative", width: "100%", height: "auto" }}>
         <Image
-          src={imageFemmeAge}
+          src={visuelHome2}
           alt="visuel femme avec téléphone"
           width={600}
           height={450}

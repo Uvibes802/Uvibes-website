@@ -2,6 +2,7 @@ import { benefitsData } from "../../features/benefits/benefitsData";
 import "../../styles/section/BenefitsHomeSection.css";
 import { BenefitsHomeItem } from "./benefitsHomeItem";
 import Button from "../button/Button";
+import Link from "next/link";
 
 export function BenefitsHomeSection() {
   return (
@@ -22,11 +23,9 @@ export function BenefitsHomeSection() {
       </div>
 
       <div className="benefices-home-button-container">
-        <Button
-          title="Découvrir les bénéfices"
-          type="button"
-          className="benefices-home-button"
-        />
+        <Link href="/avantages">
+          <Button title="Découvrir les avantages" type="button" />
+        </Link>
       </div>
     </section>
   );
