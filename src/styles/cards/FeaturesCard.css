@@ -1,22 +1,21 @@
 .features-card-container {
-  padding: calc(var(--spacing-ref) * 2) 0;
+  padding: calc(var(--spacing-ref) * 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  gap: var(--spacing-ref);
+  gap: calc(var(--spacing-ref) * 2);
 }
 
 .features-card {
-  width: 80%;
+  width: 100%;
   border: 1px solid;
   border-radius: var(--border-radius);
   padding: var(--spacing-ref);
   height: auto;
+  gap: var(--spacing-ref);
 }
 
-/* Variante ORANGE */
 .features-card.orange {
   border-color: var(--mainColor);
 }
@@ -59,7 +58,7 @@
   color: var(--bckgColor);
 }
 .feature-title {
-  padding: var(--spacing-ref) 0;
+  padding: var(--spacing-ref) var(--spacing-ref) calc(var(--spacing-ref) * 2) 0;
 }
 
 .feature-list-item {
@@ -68,8 +67,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  padding-bottom: var(--spacing-ref);
-  gap: var(--spacing-ref);
+  padding-bottom: calc(var(--spacing-ref) * 2);
+  gap: calc(var(--spacing-ref) * 0.5);
+}
+
+.features-item-icon {
+  margin-top: -0.4rem;
 }
 
 .features-item-icon,
@@ -85,6 +88,7 @@
   align-items: center;
   width: 100%;
   position: relative;
+  padding: var(--spacing-ref) 0;
 }
 
 .features-video {
@@ -116,8 +120,6 @@
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-items: center;
-    gap: 0;
-    padding: calc(var(--spacing-ref) * 2);
   }
 
   .features-card {
