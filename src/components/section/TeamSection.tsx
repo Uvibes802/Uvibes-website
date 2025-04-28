@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { teamData } from "@/features/teams/teamData";
 import TeamCards from "../cards/teamCards";
