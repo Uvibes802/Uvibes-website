@@ -1,0 +1,72 @@
+.orga-card {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--mainColor);
+  background-color: var(--bckgColor);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.orga-card-header {
+  padding: var(--spacing-ref);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-ref);
+  border-bottom: 1px solid var(--mainColor-opacity);
+}
+
+.orga-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(253, 110, 0, 0.3);
+}
+
+.orga-card-description {
+  padding: var(--spacing-ref) var(--spacing-ref) 0 var(--spacing-ref);
+  flex-grow: 1;
+}
+
+.orga-card-content {
+  padding: var(--spacing-ref);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-ref);
+}
+
+.orga-card-content-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--gradientColor);
+  padding: var(--spacing-ref);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+}
+
+.orga-card-content-item::before {
+  content: "❝";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.orga-card-content-item p {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .orga-card {
+    max-width: 100%;
+  }
+}

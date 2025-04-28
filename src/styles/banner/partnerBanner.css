@@ -1,0 +1,64 @@
+.partner-banner-container {
+  background: var(--gradientColor-card);
+}
+
+.partner-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-ref);
+  padding: calc(var(--spacing-ref) * 2);
+  width: 100%;
+  height: 100%;
+}
+
+.partner-banner-description {
+  font-size: var(--font-size-text);
+  font-family: var(--text-font);
+  line-height: 1.2;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+}
+
+.partner-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--spacing-ref);
+  width: 100%;
+  height: 100%;
+  padding-top: var(--spacing-ref);
+}
+
+.number-user {
+  font-family: var(--text-font);
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: calc(var(--font-size-text) * 0.8);
+  color: white;
+  text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+  .partner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-ref);
+    width: 50%;
+  }
+
+  .partner-banner-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-ref);
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+.funct-orga-container {
+  padding: calc(var(--spacing-ref) * 2);
+  background: var(--bckgColor);
+}
+
+.funct-orga-container h2 {
+  text-align: left;
+  padding-bottom: calc(var(--spacing-ref) * 2);
+}
+
+.funct-orga-card {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-ref) * 2);
+}
+
+.funct-orga-card h3 {
+  text-align: left;
+  width: fit-content;
+  color: var(--mainColor);
+}
+
+.funct-orga-icon-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-ref);
+  padding: var(--spacing-ref);
+  background: rgba(253, 110, 0, 0.1);
+  border-radius: var(--border-radius);
+}
+
+.funct-orga-icon-container:hover {
+  transform: translateX(5px);
+}
+
+.funct-orga-icon {
+  border-radius: 50%;
+  padding: calc(var(--spacing-ref) * 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bckgColor);
+}
+
+.funct-orga-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-ref) * 2);
+}
+
+.funct-orga-theme-title {
+  text-align: center;
+  font-size: calc(var(--font-size-h4) * 1.5);
+  color: var(--secondaryColor);
+  padding: var(--spacing-ref) 0;
+}
+
+.funct-orga-theme-title::before,
+.funct-orga-theme-title::after {
+  content: "•";
+  color: var(--mainColor);
+  margin: 0 10px;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .funct-orga-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--spacing-ref) * 2);
+  }
+
+  .funct-orga-icon-container {
+    margin-left: 0;
+  }
+}

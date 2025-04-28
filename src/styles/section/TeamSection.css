@@ -1,0 +1,66 @@
+.uvibes-teamSection-button {
+  position: relative;
+  display: flex;
+  height: 48px;
+  border: 1px solid var(--mainColor);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--bckgColor);
+  margin: 0 -1rem;
+}
+
+.uvibes-button {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--mainColor);
+  font-family: var(--text-font);
+  font-size: var(--font-size-text);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.uvibes-button-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--gradientColor-button);
+  border-radius: var(--border-radius);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.uvibes-button:hover {
+  color: var(--bckgColor);
+}
+
+.uvibes-button.active {
+  background-image: var(--gradientColor-button);
+  color: var(--bckgColor);
+  border-radius: calc(var(--border-radius) * 4);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.uvibes-teamSection-members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-ref);
+  padding-top: var(--spacing-ref);
+}
+
+@media screen and (min-width: 768px) {
+  .uvibes-teamSection-members {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--spacing-ref) * 3);
+    padding-top: calc(var(--spacing-ref) * 3);
+  }
+}

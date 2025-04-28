@@ -1,0 +1,43 @@
+.contact-section {
+  padding: calc(var(--spacing-ref) * 2);
+  background: var(--gradientColor-card);
+  color: white;
+
+  & h2 {
+    font-size: var(--font-size-h2);
+    font-family: var(--title-font);
+    text-align: left;
+    letter-spacing: var(--spacing-letter);
+    line-height: 1;
+    padding-bottom: calc(var(--spacing-ref) * 2);
+  }
+
+  & p {
+    font-size: var(--font-size-text);
+    font-family: var(--text-font);
+    line-height: 1.2;
+    font-weight: 400;
+    padding-bottom: var(--spacing-ref);
+  }
+
+  & div {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-text);
+    font-family: var(--text-font);
+    gap: calc(var(--spacing-ref) * 0.5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    display: flex;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: calc(var(--spacing-ref) * 4);
+  }
+}
