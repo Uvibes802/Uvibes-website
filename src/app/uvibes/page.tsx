@@ -2,7 +2,7 @@
 
 import { HeroBanner } from "@/components/banner/heroBanner";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
-import logoEclatense from "../../../public/images/LogoEclatense.png";
+import logoEclatense from "../../../public/images/LogoEclatens.png";
 import { DotIcon } from "lucide-react";
 import "../../styles/page/uvibes.css";
 import Image from "next/image";
