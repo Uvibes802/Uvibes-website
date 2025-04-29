@@ -4,13 +4,14 @@
   justify-content: flex-start;
   align-items: stretch;
   padding: calc(var(--spacing-ref) * 2);
-  gap: calc(var(--spacing-ref) * 3);
+  gap: calc(var(--spacing-ref) * 2);
+  margin-bottom: 0;
 }
 
 .benefices-home-header-and-data {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing-ref) * 3);
+  gap: calc(var(--spacing-ref) * 2);
 }
 
 #benefices-home-title-word {
@@ -36,19 +37,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: calc(var(--spacing-ref) * 3);
 }
 
 .benefices-home-button {
   justify-content: center;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .benefices-home-title {
-    font-size: var(--font-size-h2);
-    padding: calc(var(--spacing-ref) * 1);
-  }
-
   .benefices-home-header-and-data {
     flex-direction: row;
     align-items: center;
