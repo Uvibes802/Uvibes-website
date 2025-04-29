@@ -27,6 +27,15 @@
   align-items: center;
 }
 
+.calendly-button-menu {
+  all: unset;
+  color: var(--secondaryColor);
+  cursor: pointer;
+  font-size: calc(var(--font-size-text) * 1.2);
+  font-family: var(--text-font-bold);
+  white-space: nowrap;
+}
+
 @media screen and (min-width: 768px) {
   .menu-items-container {
     display: none;
@@ -36,5 +45,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .calendly-button-menu {
+    font-size: var(--font-size-text);
+    padding-right: var(--spacing-ref);
   }
 }

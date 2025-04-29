@@ -18,9 +18,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Supreme-Bold";
+  src: url("/fonts/Supreme-Bold.woff2") format("woff2"),
+    url("/fonts/Supreme-Bold.woff") format("woff"),
+    url("/fonts/Supreme-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --title-font: "Bevellier";
   --text-font: "Supreme-Light";
+  --text-font-bold: "Supreme-Bold";
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
   --mainColor-opacity: #fd6e0075;

@@ -1,6 +1,7 @@
 import { Items } from "../../features/menu/MenuData";
 import MenuItem from "./MenuItem";
 import { PopupButton } from "react-calendly";
+import "../../styles/menu/Menu.css";
 
 type MenuListProps = {
   className: string;
