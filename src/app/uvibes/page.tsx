@@ -10,7 +10,7 @@ import TeamSection from "@/components/section/TeamSection";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Footer from "@/components/footer/Footer";
-import uvibesTeam from "../../../public/images/uvibesteam.png";
+import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
 
 export default function uvibes() {
   return (

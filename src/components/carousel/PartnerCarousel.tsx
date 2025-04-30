@@ -44,7 +44,9 @@ export function PartnerCarousel() {
   ];
   return (
     <section className="partner-carousel">
-      <h2 className="title-h2 partner-carousel-title">Nos Partenaires</h2>
+      <h2 className="title-h2-orange partner-carousel-title">
+        Nos Partenaires
+      </h2>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}
