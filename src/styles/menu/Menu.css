@@ -33,7 +33,6 @@
   cursor: pointer;
   font-size: calc(var(--font-size-text) * 1.2);
   font-family: var(--text-font-bold);
-  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,5 +49,6 @@
   .calendly-button-menu {
     font-size: var(--font-size-text);
     padding-right: var(--spacing-ref);
+    text-align: center;
   }
 }
