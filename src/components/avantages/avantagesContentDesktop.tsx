@@ -25,19 +25,19 @@ export default function AvantagesContentDesktop() {
       <div className="avantages-button">
         <div className="button">
           <button onClick={() => setOpenTab("entreprise")}>
-            <Building size={60} />
+            <Building size={70} />
           </button>
           <p>Entreprise</p>
         </div>
         <div className="button">
           <button onClick={() => setOpenTab("ecole")}>
-            <School size={60} />
+            <School size={70} />
           </button>
           <p>Ecole</p>
         </div>
         <div className="button">
           <button onClick={() => setOpenTab("collectif")}>
-            <Heart size={60} />
+            <Heart size={70} />
           </button>
           <p>Collectif</p>
         </div>

@@ -2,10 +2,9 @@
   margin-top: calc(var(--spacing-ref) * 2);
   border-radius: var(--border-radius);
   border: 1px solid transparent;
-  box-shadow: 1px 4px 7px 0px #00000029;
   background: linear-gradient(white, white) padding-box,
     var(--gradientColor) border-box;
-  padding: calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 1);
+  padding: calc(var(--spacing-ref) * 2);
 
   & h5 {
     color: var(--secondaryColor);
@@ -28,16 +27,19 @@
     justify-content: start;
   }
 
-  .avantages-card-content {
-    margin-top: calc(var(--spacing-ref) * 1.5);
+  & .avantages-card-content-container {
+    margin-top: calc(var(--spacing-ref) * 1);
     border-radius: var(--border-radius);
     background: linear-gradient(white, white) padding-box,
       var(--gradientColor) border-box;
-    padding: calc(var(--spacing-ref) * 1);
     border: 1px solid transparent;
-    font-size: var(--font-size-title-text);
-    text-align: left;
+    padding: calc(var(--spacing-ref) * 1);
+
+    & p {
+      font-weight: bold;
+    }
   }
+
   &:nth-child(even) {
     color: var(--mainColor);
   }
@@ -54,5 +56,9 @@
     & h5 {
       width: 100%;
     }
+  }
+
+  .avantages-card-content {
+    font-size: calc(var(--font-size-text) * 1.5) !important;
   }
 }

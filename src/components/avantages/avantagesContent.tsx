@@ -1,17 +1,17 @@
 import {
-  Building,
-  School,
-  Heart,
-  CircleGauge,
   Brain,
-  Smile,
-  Home,
-  UsersIcon,
-  Handshake,
+  Building,
+  CircleGauge,
   DotIcon,
+  Handshake,
+  Heart,
+  Home,
+  School,
+  Smile,
+  UsersIcon,
 } from "lucide-react";
-import { DropdownButton } from "../button/DropdownButton";
 import "../../styles/avantages/avantagesContent.css";
+import { DropdownButton } from "../button/DropdownButton";
 import AvantagesCard from "../cards/avantagesCard";
 import LastAvantagesCard from "../cards/LastAvantagesCard";
 export default function AvantagesContent() {
@@ -32,7 +32,7 @@ export default function AvantagesContent() {
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
         />
         <AvantagesCard
-          icone={<UsersIcon size={50} />}
+          icone={<UsersIcon size={50} style={{ color: "var(--mainColor)" }} />}
           title="Améliorer sa prise de décision et augmenter sa performance"
           stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
           content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l’adhésion collective"
@@ -84,7 +84,7 @@ export default function AvantagesContent() {
           Il élimine les facteurs de cyberharcèlement et de dévalorisation de soi."
         />
         <AvantagesCard
-          icone={<Brain size={50} />}
+          icone={<Brain size={50} style={{ color: "var(--mainColor)" }} />}
           title="Développer les savoir-agir relationnels"
           stats="62 % des managers sont prêts à recruter un  collaborateur sur la base de ses soft skills, même si ses compétences  techniques ne correspondent pas entièrement au poste"
           content="Uvibes est le premier service qui offre un espace d'entraînement continu et de valorisation des compétences interpersonnelles."
@@ -138,7 +138,7 @@ export default function AvantagesContent() {
           content="Uvibes nous redonne l’envie et la facilité de discuter"
         />
         <AvantagesCard
-          icone={<Smile size={50} />}
+          icone={<Smile size={50} style={{ color: "var(--mainColor)" }} />}
           title="Valoriser chaque individu et cultiver le vivre-ensemble"
           stats="Parler à des inconnus augmente l’estime de soi et transforme notre perception de l’autre (Etude 2014 Epley et Shroeder)"
           content="En mettant en avant l'unicité de chacun, Uvibes nous amène à tisser de nouveaux liens avec notre entourage"
