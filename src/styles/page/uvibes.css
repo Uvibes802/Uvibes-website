@@ -1,5 +1,5 @@
 .uvibes-container {
-  padding: 0 calc(var(--spacing-ref) * 2);
+  padding: calc(var(--spacing-ref) * 2);
   gap: var(--spacing-ref);
 }
 .uvibes-title {
@@ -38,6 +38,52 @@
   height: auto;
 }
 
+.uvibes-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--spacing-ref);
+  background: var(--gradientColor-card);
+  padding: calc(var(--spacing-ref) * 2);
+}
+
+.uvibes-contact-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--spacing-ref) * 2);
+  padding: calc(var(--spacing-ref) * 2);
+  width: 100%;
+}
+.uvibes-contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: var(--bckgColor);
+  border: 1px solid var(--bckgColor);
+  border-radius: calc(var(--border-radius) * 3);
+  padding: var(--spacing-ref);
+  width: 15rem;
+  cursor: pointer;
+  height: 3rem;
+  font-family: var(--title-font);
+  font-size: calc(var(--font-size-ref) * 1);
+  letter-spacing: var(--spacing-letter);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 2px 2px 0px #0000006b;
+}
+
+.uvibes-contact-button:hover {
+  background: var(--bckgColor);
+  color: var(--secondaryColor);
+  border: 1px solid var(--bckgColor);
+  -webkit-text-fill-color: initial;
+}
+
 @media screen and (min-width: 768px) {
   .uvibes-container {
     gap: calc(var(--spacing-ref) * 2);
@@ -49,5 +95,21 @@
 
   .uvibes-eclatens-card {
     padding: calc(var(--spacing-ref) * 2);
+  }
+
+  .uvibes-contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(var(--spacing-ref) * 2);
+  }
+
+  .uvibes-contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--spacing-ref);
   }
 }

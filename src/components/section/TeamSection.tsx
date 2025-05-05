@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { teamData } from "@/features/teams/teamData";
 import TeamCards from "../cards/teamCards";
@@ -8,7 +10,7 @@ export default function TeamSection() {
 
   const tabs = [
     "Equipe projet",
-    "Les chargés de com'",
+    "Comité scientifique",
     "Les architectes du code",
   ];
 

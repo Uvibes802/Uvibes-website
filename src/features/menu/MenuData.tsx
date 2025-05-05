@@ -48,6 +48,6 @@ export const Items = [
     icon: <CalendarDays size={32} color="#D90A5C" />,
     label: "Prendre RDV",
     color: "#D90A5C",
-    link: "/contact",
+    link: "",
   },
 ];

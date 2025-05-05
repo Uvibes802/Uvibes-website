@@ -1,5 +1,4 @@
 .footer {
-  margin-top: calc(var(--spacing-ref) * 4);
   padding-top: calc(var(--spacing-ref) * 2);
   border-top: 2px solid var(--mainColor);
   display: grid;

@@ -8,6 +8,9 @@ import "../../styles/page/uvibes.css";
 import Image from "next/image";
 import TeamSection from "@/components/section/TeamSection";
 import FloatingMenu from "@/components/menu/Menu";
+import { AppointmentSection } from "@/components/section/appointmentSection";
+import Footer from "@/components/footer/Footer";
+import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
 
 export default function uvibes() {
   return (
@@ -25,7 +28,9 @@ export default function uvibes() {
       </nav>
       <main>
         <section className="uvibes-aboutUs uvibes-container">
-          <h2 className="title-h2 uvibes-title">La naissance de l&apos;idée</h2>
+          <h2 className="title-h2-orange uvibes-title">
+            La naissance de l&apos;idée
+          </h2>
           <p className="text">
             Interagir avec des inconnus nous rend plus heureux et nous maintient
             en bonne santé physique. <br />
@@ -55,7 +60,7 @@ export default function uvibes() {
           </ul>
         </section>
         <section className="uvibes-container ">
-          <h2 className="title-h2 uvibes-title">Le portage du projet</h2>
+          <h2 className="title-h2-orange uvibes-title">Le portage du projet</h2>
           <div className="uvibes-portage">
             <article className="uvibes-eclatens-card">
               <Image
@@ -74,11 +79,59 @@ export default function uvibes() {
             </article>
           </div>
         </section>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "auto",
+          }}
+        >
+          <Image
+            src={uvibesTeam}
+            alt="visuel femme avec téléphone"
+            width={600}
+            height={450}
+            layout="responsive"
+          />
+        </div>
         <section className="uvibes-container">
-          <h2 className="title-h2 uvibes-title">Sa concrétisation</h2>
+          <h2 className="title-h2-orange uvibes-title">Sa concrétisation</h2>
           <TeamSection />
         </section>
+        <section className="uvibes-contact-container">
+          <div className="uvibes-contact-text">
+            <h2 className="title-h2-white uvibes-title">
+              Rejoignez l&apos;aventure Uvibes
+            </h2>
+            <p className="text-white">
+              Soyez acteur de notre dynamique pour réinventer nos modes
+              d’interaction en s’ouvrant à des vision nouvelles
+            </p>
+          </div>
+          <div className="uvibes-contact-button-container">
+            <a
+              href="mailto:contact@uvibes.fr"
+              className="uvibes-contact-button"
+            >
+              Nous contacter
+            </a>
+            <a
+              href="mailto:contact@uvibes.fr"
+              className="uvibes-contact-button"
+            >
+              Devenir partenaire
+            </a>
+            <a
+              href="mailto:contact@uvibes.fr"
+              className="uvibes-contact-button"
+            >
+              Aider financièrement le projet
+            </a>
+          </div>
+        </section>
+        <AppointmentSection />
       </main>
+      <Footer />
     </>
   );
 }
