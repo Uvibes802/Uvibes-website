@@ -11,26 +11,27 @@ export default function Footer() {
         <h4>Uvibes</h4>
         <p>Contact us</p>
         <p>contact@uvibes.fr</p>
-        <div className="footer-links">
-          <Link href="/mention-legale">Mentions légales</Link>
-          <Link href="/conditions-dutilisation">
-            Conditions d&apos;utilisation
-          </Link>
-          <Link href="/politique-de-confidentialite">
-            Politique de confidentialité
-          </Link>
-        </div>
+      </div>
+      <div className="footer-links">
+        <Link href="/mention-legale">Mentions légales</Link>
+        <Link href="/conditions-dutilisation">
+          Conditions d&apos;utilisation
+        </Link>
+        <Link href="/politique-de-confidentialite">
+          Politique de confidentialité
+        </Link>
+      </div>
+      <div className="footer-buttons">
+        <Button title="Connectez-vous à Uvibes" type="button" />
         <div className="footer-icons">
           <Link href="https://www.linkedin.com/company/uvibes">
-            <Image src={iconLinkedIn} alt="LinkedIn" width={40} height={40} />
+            <Image src={iconLinkedIn} alt="LinkedIn" width={60} height={60} />
           </Link>
           <Link href="https://www.instagram.com/uvibes">
-            <Image src={iconInsta} alt="Instagram" width={50} height={50} />
+            <Image src={iconInsta} alt="Instagram" width={70} height={70} />
           </Link>
         </div>
       </div>
-
-      <Button title="Connectez-vous à Uvibes" type="button" />
     </footer>
   );
 }
