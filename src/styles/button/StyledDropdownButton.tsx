@@ -89,8 +89,8 @@ export const StyledAccordionDetails = styled(AccordionDetails)`
   padding: var(--spacing-ref);
   background: white;
   color: var(--mainColor);
+  padding: calc(var(--spacing-ref) * 2);
   font-family: calc(var(--font-size-h2) / 2.5);
-  font-weight: bold;
   text-align: center;
 `;
 
@@ -99,12 +99,6 @@ export const StyledDropdownButtonContainer = styled("div")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   margin: "var(--spacing-ref) 0",
-
-  [theme.breakpoints.up(768)]: {
-    margin: "var(--spacing-ref)",
-    maxWidth: "400px",
-    alignSelf: "flex-start",
-  },
 
   "&:has(.Mui-expanded)": {
     [theme.breakpoints.up(1024)]: {
@@ -122,13 +116,5 @@ export const DropdownButtonGroup = styled("div")(({ theme }) => ({
   width: "100%",
   padding: "0 calc(var(--spacing-ref) * 2)",
 
-  [theme.breakpoints.up(768)]: {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "flex-start",
-    gap: "var(--spacing-ref) * 2",
-    padding: "0 calc(var(--spacing-ref) * 2)",
-  },
+  [theme.breakpoints.up(768)]: {},
 }));

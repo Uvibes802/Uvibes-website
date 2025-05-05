@@ -2,10 +2,9 @@
   margin-top: calc(var(--spacing-ref) * 2);
   border-radius: var(--border-radius);
   border: 1px solid transparent;
-  box-shadow: 1px 4px 7px 0px #00000029;
   background: linear-gradient(white, white) padding-box,
     var(--gradientColor) border-box;
-  padding: calc(var(--spacing-ref) * 2) calc(var(--spacing-ref) * 1);
+  padding: calc(var(--spacing-ref) * 2);
 
   & h5 {
     color: var(--secondaryColor);
@@ -14,7 +13,7 @@
     padding-left: calc(var(--spacing-ref) * 0.5);
   }
 
-  & p:first-of-type {
+  & p:nth-child(2) {
     color: #212121;
     letter-spacing: 0.5px;
     padding-top: calc(var(--spacing-ref) * 1);
@@ -28,21 +27,38 @@
     justify-content: start;
   }
 
-  .avantages-card-content {
-    margin-top: calc(var(--spacing-ref) * 1.5);
+  & .avantages-card-content-container {
+    margin-top: calc(var(--spacing-ref) * 1);
     border-radius: var(--border-radius);
     background: linear-gradient(white, white) padding-box,
       var(--gradientColor) border-box;
-    padding: calc(var(--spacing-ref) * 1);
     border: 1px solid transparent;
+    padding: calc(var(--spacing-ref) * 1);
+
+    & p {
+      font-weight: bold;
+    }
+  }
+
+  &:nth-child(even) {
+    color: var(--mainColor);
+  }
+
+  &:nth-child(odd) {
     color: var(--secondaryColor);
-    font-size: var(--font-size-title-text);
-    text-align: left;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .avantages-card-container {
-    height: 20rem;
+    width: 80%;
+
+    & h5 {
+      width: 100%;
+    }
+  }
+
+  .avantages-card-content {
+    font-size: calc(var(--font-size-text) * 1.5) !important;
   }
 }

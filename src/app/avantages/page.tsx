@@ -1,12 +1,18 @@
 "use client";
 
 import AvantagesContent from "@/components/avantages/avantagesContent";
+import AvantagesContentDesktop from "@/components/avantages/avantagesContentDesktop";
 import { HeroBanner } from "@/components/banner/heroBanner";
-import mockupAvantages from "../../../public/images/mockupAvantages.png";
-import mockupAvantagesDesktop from "../../../public/images/mockupAvantageDesktop.png";
+import { PartnerBanner } from "@/components/banner/partnerBanner";
+import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
+import { AppointmentSection } from "@/components/section/appointmentSection";
+import Resize from "@/services/resize/resize";
+import mockupAvantagesDesktop from "../../../public/images/mockupAvantageDesktop.png";
+import mockupAvantages from "../../../public/images/mockupAvantages.png";
 
 export default function Avantages() {
+  const { isMobile } = Resize();
   return (
     <>
       <HeroBanner
@@ -21,7 +27,10 @@ export default function Avantages() {
         <FloatingMenu />
       </nav>
       <main>
-        <AvantagesContent />
+        {isMobile ? <AvantagesContent /> : <AvantagesContentDesktop />}
+        <PartnerBanner />
+        <AppointmentSection />
+        <Footer />
       </main>
     </>
   );

@@ -13,8 +13,8 @@ export default function AvantagesCard({
         {icone} <h5>{title}</h5>
       </div>
       <p>{stats}</p>
-      <div>
-        <p className="avantages-card-content">{content}</p>
+      <div className="avantages-card-content-container">
+        <p>{content}</p>
       </div>
     </article>
   );
