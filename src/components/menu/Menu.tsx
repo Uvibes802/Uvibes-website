@@ -2,15 +2,40 @@
 import { StyledBottomNavigation } from "@/styles/menu/StyledBottomNavigation";
 import { StyledFloatButton } from "@/styles/menu/styledFloatingMenu";
 import { AlignJustify, X } from "lucide-react";
-import { useState } from "react";
-import MenuList from "./MenuList";
+import { useEffect, useState } from "react";
 import "../../styles/menu/Menu.css";
+import MenuList from "./MenuList";
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isActive, setIsActive] = useState<boolean>(true);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
+
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsActive(false);
+      } else {
+        // Scrolling up
+        setIsActive(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <>
@@ -31,7 +56,13 @@ export default function Menu() {
         </nav>
       )}
 
-      <StyledBottomNavigation>
+      <StyledBottomNavigation
+        style={{
+          transform: isActive ? "translateY(0px)" : "translateY(100px)",
+          opacity: isActive ? 1 : 0,
+          transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
+        }}
+      >
         <MenuList className="menu-items-bottom-nav" />
       </StyledBottomNavigation>
     </>

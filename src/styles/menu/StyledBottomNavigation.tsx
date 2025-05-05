@@ -3,10 +3,13 @@ import { styled } from "@mui/material/styles";
 
 export const StyledBottomNavigation = styled(BottomNavigation)(({ theme }) => ({
   position: "fixed",
+  width: "auto",
+  height: "80px",
+  justifySelf: "center",
   zIndex: 9999,
   bottom: 0,
-  left: "50%",
-  transform: "translateX(-50%)",
+  left: "0",
+  right: "0",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -19,6 +22,6 @@ export const StyledBottomNavigation = styled(BottomNavigation)(({ theme }) => ({
 
   [theme.breakpoints.down(768)]: {
     display: "none",
-    withdth: "100%",
+    width: "100%",
   },
 }));
