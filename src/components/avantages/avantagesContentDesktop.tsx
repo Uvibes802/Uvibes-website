@@ -1,19 +1,19 @@
 import "@/styles/avantages/avantagesContentDesktop.css";
 import {
-  CircleGauge,
-  UsersIcon,
-  Handshake,
-  DotIcon,
   Brain,
-  Home,
-  Smile,
   Building,
-  School,
+  CircleGauge,
+  DotIcon,
+  Handshake,
   Heart,
+  Home,
+  School,
+  Smile,
+  UsersIcon,
 } from "lucide-react";
+import { useState } from "react";
 import AvantagesCard from "../cards/avantagesCard";
 import LastAvantagesCard from "../cards/LastAvantagesCard";
-import { useState } from "react";
 
 export default function AvantagesContentDesktop() {
   const [openTab, setOpenTab] = useState<"entreprise" | "ecole" | "collectif">(

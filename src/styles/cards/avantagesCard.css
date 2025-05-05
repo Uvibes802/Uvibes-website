@@ -35,14 +35,24 @@
       var(--gradientColor) border-box;
     padding: calc(var(--spacing-ref) * 1);
     border: 1px solid transparent;
-    color: var(--secondaryColor);
     font-size: var(--font-size-title-text);
     text-align: left;
   }
+  &:nth-child(even) {
+    color: var(--mainColor);
+  }
+
+  &:nth-child(odd) {
+    color: var(--secondaryColor);
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .avantages-card-container {
-    width: 90%;
+    width: 80%;
+
+    & h5 {
+      width: 100%;
+    }
   }
 }

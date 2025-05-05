@@ -38,10 +38,22 @@
     color: #212121;
     font-family: var(--text-font);
     font-size: calc(var(--font-size-text) * 0.8);
+    font-weight: 600;
     text-align: left;
     width: 40ch;
   }
   .last-avantages-card-title {
     padding-bottom: var(--spacing-ref);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .avantages-card-container {
+    & h5 {
+      width: 100%;
+    }
+    .last-avantages-list {
+      width: 100%;
+    }
   }
 }
