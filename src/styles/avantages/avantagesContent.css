@@ -17,7 +17,7 @@
     }
     .avantages-card-content {
       & p {
-        color: var(--secondaryColor);
+        color: var(--mainColor);
       }
     }
   }

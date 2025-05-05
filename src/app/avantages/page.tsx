@@ -5,8 +5,14 @@ import { HeroBanner } from "@/components/banner/heroBanner";
 import mockupAvantages from "../../../public/images/mockupAvantages.png";
 import mockupAvantagesDesktop from "../../../public/images/mockupAvantageDesktop.png";
 import FloatingMenu from "@/components/menu/Menu";
+import Resize from "@/services/resize/resize";
+import AvantagesContentDesktop from "@/components/avantages/avantagesContentDesktop";
+import { AppointmentSection } from "@/components/section/appointmentSection";
+import Footer from "@/components/footer/Footer";
+import { PartnerBanner } from "@/components/banner/partnerBanner";
 
 export default function Avantages() {
+  const { isMobile } = Resize();
   return (
     <>
       <HeroBanner
@@ -21,7 +27,10 @@ export default function Avantages() {
         <FloatingMenu />
       </nav>
       <main>
-        <AvantagesContent />
+        {isMobile ? <AvantagesContent /> : <AvantagesContentDesktop />}
+        <PartnerBanner />
+        <AppointmentSection />
+        <Footer />
       </main>
     </>
   );
