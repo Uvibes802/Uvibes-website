@@ -38,12 +38,10 @@ export default function BlogEntrepriseArticle() {
     const fetchArticles = async () => {
       const articles = await fetchPostsByTagSlug("entreprise-article");
 
-      // Pour chaque article, on récupère l'URL de l'image à la une via l'ID
       const articlesWithImages = await Promise.all(
         articles.map(async (article) => {
           let featuredImage = null;
           if (article.featured_media) {
-            // On récupère l'image à la une via l'ID
             const mediaRes = await fetch(
               `https://uvibes.fr/wp-json/wp/v2/media/${article.featured_media}`
             );
