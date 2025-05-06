@@ -1,0 +1,9 @@
+.blog-article {
+  padding: var(--spacing-ref);
+  border: 1px solid #000;
+  border-radius: var(--border-radius);
+}
+
+.entreprise-article {
+  border-color: blue;
+}

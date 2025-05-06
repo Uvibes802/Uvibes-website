@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import DOMPurify from "dompurify";
+import { useEffect, useState } from "react";
 
 export default function FetchCitation() {
   const [citation, setCitation] = useState<string>("");
@@ -33,7 +33,6 @@ export default function FetchCitation() {
     fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=13")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setAuthorCitation(sanitizeText(data[0].content.rendered));
       });
 
