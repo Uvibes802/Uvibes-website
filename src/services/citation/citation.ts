@@ -7,6 +7,8 @@ export default function FetchCitation() {
   const [roleAuthor, setRoleAuthor] = useState<string>("");
   const [userNumber, setUserNumber] = useState<string>("");
   const [userNumberTitle, setUserNumberTitle] = useState<string>("");
+
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   useEffect(() => {
     const sanitizeText = (text: string) => {
       const tempDiv = document.createElement("p");
@@ -20,7 +22,7 @@ export default function FetchCitation() {
         .trim();
     };
 
-    fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=12")
+    fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=12`)
       .then((response) => response.json())
       .then((data) => {
         setCitation(sanitizeText(data[0].content.rendered));
@@ -30,24 +32,24 @@ export default function FetchCitation() {
         setCitation("Citation non disponible");
       });
 
-    fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=13")
+    fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=13`)
       .then((response) => response.json())
       .then((data) => {
         setAuthorCitation(sanitizeText(data[0].content.rendered));
       });
 
-    fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=14")
+    fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=14`)
       .then((response) => response.json())
       .then((data) => {
         setRoleAuthor(sanitizeText(data[0].content.rendered));
       });
-    fetch("https://uvibes.fr/wp-json/wp/v2/posts?categories=15")
+    fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=15`)
       .then((response) => response.json())
       .then((data) => {
         setUserNumber(sanitizeText(data[0].content.rendered));
         setUserNumberTitle(sanitizeText(data[0].title.rendered));
       });
-  }, []);
+  }, [apiUrl]);
 
   return { citation, authorCitation, roleAuthor, userNumber, userNumberTitle };
 }
