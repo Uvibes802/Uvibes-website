@@ -50,7 +50,7 @@ export default function FetchCitation() {
         setUserNumber(sanitizeText(data[0].content.rendered));
         setUserNumberTitle(sanitizeText(data[0].title.rendered));
       });
-  }, []);
+  }, [apiUrl]);
 
   return { citation, authorCitation, roleAuthor, userNumber, userNumberTitle };
 }
