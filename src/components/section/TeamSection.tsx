@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
-import { teamData } from "@/features/teams/teamData";
+import { useEffect, useState } from "react";
 import TeamCards from "../cards/teamCards";
+import FetchTeam from "@/services/team/team";
+import type { TeamProps } from "@/types/team/teamProps";
 import "../../styles/section/TeamSection.css";
 
 export default function TeamSection() {
   const [activeButton, setActiveButton] = useState("Equipe projet");
+  const [team, setTeam] = useState<TeamProps[]>([]);
+
+  useEffect(() => {
+    const fetchTeam = async () => {
+      const teamData = await FetchTeam();
+      setTeam(teamData);
+    };
+    fetchTeam();
+  }, []);
 
   const tabs = [
     "Equipe projet",
@@ -36,7 +46,7 @@ export default function TeamSection() {
         ))}
       </div>
       <div className="uvibes-teamSection-members">
-        {teamData
+        {team
           .filter((member) => member.team === activeButton)
           .map((member) => (
             <TeamCards
@@ -45,6 +55,7 @@ export default function TeamSection() {
               alt={member.alt}
               name={member.name}
               position={member.position}
+              team={member.team}
             />
           ))}
       </div>

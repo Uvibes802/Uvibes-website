@@ -1,12 +1,11 @@
 import Image from "next/image";
-import "../../styles/cards/teamCard.css";
 import type { TeamProps } from "@/types/team/teamProps";
+import "@/styles/cards/teamCard.css";
 
 export default function TeamCards({ image, name, position }: TeamProps) {
   return (
     <article className="team-card">
-      <div />
-      <Image src={image} alt="team-staff" width={500} height={500} />
+      <Image src={image} alt={`Portrait de ${name}`} width={500} height={500} />
       <div className="content-card">
         <p>{name}</p>
         <p>{position}</p>
