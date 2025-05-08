@@ -1,10 +1,10 @@
 "use client";
 
 import { HeroBanner } from "@/components/banner/heroBanner";
-import FloatingMenu from "@/components/menu/Menu";
+import BlogEntrepriseArticle from "@/components/cards/blogEntrepriseArticle";
 import Footer from "@/components/footer/Footer";
+import FloatingMenu from "@/components/menu/Menu";
 import mockupBlog from "../../../public/images/mockupBlog.png";
-
 export default function BlogPage() {
   return (
     <>
@@ -19,6 +19,9 @@ export default function BlogPage() {
       <nav>
         <FloatingMenu />
       </nav>
+      <div>
+        <BlogEntrepriseArticle />
+      </div>
       <Footer />
     </>
   );
