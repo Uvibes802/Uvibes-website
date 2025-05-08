@@ -1,7 +1,7 @@
 "use client";
 
 import { FeaturesData } from "@/features/features/featuresData";
-import { CircleCheckBig, CirclePlay } from "lucide-react";
+import { CircleCheckBig, CirclePlay, PauseCircle } from "lucide-react";
 import "../../styles/cards/FeaturesCard.css";
 import { useState, useRef } from "react";
 
@@ -63,7 +63,6 @@ export function FeaturesCard() {
               className={`features-video ${
                 activeVideoId === feature.id ? "playing" : ""
               }`}
-              controls
               ref={(el) => {
                 videoRefs.current[feature.id] = el;
               }}
@@ -80,13 +79,25 @@ export function FeaturesCard() {
               Your browser does not support the video tag.
             </video>
 
-            {activeVideoId !== feature.id && (
+            {activeVideoId !== feature.id ? (
               <CirclePlay
                 className={`features-video-icon ${
                   index % 2 === 0 ? "orange-video-icon" : "pink-video-icon"
                 }`}
                 onClick={() => handlePlay(feature.id)}
                 onKeyUp={(e) => handleKeyPlay(e, feature.id)}
+                tabIndex={0}
+              />
+            ) : (
+              <PauseCircle
+                className={`features-video-icon pause-icon ${
+                  index % 2 === 0 ? "orange-video-icon" : "pink-video-icon"
+                }`}
+                onClick={() => handlePause(feature.id)}
+                onKeyUp={(e) => {
+                  if (e.key === "Enter" || e.key === " ")
+                    handlePause(feature.id);
+                }}
                 tabIndex={0}
               />
             )}
