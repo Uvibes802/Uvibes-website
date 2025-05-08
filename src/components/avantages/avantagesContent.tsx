@@ -18,7 +18,7 @@ export default function AvantagesContent() {
   return (
     <div className="avantage-button-container">
       <DropdownButton
-        title="Pour votre entreprise"
+        title="Entreprise"
         subtitle="Dans le monde du travail, Uvibes stimule le bien-être individuel pour renforcer la performance collective"
         icon={<Building size={60} />}
       >
@@ -69,7 +69,7 @@ export default function AvantagesContent() {
         />
       </DropdownButton>
       <DropdownButton
-        title="Pour votre établissement d'enseignement"
+        title="Etablissement d'enseignement"
         subtitle="Dans la sphère éducative, Uvibes améliore la sociabilité des apprenants "
         icon={<School size={80} />}
       >
@@ -125,7 +125,7 @@ export default function AvantagesContent() {
         />
       </DropdownButton>
       <DropdownButton
-        title="Pour votre organisation en charge d'un collectif"
+        title="Collectif"
         subtitle="Dans la sphère du prendre soin, Uvibes est une nouvelle respiration "
         icon={<Heart size={80} />}
       >
