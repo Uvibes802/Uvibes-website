@@ -2,23 +2,29 @@
 
 import { Button, styled } from "@mui/material";
 
-export const StyledButton = styled(Button)(
-  `
+export const StyledButton = styled(Button)(`
   background: var(--gradientColor-button);
   color: #F4ECEC;
-  border-radius: calc(var(--border-radius) * 3);
-  padding: var(--spacing-ref);
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
   border: none;
-  width: 15rem;
+  min-width: 10rem;
   cursor: pointer;
-  height: 3rem;
+  height: auto;
   font-family: var(--title-font);
   font-size: calc(var(--font-size-ref) * 1);
   letter-spacing: var(--spacing-letter);
-  box-shadow: 0px 2px 2px 0px #0000006b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 
   &:hover {
-  opacity: 0.9;
-  };
-  `
-);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+`);
