@@ -30,11 +30,6 @@ export default function FunctOrganisation() {
               Les thématiques abordées par votre collectif
             </p>
           </div>
-
-          <h4 className="funct-orga-theme-title">
-            Explorez différentes thématiques
-          </h4>
-
           <div className="funct-orga-card-container">
             <OrgaCard
               icone={
