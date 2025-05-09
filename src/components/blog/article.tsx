@@ -1,9 +1,10 @@
 "use client";
 
 import { sanitizeText } from "@/services/blog/sanitize";
-import { Article } from "@/types/article/article";
+import type { Article } from "@/types/article/article";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import parse from "html-react-parser";
 
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -60,11 +61,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
           height={400}
         />
       )}
-      <h1>{article.title.rendered}</h1>
-      <div
-        className="article-content"
-        dangerouslySetInnerHTML={{ __html: article.content.rendered }}
-      />
+      <div className="article-content">{parse(article.content.rendered)}</div>
     </article>
   );
 }

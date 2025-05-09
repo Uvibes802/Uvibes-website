@@ -2,7 +2,7 @@
 import { fetchPostsByTagSlug } from "@/services/blog/article";
 import { sanitizeText } from "@/services/blog/sanitize";
 import "@/styles/cards/blogArticleCard.css";
-import { Article } from "@/types/article/article";
+import type { Article } from "@/types/article/article";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -50,7 +50,7 @@ export default function BlogEntrepriseArticle() {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = html;
     const text = tempDiv.textContent || tempDiv.innerText || "";
-    return text.length > length ? text.slice(0, length) + "..." : text;
+    return text.length > length ? `${text.slice(0, length)}...` : text;
   };
 
   return (
