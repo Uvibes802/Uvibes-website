@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import DOMPurify from "dompurify";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
 import type { TeamProps } from "@/types/team/teamProps";
-import { useCallback } from "react";
 
-export default function useTeam() {
+export default function useTeamByTag(slug: string) {
   const [team, setTeam] = useState<TeamProps[]>([]);
 
   const sanitizeText = useCallback((text: string): string => {
@@ -20,44 +19,53 @@ export default function useTeam() {
   }, []);
 
   useEffect(() => {
-    const tagToTeamName = {
-      20: "Equipe projet",
-      21: "Comité scientifique",
-      22: "Les architectes du code",
-    };
-
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=19&_embed`)
-      .then((res) => res.json())
-      .then((data) => {
-        const mappedTeam = data.map(
-          (item: {
-            title: { rendered: string };
-            content: { rendered: string };
-            tags: number[];
-            _embedded?: { "wp:featuredmedia"?: { source_url?: string }[] };
-          }) => {
-            const image =
-              item._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
-              logoUvibes;
-            const teamTagId = item.tags[0] as keyof typeof tagToTeamName;
-            const teamName = tagToTeamName[teamTagId] || "Autre";
+    if (!slug) return;
 
-            return {
-              name: sanitizeText(item.title.rendered),
-              position: sanitizeText(item.content.rendered),
-              image,
-              alt: `Photo de ${sanitizeText(item.title.rendered)}`,
-              team: teamName,
-            };
-          }
-        );
-        setTeam(mappedTeam);
+    fetch(`${apiUrl}/wp-json/wp/v2/tags?slug=${slug}`)
+      .then((res) => res.json())
+      .then((tags) => {
+        const tagId = tags[0]?.id;
+        if (!tagId) {
+          setTeam([]);
+          return;
+        }
+
+        return fetch(
+          `${apiUrl}/wp-json/wp/v2/posts?categories=19&tags=${tagId}&_embed`
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            const mappedTeam = data.map(
+              (item: {
+                title: { rendered: string };
+                content: { rendered: string };
+                slug: string;
+                _embedded?: {
+                  "wp:featuredmedia"?: { source_url?: string }[];
+                };
+              }) => {
+                const image =
+                  item._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+                  logoUvibes;
+
+                return {
+                  name: sanitizeText(item.title.rendered),
+                  position: sanitizeText(item.content.rendered),
+                  image,
+                  alt: `Photo de ${sanitizeText(item.title.rendered)}`,
+                  team: slug,
+                };
+              }
+            );
+            setTeam(mappedTeam);
+          });
       })
       .catch((error) => {
         console.error("Erreur lors de la récupération de l'équipe :", error);
+        setTeam([]);
       });
-  }, [sanitizeText]);
+  }, [slug, sanitizeText]);
 
   return team;
 }

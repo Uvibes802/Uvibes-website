@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import TeamCards from "../cards/teamCards";
-import useTeam from "@/services/team/team";
+import useTeamByTag from "@/services/team/team";
 import "../../styles/section/TeamSection.css";
 import type { TeamProps } from "@/types/team/teamProps";
 
 export default function TeamSection() {
-  const [activeButton, setActiveButton] = useState("Equipe projet");
-  const team: TeamProps[] = useTeam();
-
   const tabs = [
-    "Equipe projet",
-    "Comité scientifique",
-    "Les architectes du code",
+    { label: "Equipe projet", slug: "equipe-projet" },
+    { label: "Comité scientifique", slug: "comite-scientifique" },
+    { label: "Les architectes du code", slug: "les-architectes-du-code" },
   ];
+
+  const [activeButton, setActiveButton] = useState(tabs[0].slug);
+  const team: TeamProps[] = useTeamByTag(activeButton);
 
   return (
     <section className="uvibes-teamSection-container">
@@ -22,34 +22,37 @@ export default function TeamSection() {
         <div
           className="uvibes-button-slider"
           style={{
-            left: `${(tabs.indexOf(activeButton) * 100) / tabs.length}%`,
+            left: `${
+              (tabs.findIndex((tab) => tab.slug === activeButton) * 100) /
+              tabs.length
+            }%`,
             width: `${100 / tabs.length}%`,
           }}
         />
         {tabs.map((tab) => (
           <button
-            key={tab}
-            className={`uvibes-button ${activeButton === tab ? "active" : ""}`}
-            onClick={() => setActiveButton(tab)}
+            key={tab.slug}
+            className={`uvibes-button ${
+              activeButton === tab.slug ? "active" : ""
+            }`}
+            onClick={() => setActiveButton(tab.slug)}
             type="button"
           >
-            {tab}
+            {tab.label}
           </button>
         ))}
       </div>
       <div className="uvibes-teamSection-members">
-        {team
-          .filter((member) => member.team === activeButton)
-          .map((member) => (
-            <TeamCards
-              key={member.name}
-              image={member.image}
-              alt={member.alt}
-              name={member.name}
-              position={member.position}
-              team={member.team}
-            />
-          ))}
+        {team.map((member) => (
+          <TeamCards
+            key={member.name}
+            image={member.image}
+            alt={member.alt}
+            name={member.name}
+            position={member.position}
+            team={member.team}
+          />
+        ))}
       </div>
     </section>
   );
