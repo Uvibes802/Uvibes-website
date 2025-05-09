@@ -7,6 +7,11 @@
     var(--gradientColor) border-box;
   border: 1px solid transparent;
   border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-ref);
 
   & div:first-child {
     background: var(--gradientColor-card);

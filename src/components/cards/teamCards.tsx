@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { TeamProps } from "@/types/team/teamProps";
-import "@/styles/cards/teamCard.css";
+import "../../styles/cards/teamCard.css";
 
 export default function TeamCards({ image, name, position }: TeamProps) {
   return (

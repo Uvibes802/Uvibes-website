@@ -2,7 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["wp.uvibes.fr"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "wp.uvibes.fr",
+      },
+    ],
   },
 };
 
