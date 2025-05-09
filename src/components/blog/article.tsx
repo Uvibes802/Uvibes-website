@@ -1,11 +1,10 @@
 "use client";
 
 import { sanitizeText } from "@/services/blog/sanitize";
+import "@/styles/blog/article.css";
 import type { Article } from "@/types/article/article";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import parse from "html-react-parser";
-
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
 
@@ -51,8 +50,12 @@ export default function ArticleContent({ slug }: { slug: string }) {
   const article = articles[0];
   if (!article) return <div>Article non trouvé</div>;
 
+  function parse(rendered: string): import("react").ReactNode {
+    return <div dangerouslySetInnerHTML={{ __html: rendered }} />;
+  }
+
   return (
-    <article>
+    <article className="article-container">
       {article.featured_image && (
         <Image
           src={article.featured_image}

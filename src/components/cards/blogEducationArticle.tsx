@@ -1,19 +1,17 @@
-"use client";
 import { fetchPostsByTagSlug } from "@/services/blog/article";
 import { getExcerpt } from "@/services/blog/getExcerpt";
 import { sanitizeText } from "@/services/blog/sanitize";
-import "@/styles/cards/blogArticleCard.css";
-import type { Article } from "@/types/article/article";
+import { Article } from "@/types/article/article";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function BlogEntrepriseArticle() {
-  const [entrepriseArticle, setEntrepriseArticle] = useState<Article[]>([]);
+export default function BlogEducationArticle() {
+  const [educationArticle, setEducationArticle] = useState<Article[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await fetchPostsByTagSlug("entreprise-article");
+      const articles = await fetchPostsByTagSlug("education-article");
 
       const articlesWithImages = await Promise.all(
         articles.map(async (article: Article) => {
@@ -44,15 +42,16 @@ export default function BlogEntrepriseArticle() {
       const sortedArticles = articlesWithImages.sort(
         (a, b) => b.date.getTime() - a.date.getTime()
       );
-      setEntrepriseArticle(sortedArticles);
+      setEducationArticle(sortedArticles);
+      console.log(articlesWithImages);
     };
     fetchArticles();
   }, []);
 
   return (
     <section className="article-section">
-      {entrepriseArticle.map((article) => (
-        <article key={article.id} className="blog-article entreprise-article">
+      {educationArticle.map((article) => (
+        <article key={article.id} className="blog-article education-article">
           <Image
             src={article.featured_image}
             alt={article.title.rendered}
