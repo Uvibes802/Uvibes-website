@@ -1,10 +1,10 @@
 "use client";
 
 import { sanitizeText } from "@/services/blog/sanitize";
+import "@/styles/blog/article.css";
 import { Article } from "@/types/article/article";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
 
@@ -51,7 +51,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
   if (!article) return <div>Article non trouvé</div>;
 
   return (
-    <article>
+    <article className="article-container">
       {article.featured_image && (
         <Image
           src={article.featured_image}

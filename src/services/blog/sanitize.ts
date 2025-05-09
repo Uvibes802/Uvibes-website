@@ -26,8 +26,18 @@ export const sanitizeText = (text: string) => {
       "h4",
       "h5",
       "h6",
+      "img",
     ],
-    ALLOWED_ATTR: ["href", "title", "target", "rel"],
+    ALLOWED_ATTR: [
+      "href",
+      "title",
+      "target",
+      "rel",
+      "src",
+      "alt",
+      "width",
+      "height",
+    ],
   });
 
   return decodeHtmlEntities(sanitized);
