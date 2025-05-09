@@ -30,6 +30,10 @@
   box-shadow: 0 0 15px rgba(253, 110, 0, 0.3);
 }
 
+.funct-orga-card-container--visible {
+  margin-top: calc(var(--spacing-ref) * 2);
+}
+
 .orga-card-description {
   padding: var(--spacing-ref) var(--spacing-ref) 0 var(--spacing-ref);
   flex-grow: 1;

@@ -24,19 +24,19 @@ export default function AvantagesContentDesktop() {
     <article className="avantages-desktop-container">
       <div className="avantages-button">
         <div className="button">
-          <button onClick={() => setOpenTab("entreprise")}>
+          <button onClick={() => setOpenTab("entreprise")} type="button">
             <Building size={70} />
           </button>
           <p>Entreprise</p>
         </div>
         <div className="button">
-          <button onClick={() => setOpenTab("ecole")}>
+          <button onClick={() => setOpenTab("ecole")} type="button">
             <School size={70} />
           </button>
           <p>Ecole</p>
         </div>
         <div className="button">
-          <button onClick={() => setOpenTab("collectif")}>
+          <button onClick={() => setOpenTab("collectif")} type="button">
             <Heart size={70} />
           </button>
           <p>Collectif</p>
@@ -45,7 +45,7 @@ export default function AvantagesContentDesktop() {
       {openTab === "entreprise" && (
         <section className="avantages-section">
           <hgroup>
-            <h3>Pour votre entreprise</h3>
+            <h3>Entreprise</h3>
             <h4>
               Dans le monde du travail, Uvibes stimule le bien-être individuel
               pour renforcer la performance collective
@@ -120,7 +120,7 @@ export default function AvantagesContentDesktop() {
       {openTab === "ecole" && (
         <section className="avantages-section">
           <hgroup>
-            <h3>Pour votre établissement d&apos;enseignement</h3>
+            <h3>Etablissement d&apos;enseignement</h3>
             <h4>
               Dans la sphère éducative, Uvibes améliore la sociabilité des
               apprenants
@@ -203,7 +203,7 @@ export default function AvantagesContentDesktop() {
       {openTab === "collectif" && (
         <section className="avantages-section">
           <hgroup>
-            <h3>Pour votre collectif</h3>
+            <h3>Collectif</h3>
             <h4>
               Dans la sphère du prendre soin, Uvibes est une nouvelle
               respiration

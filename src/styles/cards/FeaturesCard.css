@@ -112,6 +112,20 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.features-video-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.pause-icon {
+  top: 50px;
+  left: auto;
+  bottom: 1rem;
+  right: 1rem;
+  transform: none;
 }
 
 @media screen and (min-width: 768px) {
