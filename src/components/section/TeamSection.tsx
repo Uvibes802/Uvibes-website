@@ -1,22 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import TeamCards from "../cards/teamCards";
-import FetchTeam from "@/services/team/team";
-import type { TeamProps } from "@/types/team/teamProps";
+import useTeam from "@/services/team/team";
 import "../../styles/section/TeamSection.css";
+import type { TeamProps } from "@/types/team/teamProps";
 
 export default function TeamSection() {
   const [activeButton, setActiveButton] = useState("Equipe projet");
-  const [team, setTeam] = useState<TeamProps[]>([]);
-
-  useEffect(() => {
-    const fetchTeam = async () => {
-      const teamData = await FetchTeam();
-      setTeam(teamData);
-    };
-    fetchTeam();
-  }, []);
+  const team: TeamProps[] = useTeam();
 
   const tabs = [
     "Equipe projet",
