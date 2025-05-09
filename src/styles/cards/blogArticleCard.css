@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 80%;
   padding: var(--spacing-ref);
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: var(--border-radius);
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,10 @@
     object-fit: cover;
     border-radius: var(--border-radius);
   }
+
+  & p {
+    font-size: var(--font-size-text);
+  }
 }
 
 .article-section {
@@ -38,5 +42,21 @@
 }
 
 .entreprise-article {
-  border-color: blue;
+  border-color: var(--blueUvibes);
+}
+
+.education-article {
+  border-color: var(--pinkUvibes);
+}
+
+.science-article {
+  border-color: var(--greenUvibes);
+}
+
+.vulnerability-article {
+  border-color: var(--yellowUvibes);
+}
+
+.uvibes-article {
+  border-color: var(--mainColor);
 }
