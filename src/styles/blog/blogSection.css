@@ -1,0 +1,7 @@
+@media screen and (min-width: 768px) {
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-ref);
+  }
+}

@@ -1,9 +1,14 @@
 "use client";
 
 import { HeroBanner } from "@/components/banner/heroBanner";
+import BlogEducationArticle from "@/components/cards/blogEducationArticle";
 import BlogEntrepriseArticle from "@/components/cards/blogEntrepriseArticle";
+import BlogScienceNSociety from "@/components/cards/blogScienceNSociety";
+import BlogUvibesArticle from "@/components/cards/blogUvibesArticle";
+import BlogVulnerabilityArticle from "@/components/cards/blogVulnerabilityArticle";
 import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
+import "@/styles/blog/blogSection.css";
 import mockupBlog from "../../../public/images/mockupBlog.png";
 export default function BlogPage() {
   return (
@@ -11,7 +16,7 @@ export default function BlogPage() {
       <HeroBanner
         subtitle="Le blog"
         title="Explorez des contenus inspirants"
-        description="Une sélection d’actualités et de publications enrichissantes"
+        description="Une sélection d'actualités et de publications enrichissantes"
         imageDesktop={mockupBlog}
         imageMobile={mockupBlog}
         alt="Fonctionnalités de l'application"
@@ -19,9 +24,13 @@ export default function BlogPage() {
       <nav>
         <FloatingMenu />
       </nav>
-      <div>
+      <section className="blog-section">
         <BlogEntrepriseArticle />
-      </div>
+        <BlogEducationArticle />
+        <BlogScienceNSociety />
+        <BlogVulnerabilityArticle />
+        <BlogUvibesArticle />
+      </section>
       <Footer />
     </>
   );

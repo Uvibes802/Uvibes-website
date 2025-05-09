@@ -17,10 +17,11 @@ export async function fetchFeaturedImageByPostSlug(slug: string) {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${slug}`
   );
+
   const posts = await res.json();
   if (!posts.length) return null;
   const post = posts[0];
-
+  console.log(post.featured_media);
   const mediaId = post.featured_media;
   if (!mediaId) return null;
 
