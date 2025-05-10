@@ -31,9 +31,7 @@ export default function useTeamByTag(slug: string) {
           return;
         }
 
-        return fetch(
-          `${apiUrl}/wp-json/wp/v2/posts?categories=19&tags=${tagId}&_embed`
-        )
+        return fetch(`${apiUrl}/wp-json/wp/v2/posts?tags=${tagId}&_embed`)
           .then((res) => res.json())
           .then((data) => {
             const mappedTeam = data.map(
