@@ -1,5 +1,6 @@
 import type { HeroBannerProps } from "../../types/banner/heroBanner";
 import Image from "next/image";
+import Link from "next/link";
 import Logo_uVibesDesktop from "../../../public/images/Logo UVIBES.png";
 import Logo_uVibes from "../../../public/images/Logo VI blanc.png";
 import "../../styles/banner/heroBanner.css";
@@ -17,18 +18,22 @@ export function HeroBanner({
     <header className="hero-banner-wrapper">
       <div className="hero-banner-container">
         <div className="hero-banner-header-top">
-          <Image
-            src={Logo_uVibes}
-            alt="Logo uVibes"
-            width={80}
-            className="logo_mobile"
-          />
-          <Image
-            src={Logo_uVibesDesktop}
-            alt="Logo uVibes desktop"
-            width={400}
-            className="logo_desktop"
-          />
+          <Link href="/" passHref>
+            <Image
+              src={Logo_uVibes}
+              alt="Logo uVibes"
+              width={80}
+              className="logo_mobile"
+            />
+
+            <Image
+              src={Logo_uVibesDesktop}
+              alt="Logo uVibes desktop"
+              width={400}
+              className="logo_desktop"
+            />
+          </Link>
+
           <WhiteButton title="Connectez-vous à Uvibes" type="button" />
         </div>
 
