@@ -45,6 +45,7 @@ export default function BlogEducationArticle() {
       setEducationArticle(sortedArticles);
       console.log(articlesWithImages);
     };
+    console.log(educationArticle);
     fetchArticles();
   }, []);
 
