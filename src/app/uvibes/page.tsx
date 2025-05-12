@@ -13,6 +13,7 @@ import { AppointmentSection } from "@/components/section/appointmentSection";
 import Footer from "@/components/footer/Footer";
 import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
 import uvibesTeamDesktop from "../../../public/images/UvibesTeamDesktop.jpg";
+import HelloAssoDon from "@/components/uvibes/HelloAssoDon";
 
 export default function uvibes() {
   const { isMobile } = Resize();
@@ -127,12 +128,7 @@ export default function uvibes() {
             >
               Devenir partenaire
             </a>
-            <a
-              href="mailto:contact@uvibes.fr"
-              className="uvibes-contact-button"
-            >
-              Aider financièrement le projet
-            </a>
+            <HelloAssoDon />
           </div>
         </section>
         <AppointmentSection />
