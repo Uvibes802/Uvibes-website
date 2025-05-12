@@ -2,7 +2,7 @@
   padding-top: calc(var(--spacing-ref) * 2);
   border-top: 2px solid var(--mainColor);
   display: grid;
-
+  height: calc(var(--spacing-ref) * 5);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   & h4 {
@@ -52,6 +52,10 @@
   gap: calc(var(--spacing-ref) * 1);
   justify-content: start;
   align-items: center;
+
+  & img {
+    width: 80%;
+  }
 }
 
 .footer-icons-links {
@@ -62,6 +66,7 @@
 }
 
 .footer-links {
+  height: var(--spacing-ref);
   margin: 0 auto;
   grid-column: span 3;
   grid-row-start: 2;
