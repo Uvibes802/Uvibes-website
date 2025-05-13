@@ -11,11 +11,13 @@ import BlogUvibesArticle from "../../services/blog/blogUvibesArticle";
 import BlogVulnerabilityArticle from "../../services/blog/blogVulnerabilityArticle";
 export default function AllArticle() {
   const [allArticles, setAllArticle] = useState<Article[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
   const { entrepriseArticle } = BlogEntrepriseArticle();
   const { educationArticle } = BlogEducationArticle();
   const { scienceArticles } = BlogScienceNSociety();
   const { vulnerabilityArticles } = BlogVulnerabilityArticle();
   const { uvibesArticles } = BlogUvibesArticle();
+
   useEffect(() => {
     const fetchAllArticle = async () => {
       try {
@@ -45,9 +47,27 @@ export default function AllArticle() {
     vulnerabilityArticles,
     uvibesArticles,
   ]);
+
+  const filteredArticles = selectedCategory
+    ? allArticles.filter((article) => article.tags.slug === selectedCategory)
+    : allArticles;
+
   return (
     <section className="article-section">
-      {allArticles.map((article) => (
+      <select
+        name="category"
+        id="categories"
+        value={selectedCategory}
+        onChange={(e) => setSelectedCategory(e.target.value)}
+      >
+        <option value="">Toutes les catégories</option>
+        <option value="entreprise-article">Entreprise</option>
+        <option value="education-article">Education</option>
+        <option value="personne-vulnerable">Personne Vulnerable</option>
+        <option value="uvibes">Uvibes</option>
+        <option value="science-et-societe">Science et Société</option>
+      </select>
+      {filteredArticles.map((article) => (
         <article
           key={article.id}
           className={`blog-article ${article.tags.slug}`}
