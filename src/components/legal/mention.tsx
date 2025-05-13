@@ -19,9 +19,9 @@ export default function Mention() {
         </p>
         <p>
           <strong>Adresse du site :</strong>{" "}
-          <a href="https://uvibes.fr" rel="noreferrer">
+          <Link href="https://uvibes.fr" rel="noreferrer">
             https://uvibes.fr
-          </a>
+          </Link>
         </p>
         <p>
           <strong>Responsable publication :</strong> Delphine Boyrie
