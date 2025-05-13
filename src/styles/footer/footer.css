@@ -84,10 +84,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & button {
+    font-size: calc(var(--font-size-ref) * 0.8);
+    height: calc(var(--spacing-ref) * 3);
+    width: 150px;
+    min-width: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     align-items: center;
+    padding: calc(var(--spacing-ref) * 5);
   }
 }

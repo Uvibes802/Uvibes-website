@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <h4>Uvibes</h4>
-        <p>Contact us</p>
+        <p>Contactez-nous</p>
         <p>contact@uvibes.fr</p>
       </div>
       <div className="footer-links">
