@@ -3,6 +3,7 @@ import "@/styles/blog/blogSection.css";
 import { Article } from "@/types/article/article";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import BlogEducationArticle from "../../services/blog/blogEducationArticle";
 import BlogEntrepriseArticle from "../../services/blog/blogEntrepriseArticle";
@@ -17,7 +18,7 @@ export default function AllArticle() {
   const { scienceArticles } = BlogScienceNSociety();
   const { vulnerabilityArticles } = BlogVulnerabilityArticle();
   const { uvibesArticles } = BlogUvibesArticle();
-
+  const router = useRouter();
   useEffect(() => {
     const fetchAllArticle = async () => {
       try {
@@ -71,6 +72,7 @@ export default function AllArticle() {
         <article
           key={article.id}
           className={`blog-article ${article.tags.slug}`}
+          onClick={() => router.push(`/blog/${article.slug}`)}
         >
           <Image
             src={article.featured_image}

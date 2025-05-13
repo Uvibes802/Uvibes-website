@@ -8,7 +8,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h4>Uvibes</h4>
+        <h4>
+          <Link href="#top">Uvibes</Link>
+        </h4>
         <p>Contactez-nous</p>
         <p>contact@uvibes.fr</p>
       </div>

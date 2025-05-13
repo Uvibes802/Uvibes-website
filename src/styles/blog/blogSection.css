@@ -14,7 +14,7 @@
   border-radius: var(--border-radius);
   box-shadow: 1px 4px 10px #00000038;
   flex-direction: column;
-
+  cursor: pointer;
   & h3 {
     font-size: var(--font-size-h3);
     color: var(--mainColor);
@@ -33,6 +33,11 @@
 
   & a {
     font-family: var(--text-font);
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
   }
 }
 
