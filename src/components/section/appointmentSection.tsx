@@ -21,7 +21,7 @@ export function AppointmentSection() {
       </h2>
       <div className="appointment-button-container">
         <CalendlyStyledButton
-          url="https://calendly.com/justine-cousin-wbx/demo-uvibes"
+          url="https://calendly.com/uvibescommunication/30min"
           rootElement={document.body}
           text="PARLER A UN CONSEILLER"
         />

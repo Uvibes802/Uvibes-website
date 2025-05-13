@@ -44,9 +44,11 @@
 
 .logo_mobile {
   display: block;
+  cursor: pointer;
 }
 .logo_desktop {
   display: none;
+  cursor: pointer;
 }
 
 .visually-hidden {
