@@ -12,7 +12,7 @@ import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Footer from "@/components/footer/Footer";
 import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
-import uvibesTeamDesktop from "../../../public/images/UvibesTeamDesktop.jpg";
+import uvibesTeamDesktop from "../../../public/images/uvibesTeamDesktop.png";
 import HelloAssoDon from "@/components/uvibes/HelloAssoDon";
 
 export default function uvibes() {

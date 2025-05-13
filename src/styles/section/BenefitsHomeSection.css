@@ -17,7 +17,7 @@
 #benefices-home-title-word {
   color: var(--bckgColor);
   background-color: var(--mainColor);
-  padding: calc(var(--spacing-ref) * 0.5);
+  padding: calc(var(--spacing-ref) * 0.1);
 }
 
 .benefices-home-data-container {

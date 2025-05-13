@@ -49,6 +49,16 @@ export default function FormContact() {
         {...register("message", { required: true })}
         htmlFor="message"
       />
+
+      <label className="checkbox-label">
+        <input
+          type="checkbox"
+          {...register("newsletter")}
+          className="checkbox-input"
+        />
+        Je m&apos;inscris à la newsletter uVibes
+      </label>
+
       <div>
         <Button title="Envoyer" type="submit" />
       </div>
