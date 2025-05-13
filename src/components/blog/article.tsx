@@ -58,7 +58,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
 
   return (
     <main className="article-main">
-      <button onClick={() => router.back()}>
+      <button onClick={() => router.push("/blog")}>
         <ArrowLeft /> Retour
       </button>
       <article className="article-container">
@@ -72,7 +72,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
         )}
         <div className="article-content">{parse(article.content.rendered)}</div>
       </article>
-      <button onClick={() => router.back()}>
+      <button onClick={() => router.push("/blog")}>
         <ArrowLeft /> Retour
       </button>
     </main>
