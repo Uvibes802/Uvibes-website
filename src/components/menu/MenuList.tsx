@@ -22,7 +22,7 @@ export default function MenuList({ className }: MenuListProps) {
         item.id === 6 && isClient ? (
           <PopupButton
             key={item.id}
-            url="https://calendly.com/justine-cousin-wbx/demo-uvibes"
+            url="https://calendly.com/uvibescommunication/30min"
             rootElement={document.body}
             text="Prendre RDV"
             className={"calendly-button-menu"}

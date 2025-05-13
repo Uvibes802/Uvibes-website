@@ -20,10 +20,8 @@ export default function Menu() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        // Scrolling down
         setIsActive(false);
       } else {
-        // Scrolling up
         setIsActive(true);
       }
 
@@ -58,7 +56,7 @@ export default function Menu() {
 
       <StyledBottomNavigation
         style={{
-          transform: isActive ? "translateY(0px)" : "translateY(100px)",
+          transform: isActive ? "translateX(0px)" : "translateX(100px)",
           opacity: isActive ? 1 : 0,
           transition: "transform 0.3s ease-in-out, opacity 0.3s ease-in-out",
         }}

@@ -8,8 +8,7 @@ import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Resize from "@/services/resize/resize";
-import mockupAvantagesDesktop from "../../../public/images/mockupAvantageDesktop.png";
-import mockupAvantages from "../../../public/images/mockupAvantages.png";
+import mockupAvantages from "../../../public/images/MockupAvantage.png";
 
 export default function Avantages() {
   const { isMobile } = Resize();
@@ -19,7 +18,7 @@ export default function Avantages() {
         subtitle="Les avantages"
         title="Uvibes , moteur d’une dynamique positive"
         description="L’application qui répond aux objectifs de votre organisation"
-        imageDesktop={mockupAvantagesDesktop}
+        imageDesktop={mockupAvantages}
         imageMobile={mockupAvantages}
         alt="Fonctionnalités de l'application"
       />

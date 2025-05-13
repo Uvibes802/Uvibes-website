@@ -9,23 +9,6 @@
   padding-top: calc(var(--spacing-ref) * 2);
 }
 
-.calendly-button {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100%;
-  color: #f4ecec;
-  background: var(--gradientColor);
-  border-radius: calc(var(--border-radius) * 3);
-  padding: var(--spacing-ref);
-  border: none;
-  width: 15rem;
-  height: 3rem;
-  font-family: var(--title-font);
-  font-size: calc(var(--font-size-ref) * 1);
-  letter-spacing: var(--spacing-letter);
-  box-shadow: 1px 3px 10px 0px #0000006b;
-}
-
 @media screen and (min-width: 768px) {
   .appointment-section {
     display: flex;
@@ -36,7 +19,6 @@
   }
 
   .appointment-button-container {
-    padding-top: 0;
     width: 40%;
   }
 }

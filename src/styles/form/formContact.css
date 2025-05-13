@@ -26,6 +26,12 @@
 .form-contact textarea {
   width: 100%;
   font-style: italic;
+
+  &input:last-of-type {
+    width: auto;
+    padding: var(--spacing-ref);
+    accent-color: var(--mainColor) !important;
+  }
 }
 
 .form-contact input::placeholder,
@@ -45,6 +51,21 @@
 
 .form-contact button {
   margin-top: calc(var(--spacing-ref) * 2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--mainColor);
+  padding: var(--spacing-ref);
+  gap: var(--spacing-ref);
+}
+
+.checkbox-input {
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {

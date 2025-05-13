@@ -20,8 +20,7 @@
 
 @font-face {
   font-family: "Supreme-Bold";
-  src: url("/fonts/Supreme-Bold.woff2") format("woff2"),
-    url("/fonts/Supreme-Bold.woff") format("woff"),
+  src: url("/fonts/Supreme-Bold.woff") format("woff"),
     url("/fonts/Supreme-Bold.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
@@ -34,6 +33,10 @@
   --text-font-bold: "Supreme-Bold";
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
+  --yellowUvibes: #feb000;
+  --greenUvibes: #78c751;
+  --blueUvibes: #32bdca;
+  --pinkUvibes: #d90a5c;
   --mainColor-opacity: #fd6e0075;
   --secondaryColor: #d90a5c;
   --cardsOpacity: rgba(255, 255, 255, 0.808);

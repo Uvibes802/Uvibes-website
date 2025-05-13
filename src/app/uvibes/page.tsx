@@ -1,6 +1,7 @@
 "use client";
 
 import { HeroBanner } from "@/components/banner/heroBanner";
+import Resize from "@/services/resize/resize";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
 import logoEclatense from "../../../public/images/LogoEclatens.png";
 import { DotIcon } from "lucide-react";
@@ -11,8 +12,11 @@ import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Footer from "@/components/footer/Footer";
 import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
+import uvibesTeamDesktop from "../../../public/images/uvibesTeamDesktop.png";
+import HelloAssoDon from "@/components/uvibes/HelloAssoDon";
 
 export default function uvibes() {
+  const { isMobile } = Resize();
   return (
     <>
       <HeroBanner
@@ -83,15 +87,18 @@ export default function uvibes() {
           style={{
             position: "relative",
             width: "100%",
-            height: "auto",
+            aspectRatio: isMobile ? "4/3" : "16/9",
           }}
         >
           <Image
-            src={uvibesTeam}
-            alt="visuel femme avec téléphone"
-            width={600}
-            height={450}
-            layout="responsive"
+            src={isMobile ? uvibesTeam : uvibesTeamDesktop}
+            alt="visuel équipe Uvibes"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            priority
           />
         </div>
         <section className="uvibes-container">
@@ -121,12 +128,7 @@ export default function uvibes() {
             >
               Devenir partenaire
             </a>
-            <a
-              href="mailto:contact@uvibes.fr"
-              className="uvibes-contact-button"
-            >
-              Aider financièrement le projet
-            </a>
+            <HelloAssoDon />
           </div>
         </section>
         <AppointmentSection />

@@ -35,7 +35,6 @@ export default function FetchCitation() {
     fetch(`${apiUrl}/wp-json/wp/v2/posts?categories=13`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setAuthorCitation(sanitizeText(data[0].content.rendered));
       });
 

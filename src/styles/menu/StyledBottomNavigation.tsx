@@ -18,7 +18,7 @@ export const StyledBottomNavigation = styled(BottomNavigation)(({ theme }) => ({
   boxShadow: theme.shadows[4],
   marginBottom: "var(--spacing-ref)",
   borderRadius: "calc(var(--border-radius)*2.5)",
-  padding: "calc(var(--spacing-ref) * 2) 0",
+  padding: "calc(var(--spacing-ref) * 2)",
 
   [theme.breakpoints.down(768)]: {
     display: "none",

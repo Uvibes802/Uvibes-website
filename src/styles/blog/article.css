@@ -1,0 +1,33 @@
+.article-container {
+  padding: calc(var(--spacing-ref) * 2);
+  & h1 {
+    color: var(--mainColor);
+    padding-bottom: calc(var(--spacing-ref) * 2);
+  }
+
+  & h2 {
+    color: var(--mainColor);
+    padding-bottom: calc(var(--spacing-ref) * 2);
+  }
+
+  & h3 {
+    color: var(--mainColor);
+  }
+
+  & img {
+    width: 100%;
+    height: 100vw;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+}
+
+.article-content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+
+  & p {
+    padding-bottom: 2rem;
+  }
+}
