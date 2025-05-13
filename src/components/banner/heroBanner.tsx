@@ -33,8 +33,9 @@ export function HeroBanner({
               className="logo_desktop"
             />
           </Link>
-
-          <WhiteButton title="Connectez-vous à Uvibes" type="button" />
+          <Link href="http://app.uvibes.fr/" passHref>
+            <WhiteButton title="Connectez-vous à Uvibes" type="button" />
+          </Link>
         </div>
 
         <div className="hero-banner-body">
