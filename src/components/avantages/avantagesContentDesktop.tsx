@@ -59,7 +59,7 @@ export default function AvantagesContentDesktop() {
                   size={50}
                 />
               }
-              title="Améliorer sa prise de décision et augmenter sa performance"
+              title="Performance : améliorer sa prise de décision et renforcer l’engagement"
               stats="42% des employés admettent ne faire que le strict minimum (Etude 2023 Observatoire 
 						de la société et de la consommation)."
               content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l'adhésion collective"
@@ -68,9 +68,9 @@ export default function AvantagesContentDesktop() {
               icone={
                 <UsersIcon size={50} style={{ color: "var(--mainColor)" }} />
               }
-              title="Renforcer sa culture d’entreprise et le lien d’appartenance"
-              stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
-              content="Uvibes augmente l’engagement des salariés en renforcant le lien affectif entre l’entreprise et ses collaborateurs"
+              title="Lien d’appartenance : créer une culture commune"
+              stats="Pour 62 % des dirigeants et salariés, la culture d’entreprise est le principal frein à la transformation (Rapport The digital culture challenge)."
+              content="Uvibes renforce le lien affectif qui relie l’entreprise à ses équipes"
             />
             <LastAvantagesCard
               icone={
@@ -79,7 +79,7 @@ export default function AvantagesContentDesktop() {
                   style={{ color: "var(--secondaryColor)" }}
                 />
               }
-              title="Répondre aux enjeux de sa RSE"
+              title="RSE : augmenter le bien-être individuel et collectif"
               stats={
                 <ul>
                   <div className="last-avantages-card-content">
