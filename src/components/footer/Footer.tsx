@@ -1,15 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import iconInsta from "../../../public/images/iconInsta.svg";
 import iconLinkedIn from "../../../public/images/iconLinkedin.svg";
-import Image from "next/image";
 import "../../styles/footer/footer.css";
 import Button from "../button/Button";
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h4>Uvibes</h4>
-        <p>Contact us</p>
+        <h4>
+          <Link href="#top">Uvibes</Link>
+        </h4>
+        <p>Contactez-nous</p>
         <p>contact@uvibes.fr</p>
       </div>
       <div className="footer-links">

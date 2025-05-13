@@ -1,19 +1,19 @@
 "use client";
 
 import { HeroBanner } from "@/components/banner/heroBanner";
-import Resize from "@/services/resize/resize";
-import logoUvibes from "../../../public/images/Logo VI blanc.png";
-import logoEclatense from "../../../public/images/LogoEclatens.png";
-import { DotIcon } from "lucide-react";
-import "../../styles/page/uvibes.css";
-import Image from "next/image";
-import TeamSection from "@/components/section/TeamSection";
+import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
-import Footer from "@/components/footer/Footer";
-import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
-import uvibesTeamDesktop from "../../../public/images/UvibesTeamDesktop.jpg";
+import TeamSection from "@/components/section/TeamSection";
 import HelloAssoDon from "@/components/uvibes/HelloAssoDon";
+import Resize from "@/services/resize/resize";
+import { DotIcon } from "lucide-react";
+import Image from "next/image";
+import logoUvibes from "../../../public/images/Logo VI blanc.png";
+import logoEclatense from "../../../public/images/LogoEclatens.png";
+import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
+import uvibesTeamDesktop from "../../../public/images/uvibesTeamDesktop.png";
+import "../../styles/page/uvibes.css";
 
 export default function uvibes() {
   const { isMobile } = Resize();
@@ -111,8 +111,8 @@ export default function uvibes() {
               Rejoignez l&apos;aventure Uvibes
             </h2>
             <p className="text-white">
-              Soyez acteur de notre dynamique pour réinventer nos modes
-              d’interaction en s’ouvrant à des vision nouvelles
+              Prenez part à une dynamique qui réinvente nos façons d’interagir
+              en ouvrant notre esprit à des visions nouvelles
             </p>
           </div>
           <div className="uvibes-contact-button-container">

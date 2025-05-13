@@ -2,7 +2,7 @@
   padding-top: calc(var(--spacing-ref) * 2);
   border-top: 2px solid var(--mainColor);
   display: grid;
-
+  height: calc(var(--spacing-ref) * 5);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   & h4 {
@@ -10,6 +10,11 @@
     font-family: var(--title-font);
     color: var(--mainColor);
     padding-bottom: calc(var(--spacing-ref) * 1);
+
+    & a {
+      text-decoration: none;
+      color: var(--mainColor);
+    }
   }
 
   & p:first-of-type {
@@ -28,10 +33,6 @@
   & p:nth-child(3) {
     font-size: calc(var(--font-size-ref) * 0.8);
     color: #95a1bb;
-  }
-
-  & button {
-    margin: var(--spacing-ref);
   }
 }
 
@@ -52,6 +53,10 @@
   gap: calc(var(--spacing-ref) * 1);
   justify-content: start;
   align-items: center;
+
+  & img {
+    width: 80%;
+  }
 }
 
 .footer-icons-links {
@@ -62,6 +67,7 @@
 }
 
 .footer-links {
+  height: var(--spacing-ref);
   margin: 0 auto;
   grid-column: span 3;
   grid-row-start: 2;
@@ -83,10 +89,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & button {
+    font-size: calc(var(--font-size-ref) * 0.8);
+    height: calc(var(--spacing-ref) * 3);
+    width: 150px;
+    min-width: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     align-items: center;
+    padding: calc(var(--spacing-ref) * 5);
   }
 }

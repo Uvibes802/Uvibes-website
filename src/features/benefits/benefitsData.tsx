@@ -8,11 +8,11 @@ import {
 } from "lucide-react";
 
 export const benefitsData = [
-  { id: 1, icon: <Smile size="50%" color="#fd6e00" />, title: "Optimiste" },
+  { id: 1, icon: <Smile size="50%" color="#fd6e00" />, title: "Optimisme " },
   {
     id: 2,
     icon: <ArrowRightLeft size="50%" color="#fd6e00" />,
-    title: "Flexible",
+    title: "Flexibilité",
   },
   { id: 3, icon: <Zap size="50%" color="#fd6e00" />, title: "Energie" },
   {
