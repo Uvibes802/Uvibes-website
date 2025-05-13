@@ -1,17 +1,15 @@
 import { fetchPostsByTagSlug } from "@/services/blog/article";
-import { getExcerpt } from "@/services/blog/getExcerpt";
 import { sanitizeText } from "@/services/blog/sanitize";
 import { Article } from "@/types/article/article";
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function BlogUvibesArticle() {
-  const [uvibesArticles, setUvibesArticles] = useState<Article[]>([]);
+export default function BlogEducationArticle() {
+  const [educationArticle, setEducationArticle] = useState<Article[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await fetchPostsByTagSlug("uvibes");
+      const articles = await fetchPostsByTagSlug("education-article");
+
       const articlesWithImages = await Promise.all(
         articles.map(async (article: Article) => {
           let featuredImage = null;
@@ -37,35 +35,14 @@ export default function BlogUvibesArticle() {
           };
         })
       );
+
       const sortedArticles = articlesWithImages.sort(
         (a, b) => b.date.getTime() - a.date.getTime()
       );
-      setUvibesArticles(sortedArticles);
+      setEducationArticle(sortedArticles);
     };
     fetchArticles();
   }, []);
 
-  return (
-    <section className="article-section">
-      {uvibesArticles.map((article) => (
-        <article key={article.id} className="blog-article uvibes-article">
-          <Image
-            src={article.featured_image}
-            alt={article.title.rendered}
-            width={200}
-            height={200}
-          />
-          <div className="article-card-content">
-            <h3>{article.title.rendered}</h3>
-            <p>{getExcerpt(article.content.rendered, 240)}</p>
-            <p>
-              <strong>{article.acf.auteur_custom}</strong>
-            </p>
-            <p>{article.date.toLocaleDateString()}</p>
-            <Link href={`/blog/${article.slug}`}>Lire la suite</Link>
-          </div>
-        </article>
-      ))}
-    </section>
-  );
+  return { educationArticle };
 }

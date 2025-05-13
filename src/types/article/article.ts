@@ -13,4 +13,9 @@ export type Article = {
   acf: {
     auteur_custom: string;
   };
+  tags: {
+    id: number;
+    name: string;
+    slug: string;
+  };
 };
