@@ -1,17 +1,14 @@
 import { fetchPostsByTagSlug } from "@/services/blog/article";
-import { getExcerpt } from "@/services/blog/getExcerpt";
 import { sanitizeText } from "@/services/blog/sanitize";
-import { Article } from "@/types/article/article";
-import Image from "next/image";
-import Link from "next/link";
+import type { Article } from "@/types/article/article";
 import { useEffect, useState } from "react";
 
-export default function BlogScienceNSociety() {
-  const [scienceArticles, setScienceArticles] = useState<Article[]>([]);
+export default function BlogEntrepriseArticle() {
+  const [entrepriseArticle, setEntrepriseArticle] = useState<Article[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await fetchPostsByTagSlug("science-et-societe");
+      const articles = await fetchPostsByTagSlug("entreprise-article");
 
       const articlesWithImages = await Promise.all(
         articles.map(async (article: Article) => {
@@ -42,32 +39,10 @@ export default function BlogScienceNSociety() {
       const sortedArticles = articlesWithImages.sort(
         (a, b) => b.date.getTime() - a.date.getTime()
       );
-      setScienceArticles(sortedArticles);
+      setEntrepriseArticle(sortedArticles);
     };
     fetchArticles();
   }, []);
 
-  return (
-    <section className="article-section">
-      {scienceArticles.map((article) => (
-        <article key={article.id} className="blog-article science-article">
-          <Image
-            src={article.featured_image}
-            alt={article.title.rendered}
-            width={200}
-            height={200}
-          />
-          <div className="article-card-content">
-            <h3>{article.title.rendered}</h3>
-            <p>{getExcerpt(article.content.rendered, 240)}</p>
-            <p>
-              <strong>{article.acf.auteur_custom}</strong>
-            </p>
-            <p>{article.date.toLocaleDateString()}</p>
-            <Link href={`/blog/${article.slug}`}>Lire la suite</Link>
-          </div>
-        </article>
-      ))}
-    </section>
-  );
+  return { entrepriseArticle };
 }

@@ -1,7 +1,108 @@
+.article-section {
+  padding-top: calc(var(--spacing-ref) * 2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-ref);
+}
+
+.blog-article {
+  margin: 0 auto;
+  width: 80%;
+  padding: var(--spacing-ref);
+  margin-bottom: calc(var(--spacing-ref) * 2);
+  border: 2px solid #000;
+  border-radius: var(--border-radius);
+  box-shadow: 1px 4px 10px #00000038;
+  flex-direction: column;
+  cursor: pointer;
+  & h3 {
+    font-size: var(--font-size-h3);
+    color: var(--mainColor);
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+
+  & p {
+    font-size: var(--font-size-text);
+  }
+
+  & a {
+    font-family: var(--text-font);
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+  }
+}
+
+#categories {
+  padding: var(--spacing-ref);
+  margin: calc(var(--spacing-ref) * 2);
+  border-radius: var(--border-radius);
+  border: 1px solid #00000040;
+  box-shadow: 4px -4px 0px 0px #00000040;
+  font-family: var(--text-font);
+  font-size: var(--font-size-text);
+  text-align: left;
+}
+
+.article-card-content {
+  padding: var(--spacing-ref);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-ref);
+}
+
+.entreprise-article {
+  border-color: var(--blueUvibes);
+}
+
+.education-article {
+  border-color: var(--pinkUvibes);
+}
+
+.science-et-societe {
+  border-color: var(--greenUvibes);
+}
+
+.personne-vulnerable {
+  border-color: var(--yellowUvibes);
+}
+
+.uvibes-article {
+  border-color: var(--mainColor);
+}
+
 @media screen and (min-width: 768px) {
-  .blog-section {
+  .blog-article {
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .article-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-ref);
+  }
+
+  #categories {
+    grid-column: span 2;
+    width: 70%;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #categories {
+    grid-column: span 3;
   }
 }

@@ -10,6 +10,11 @@
     font-family: var(--title-font);
     color: var(--mainColor);
     padding-bottom: calc(var(--spacing-ref) * 1);
+
+    & a {
+      text-decoration: none;
+      color: var(--mainColor);
+    }
   }
 
   & p:first-of-type {

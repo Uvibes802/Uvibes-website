@@ -3,11 +3,13 @@
 import { sanitizeText } from "@/services/blog/sanitize";
 import "@/styles/blog/article.css";
 import type { Article } from "@/types/article/article";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
-
+  const router = useRouter();
   useEffect(() => {
     const fetchArticle = async () => {
       const res = await fetch(
@@ -55,16 +57,24 @@ export default function ArticleContent({ slug }: { slug: string }) {
   }
 
   return (
-    <article className="article-container">
-      {article.featured_image && (
-        <Image
-          src={article.featured_image}
-          alt={article.title.rendered}
-          width={400}
-          height={400}
-        />
-      )}
-      <div className="article-content">{parse(article.content.rendered)}</div>
-    </article>
+    <main className="article-main">
+      <button onClick={() => router.push("/blog")}>
+        <ArrowLeft /> Retour
+      </button>
+      <article className="article-container">
+        {article.featured_image && (
+          <Image
+            src={article.featured_image}
+            alt={article.title.rendered}
+            width={400}
+            height={400}
+          />
+        )}
+        <div className="article-content">{parse(article.content.rendered)}</div>
+      </article>
+      <button onClick={() => router.push("/blog")}>
+        <ArrowLeft /> Retour
+      </button>
+    </main>
   );
 }
