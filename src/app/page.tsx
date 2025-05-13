@@ -1,21 +1,21 @@
 "use client";
 import { HeroBanner } from "@/components/banner/heroBanner";
+import UserNumberCard from "@/components/cards/userNumberCard";
+import { PartnerCarousel } from "@/components/carousel/PartnerCarousel";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
-import Resize from "@/services/resize/resize";
-import { BenefitsHomeSection } from "../components/section/BenefitsHomeSection";
-import mockupHome from "../../public/images/mockupHome.png";
-import Uvibes from "@/components/uvibes/uvibes";
 import FunctSection from "@/components/section/functSection";
-import visuelHome1Mobile from "../../public/images/visuel-homepage1.jpg";
-import visuelHome1Desktop from "../../public/images/visuelHome1Desktop.jpg";
-import visuelHome2Mobile from "../../public/images/visuel-homepage2.jpg";
-import visuelHome2Desktop from "../../public/images/visuelHome2Desktop.jpg";
-import Image from "next/image";
 import InspirationSection from "@/components/section/inspirationSection";
-import UserNumberCard from "@/components/cards/userNumberCard";
-import { PartnerCarousel } from "@/components/carousel/PartnerCarousel";
+import Uvibes from "@/components/uvibes/uvibes";
+import Resize from "@/services/resize/resize";
+import Image from "next/image";
+import mockupHome from "../../public/images/mockupHome.png";
+import visuelHome1Mobile from "../../public/images/visuel-homepage1.jpg";
+import visuelHome2Mobile from "../../public/images/visuel-homepage2.jpg";
+import visuelHome1Desktop from "../../public/images/visuelHome1Desktop.jpg";
+import visuelHome2Desktop from "../../public/images/visuelHome2Desktop.jpg";
+import { BenefitsHomeSection } from "../components/section/BenefitsHomeSection";
 
 export default function Home() {
   const { isMobile } = Resize();
@@ -24,7 +24,7 @@ export default function Home() {
       <HeroBanner
         subtitle=""
         title="Ouvrir notre esprit à des visions nouvelles"
-        description="La première application qui transforme notre perception de l'autre et nous inspire"
+        description="La première application qui transforme notre perception de l'autre"
         imageMobile={mockupHome}
         imageDesktop={mockupHome}
         alt="visuel application"

@@ -1,17 +1,17 @@
-import OrgaCard from "../cards/orgaCard";
-import "../../styles/funct/functOrganisation.css";
 import {
   BookOpen,
   CalendarClock,
+  ChevronDown,
+  ChevronUp,
   Compass,
   Expand,
   Eye,
   GraduationCap,
   Lightbulb,
-  ChevronDown,
-  ChevronUp,
 } from "lucide-react";
 import { useState } from "react";
+import "../../styles/funct/functOrganisation.css";
+import OrgaCard from "../cards/orgaCard";
 
 export default function FunctOrganisation() {
   const [showThemes, setShowThemes] = useState(false);
@@ -40,7 +40,8 @@ export default function FunctOrganisation() {
               <Compass size={"32px"} style={{ color: "var(--mainColor)" }} />
             </div>
             <p className="title-text-orange" style={{ flexGrow: 1 }}>
-              Les thématiques abordées par votre collectif
+              les sujets sur lesquels vous souhaitez obtenir la vision de votre
+              collectif
             </p>
             {showThemes ? (
               <ChevronUp size={24} style={{ color: "var(--mainColor)" }} />
@@ -69,7 +70,7 @@ export default function FunctOrganisation() {
                 }
                 title="Des sujets pédagogiques"
                 description="Management, innovation, conversation en langue étrangère, etc.."
-                content1="Est-ce que tu as déjà innové dans ton quotidien ?"
+                content1="Have you ever innovated in your daily life ?"
                 content2="Comment vois-tu le management du futur ?"
               />
               <OrgaCard
@@ -105,8 +106,7 @@ export default function FunctOrganisation() {
               <Eye size={"32px"} style={{ color: "var(--mainColor)" }} />
             </div>
             <p className="title-text-orange">
-              Les sujets dont vous souhaitez obtenir la vision de votre
-              collectif
+              les ressources explorées par votre collectif
             </p>
           </div>
         </div>

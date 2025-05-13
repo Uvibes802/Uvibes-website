@@ -8,9 +8,9 @@ export const FeaturesData = [
       { id: 3, item: "Sur un temps court, de 6 à 20 minutes" },
       {
         id: 4,
-        item: "Amenant à partager des témoignages positifs de groupe",
+        item: "Amenant à partager des témoignages positifs",
       },
-      { id: 5, item: "En Sur un nombre infini de sujets" },
+      { id: 5, item: "Sur un nombre infini de sujets" },
     ],
     video: "/videos/testTémoignage.mp4",
   },
@@ -36,7 +36,7 @@ export const FeaturesData = [
     items: [
       {
         id: 1,
-        item: "Une cité des savoirs incluant infographiques, vidéos, podcasts, et textes",
+        item: "Une cité des savoirs incluant infographiques, vidéos, podcasts, et articles",
       },
       { id: 2, item: "Portant sur des sujets intéressant votre collectif" },
       { id: 3, item: "Avec une valorisation à la fin" },
