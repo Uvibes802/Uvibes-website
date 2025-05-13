@@ -29,10 +29,6 @@
     font-size: calc(var(--font-size-ref) * 0.8);
     color: #95a1bb;
   }
-
-  & button {
-    margin: var(--spacing-ref);
-  }
 }
 
 .footer-content {
