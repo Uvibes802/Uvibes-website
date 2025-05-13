@@ -68,9 +68,9 @@ export default function AvantagesContentDesktop() {
               icone={
                 <UsersIcon size={50} style={{ color: "var(--mainColor)" }} />
               }
-              title="Améliorer sa prise de décision et augmenter sa performance"
+              title="Renforcer sa culture d’entreprise et le lien d’appartenance"
               stats="62% des dirigeants et employés considèrent la culture d'entreprise comme le principal frein à la transformation (Rapport The digital culture challenge)."
-              content="Uvibes stimule la réflexion, offre une meilleure connaissance de son collectif et suscite l'adhésion collective"
+              content="Uvibes augmente l’engagement des salariés en renforcant le lien affectif entre l’entreprise et ses collaborateurs"
             />
             <LastAvantagesCard
               icone={
