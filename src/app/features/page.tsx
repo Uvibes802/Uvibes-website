@@ -9,8 +9,7 @@ import FloatingMenu from "@/components/menu/Menu";
 import Footer from "@/components/footer/Footer";
 import { PartnerBanner } from "@/components/banner/partnerBanner";
 import { AppointmentSection } from "@/components/section/appointmentSection";
-import visuelFeature1 from "../../../public/images/visuel-featurespage1.jpg";
-import visuelFeature1Desktop from "../../../public/images/visuel-featurespage1Desktop.jpg";
+import visuelFeature1 from "../../../public/images/Visuel-feature.png";
 import Image from "next/image";
 
 export default function FeaturesPage() {
@@ -39,7 +38,7 @@ export default function FeaturesPage() {
           }}
         >
           <Image
-            src={isMobile ? visuelFeature1 : visuelFeature1Desktop}
+            src={isMobile ? visuelFeature1 : visuelFeature1}
             alt="visuel femme avec téléphone"
             fill
             style={{
