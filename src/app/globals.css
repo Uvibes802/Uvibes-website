@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: "Bevellier-regular";
+  src: url("/fonts/Bevellier-Regular.woff2") format("woff2"),
+    url("/fonts/Bevellier-Regular.woff") format("woff"),
+    url("/fonts/Bevellier-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Supreme-Light";
   src: url("/fonts/Supreme-Light.woff2") format("woff2"),
     url("/fonts/Supreme-Light.woff") format("woff"),
@@ -31,13 +41,13 @@
   --title-font: "Bevellier";
   --text-font: "Supreme-Light";
   --text-font-bold: "Supreme-Bold";
+  --button-font: "Bevellier-regular";
   --bckgColor: #f8f9fa;
   --mainColor: #fd6e00;
   --yellowUvibes: #feb000;
   --greenUvibes: #78c751;
   --blueUvibes: #32bdca;
   --pinkUvibes: #d90a5c;
-  --purpleUvibes: #800080;
   --mainColor-opacity: #fd6e0075;
   --secondaryColor: #d90a5c;
   --cardsOpacity: rgba(255, 255, 255, 0.808);
