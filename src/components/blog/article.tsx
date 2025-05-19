@@ -7,7 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Loader } from "rsuite";
+import { Loader } from "../loader/loader";
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const router = useRouter();
@@ -51,7 +51,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
   if (!articles.length)
     return (
       <div className="loader-container">
-        <Loader size="lg" />
+        <Loader />
       </div>
     );
 
