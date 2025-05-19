@@ -19,7 +19,7 @@ export default function FunctOrganisation() {
   return (
     <section className="funct-orga-container">
       <h2 className="title-h2-orange">
-        Comment ça marche pour l&apos;organisation ?
+        Comment ça marche pour votre organisation ?
       </h2>
 
       <article className="funct-orga-card">
@@ -40,8 +40,7 @@ export default function FunctOrganisation() {
               <Compass size={"32px"} style={{ color: "var(--mainColor)" }} />
             </div>
             <p className="title-text-orange" style={{ flexGrow: 1 }}>
-              les sujets sur lesquels vous souhaitez obtenir la vision de votre
-              collectif
+              Les thématiques abordées par votre collectif
             </p>
             {showThemes ? (
               <ChevronUp size={24} style={{ color: "var(--mainColor)" }} />
@@ -106,7 +105,8 @@ export default function FunctOrganisation() {
               <Eye size={"32px"} style={{ color: "var(--mainColor)" }} />
             </div>
             <p className="title-text-orange">
-              les ressources explorées par votre collectif
+              Les sujets sur lesquels vous souhaitez obtenir la vision de votre
+              collectif
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function FunctOrganisation() {
               <BookOpen size={"32px"} style={{ color: "var(--mainColor)" }} />
             </div>
             <p className="title-text-orange">
-              Les ressources que votre collectif pourra explorer
+              Les ressources explorées par votre collectif
             </p>
           </div>
         </div>

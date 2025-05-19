@@ -1,3 +1,4 @@
+import BlogExperienceArticle from "@/services/blog/blogExperienceArticle";
 import { getExcerpt } from "@/services/blog/getExcerpt";
 import "@/styles/blog/blogSection.css";
 import { Article } from "@/types/article/article";
@@ -18,6 +19,7 @@ export default function AllArticle() {
   const { scienceArticles } = BlogScienceNSociety();
   const { vulnerabilityArticles } = BlogVulnerabilityArticle();
   const { uvibesArticles } = BlogUvibesArticle();
+  const { experienceArticles } = BlogExperienceArticle();
   const router = useRouter();
   useEffect(() => {
     const fetchAllArticle = async () => {
@@ -27,6 +29,7 @@ export default function AllArticle() {
         const fetchScienceNSocietyArticle = await scienceArticles;
         const fetchVulnerabilityArticle = await vulnerabilityArticles;
         const fetchUvibesArticle = await uvibesArticles;
+        const fetchExperienceArticle = await experienceArticles;
 
         const combinedArticles = [
           ...fetchEntrepriseArticle,
@@ -34,6 +37,7 @@ export default function AllArticle() {
           ...fetchScienceNSocietyArticle,
           ...fetchVulnerabilityArticle,
           ...fetchUvibesArticle,
+          ...fetchExperienceArticle,
         ];
         setAllArticle(combinedArticles);
       } catch (error) {
@@ -47,6 +51,7 @@ export default function AllArticle() {
     scienceArticles,
     vulnerabilityArticles,
     uvibesArticles,
+    experienceArticles,
   ]);
 
   const filteredArticles = selectedCategory
@@ -64,9 +69,12 @@ export default function AllArticle() {
         <option value="">Toutes les catégories</option>
         <option value="entreprise-article">Entreprise</option>
         <option value="education-article">Education</option>
-        <option value="personne-vulnerable">Personne Vulnerable</option>
-        <option value="uvibes">Uvibes</option>
         <option value="science-et-societe">Science et Société</option>
+        <option value="uvibes-article">Uvibes</option>
+        <option value="experiences-inattendues">Expériences inattendues</option>
+        <option value="personnes-sensibles-aux-echanges">
+          Personnes sensibles aux échanges
+        </option>
       </select>
       {filteredArticles.map((article) => (
         <article

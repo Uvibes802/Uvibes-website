@@ -1,7 +1,7 @@
+import FetchCitation from "@/services/citation/citation";
 import Resize from "@/services/resize/resize";
 import "../../styles/section/inspirationSection.css";
 import UserNumberCard from "../cards/userNumberCard";
-import FetchCitation from "@/services/citation/citation";
 
 export default function InspirationSection() {
   const { citation, authorCitation, roleAuthor } = FetchCitation();
@@ -12,7 +12,7 @@ export default function InspirationSection() {
     <article className="inspiration-section-container">
       <section className="inspiration-section">
         <div className="inspiration-section-text">
-          <h2>Uvibes, la solution qui réinvente les intéractions</h2>
+          <h2>Uvibes, la solution qui réinvente les interactions</h2>
           <p className="inspiration-text inspiration-text-citation">
             {citation}
           </p>
