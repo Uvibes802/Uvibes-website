@@ -52,6 +52,7 @@
   align-items: center;
   gap: var(--spacing-ref);
   padding-top: var(--spacing-ref);
+  padding-bottom: calc(var(--spacing-ref) * 2);
 }
 
 @media screen and (min-width: 768px) {

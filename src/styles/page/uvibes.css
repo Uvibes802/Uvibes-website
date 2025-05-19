@@ -1,6 +1,8 @@
 .uvibes-container {
-  padding: calc(var(--spacing-ref) * 2);
-  gap: var(--spacing-ref);
+  padding: 0 calc(var(--spacing-ref) * 2);
+  & ul {
+    padding-top: var(--spacing-ref);
+  }
 }
 .uvibes-title {
   padding: var(--spacing-ref) 0;
@@ -18,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-ref);
+  padding-bottom: calc(var(--spacing-ref) * 2);
 }
 
 .uvibes-eclatens-card {

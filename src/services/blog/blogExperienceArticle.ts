@@ -3,12 +3,12 @@ import { sanitizeText } from "@/services/blog/sanitize";
 import { Article } from "@/types/article/article";
 import { useEffect, useState } from "react";
 
-export default function BlogUvibesArticle() {
-  const [uvibesArticles, setUvibesArticles] = useState<Article[]>([]);
+export default function BlogExperienceArticle() {
+  const [experienceArticles, setExperienceArticles] = useState<Article[]>([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await fetchPostsByTagSlug("uvibes-article");
+      const articles = await fetchPostsByTagSlug("experiences-inattendues");
       const articlesWithImages = await Promise.all(
         articles.map(async (article: Article) => {
           let featuredImage = null;
@@ -37,10 +37,10 @@ export default function BlogUvibesArticle() {
       const sortedArticles = articlesWithImages.sort(
         (a, b) => b.date.getTime() - a.date.getTime()
       );
-      setUvibesArticles(sortedArticles);
+      setExperienceArticles(sortedArticles);
     };
     fetchArticles();
   }, []);
 
-  return { uvibesArticles };
+  return { experienceArticles };
 }

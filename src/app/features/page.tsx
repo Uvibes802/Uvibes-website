@@ -1,17 +1,16 @@
 "use client";
 import { HeroBanner } from "@/components/banner/heroBanner";
-import Resize from "@/services/resize/resize";
-import mockupFeature from "../../../public/images/mockupFeature.png";
-import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
+import { PartnerBanner } from "@/components/banner/partnerBanner";
 import { FeaturesCard } from "@/components/cards/FeaturesCard";
+import Footer from "@/components/footer/Footer";
 import FunctOrganisation from "@/components/funct/functOrganisation";
 import FloatingMenu from "@/components/menu/Menu";
-import Footer from "@/components/footer/Footer";
-import { PartnerBanner } from "@/components/banner/partnerBanner";
 import { AppointmentSection } from "@/components/section/appointmentSection";
-import visuelFeature1 from "../../../public/images/Visuel-feature.png";
+import Resize from "@/services/resize/resize";
 import Image from "next/image";
-
+import visuelFeature1 from "../../../public/images/Visuel-feature.png";
+import mockupFeature from "../../../public/images/mockupFeature.png";
+import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
 export default function FeaturesPage() {
   const { isMobile } = Resize();
   return (
@@ -19,8 +18,8 @@ export default function FeaturesPage() {
       <main>
         <HeroBanner
           subtitle="Les fonctionnalités"
-          title="Uvibes, activateur d'intelligence émotionnelle"
-          description="Au sein de votre collectif, l’application qui révolutionne les interactions grâce à des fonctionnalités innovantes"
+          title="Uvibes transforme le quotidien des échanges"
+          description="La possibilité d’accéder à des visions nouvelles"
           imageDesktop={mockupFeatureDesktop}
           imageMobile={mockupFeature}
           alt="Fonctionnalités de l'application"

@@ -23,8 +23,8 @@ export default function Home() {
     <main>
       <HeroBanner
         subtitle=""
-        title="Ouvrir notre esprit à des visions nouvelles"
-        description="La première application qui transforme notre perception de l'autre"
+        title="Découvrir des points de vue inattendus"
+        description="Voir l’autre et ce que nous vivons autrement"
         imageMobile={mockupHome}
         imageDesktop={mockupHome}
         alt="visuel application"

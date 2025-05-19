@@ -58,7 +58,7 @@ export default function uvibes() {
             </div>
             <div className="uvibes-list">
               <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">sans danger</li>
+              <li className="text">dans une dynamique bienveillante</li>
             </div>
           </ul>
         </section>

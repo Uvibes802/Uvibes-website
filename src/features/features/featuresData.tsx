@@ -1,16 +1,12 @@
 export const FeaturesData = [
   {
     id: 1,
-    title: "Un voyage conversationnel hors du commun",
+    title: "Un voyage conversationnel",
     items: [
       { id: 1, item: "Un échange de un à un" },
       { id: 2, item: "En vidéo" },
       { id: 3, item: "Sur un temps court, de 6 à 20 minutes" },
-      {
-        id: 4,
-        item: "Amenant à partager des témoignages positifs",
-      },
-      { id: 5, item: "Sur un nombre infini de sujets" },
+      { id: 4, item: "Sur un nombre infini de sujets" },
     ],
     video: "/videos/videoColette1.mp4",
   },

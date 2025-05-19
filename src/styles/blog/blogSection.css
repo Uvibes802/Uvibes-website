@@ -71,12 +71,16 @@
   border-color: var(--greenUvibes);
 }
 
-.personne-vulnerable {
+.personnes-sensibles-aux-echanges {
   border-color: var(--yellowUvibes);
 }
 
 .uvibes-article {
   border-color: var(--mainColor);
+}
+
+.experiences-inattendues {
+  border-color: var(--purpleUvibes);
 }
 
 @media screen and (min-width: 768px) {
