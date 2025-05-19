@@ -14,6 +14,8 @@ import BlogVulnerabilityArticle from "../../services/blog/blogVulnerabilityArtic
 export default function AllArticle() {
   const [allArticles, setAllArticle] = useState<Article[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const articlesPerPage = 9;
   const { entrepriseArticle } = BlogEntrepriseArticle();
   const { educationArticle } = BlogEducationArticle();
   const { scienceArticles } = BlogScienceNSociety();
@@ -58,13 +60,30 @@ export default function AllArticle() {
     ? allArticles.filter((article) => article.tags.slug === selectedCategory)
     : allArticles;
 
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = filteredArticles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+
+  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <section className="article-section">
       <select
         name="category"
         id="categories"
         value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
+        onChange={(e) => {
+          setSelectedCategory(e.target.value);
+          setCurrentPage(1);
+        }}
       >
         <option value="">Toutes les catégories</option>
         <option value="entreprise-article">Entreprise</option>
@@ -76,7 +95,8 @@ export default function AllArticle() {
           Personnes sensibles aux échanges
         </option>
       </select>
-      {filteredArticles.map((article) => (
+
+      {currentArticles.map((article) => (
         <article
           key={article.id}
           className={`blog-article ${article.tags.slug}`}
@@ -99,6 +119,23 @@ export default function AllArticle() {
           </div>
         </article>
       ))}
+      <div className="pagination-controls">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Précédent
+        </button>
+        <span>
+          Page {currentPage} sur {totalPages}
+        </span>
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          Suivant
+        </button>
+      </div>
     </section>
   );
 }

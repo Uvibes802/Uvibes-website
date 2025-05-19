@@ -1,18 +1,3 @@
-.article-main {
-  & button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: calc(var(--spacing-ref) * 2);
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    font-family: var(--text-font);
-    font-size: calc(var(--font-size-text) * 0.8);
-    gap: var(--spacing-ref);
-  }
-}
-
 .article-container {
   padding: calc(var(--spacing-ref) * 2);
   & h1 {
@@ -60,6 +45,53 @@
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.article-back-button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--spacing-ref) * 0.5);
+  padding: calc(var(--spacing-ref) * 0.5) 0;
+  border: none;
+  background: transparent;
+  color: var(--textColor);
+  font-size: calc(var(--font-size-text) * 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &:last-of-type {
+    justify-content: center;
+  }
+}
+
+.article-back-button:hover {
+  color: var(--mainColor);
+  transform: translateX(-5px);
+}
+
+.article-back-button:hover svg {
+  transform: translateX(-3px);
+  transition: transform 0.3s ease;
+}
+
+.article-back-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 2px;
+  background-color: var(--mainColor);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.article-back-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media screen and (min-width: 768px) {
