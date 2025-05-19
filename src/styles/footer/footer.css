@@ -50,10 +50,6 @@
   gap: calc(var(--spacing-ref) * 1);
   justify-content: start;
   align-items: center;
-
-  & img {
-    width: 80%;
-  }
 }
 
 .footer-icons-links {
