@@ -1,3 +1,4 @@
+import BlogExperienceArticle from "@/services/blog/blogExperienceArticle";
 import { getExcerpt } from "@/services/blog/getExcerpt";
 import "@/styles/blog/blogSection.css";
 import { Article } from "@/types/article/article";
@@ -13,11 +14,14 @@ import BlogVulnerabilityArticle from "../../services/blog/blogVulnerabilityArtic
 export default function AllArticle() {
   const [allArticles, setAllArticle] = useState<Article[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const articlesPerPage = 9;
   const { entrepriseArticle } = BlogEntrepriseArticle();
   const { educationArticle } = BlogEducationArticle();
   const { scienceArticles } = BlogScienceNSociety();
   const { vulnerabilityArticles } = BlogVulnerabilityArticle();
   const { uvibesArticles } = BlogUvibesArticle();
+  const { experienceArticles } = BlogExperienceArticle();
   const router = useRouter();
   useEffect(() => {
     const fetchAllArticle = async () => {
@@ -27,6 +31,7 @@ export default function AllArticle() {
         const fetchScienceNSocietyArticle = await scienceArticles;
         const fetchVulnerabilityArticle = await vulnerabilityArticles;
         const fetchUvibesArticle = await uvibesArticles;
+        const fetchExperienceArticle = await experienceArticles;
 
         const combinedArticles = [
           ...fetchEntrepriseArticle,
@@ -34,6 +39,7 @@ export default function AllArticle() {
           ...fetchScienceNSocietyArticle,
           ...fetchVulnerabilityArticle,
           ...fetchUvibesArticle,
+          ...fetchExperienceArticle,
         ];
         setAllArticle(combinedArticles);
       } catch (error) {
@@ -47,11 +53,26 @@ export default function AllArticle() {
     scienceArticles,
     vulnerabilityArticles,
     uvibesArticles,
+    experienceArticles,
   ]);
 
   const filteredArticles = selectedCategory
     ? allArticles.filter((article) => article.tags.slug === selectedCategory)
     : allArticles;
+
+  const indexOfLastArticle = currentPage * articlesPerPage;
+  const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
+  const currentArticles = filteredArticles.slice(
+    indexOfFirstArticle,
+    indexOfLastArticle
+  );
+
+  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <section className="article-section">
@@ -59,16 +80,23 @@ export default function AllArticle() {
         name="category"
         id="categories"
         value={selectedCategory}
-        onChange={(e) => setSelectedCategory(e.target.value)}
+        onChange={(e) => {
+          setSelectedCategory(e.target.value);
+          setCurrentPage(1);
+        }}
       >
         <option value="">Toutes les catégories</option>
         <option value="entreprise-article">Entreprise</option>
         <option value="education-article">Education</option>
-        <option value="personne-vulnerable">Personne Vulnerable</option>
-        <option value="uvibes">Uvibes</option>
         <option value="science-et-societe">Science et Société</option>
+        <option value="uvibes-article">Uvibes</option>
+        <option value="experiences-inattendues">Expériences inattendues</option>
+        <option value="personnes-sensibles-aux-echanges">
+          Personnes sensibles aux échanges
+        </option>
       </select>
-      {filteredArticles.map((article) => (
+
+      {currentArticles.map((article) => (
         <article
           key={article.id}
           className={`blog-article ${article.tags.slug}`}
@@ -91,6 +119,23 @@ export default function AllArticle() {
           </div>
         </article>
       ))}
+      <div className="pagination-controls">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Précédent
+        </button>
+        <span>
+          Page {currentPage} sur {totalPages}
+        </span>
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          Suivant
+        </button>
+      </div>
     </section>
   );
 }

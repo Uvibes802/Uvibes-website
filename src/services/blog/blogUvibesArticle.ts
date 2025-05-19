@@ -8,7 +8,7 @@ export default function BlogUvibesArticle() {
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await fetchPostsByTagSlug("uvibes");
+      const articles = await fetchPostsByTagSlug("uvibes-article");
       const articlesWithImages = await Promise.all(
         articles.map(async (article: Article) => {
           let featuredImage = null;

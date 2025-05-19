@@ -52,6 +52,34 @@
   text-align: left;
 }
 
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-ref);
+  padding: var(--spacing-ref);
+  grid-column: span 3;
+
+  & button {
+    background-color: var(--mainColor);
+    color: #fff;
+    border: none;
+    padding: var(--spacing-ref);
+    border-radius: calc(var(--border-radius) * 2);
+    cursor: pointer;
+    font-family: var(--text-font);
+    font-size: calc(var(--font-size-text) * 0.8);
+    transition: 0.5s ease;
+    &:hover {
+      background-color: var(--secondaryColor);
+    }
+  }
+
+  & span {
+    font-family: var(--text-font);
+  }
+}
+
 .article-card-content {
   padding: var(--spacing-ref);
   display: flex;
@@ -71,12 +99,16 @@
   border-color: var(--greenUvibes);
 }
 
-.personne-vulnerable {
+.personnes-sensibles-aux-echanges {
   border-color: var(--yellowUvibes);
 }
 
 .uvibes-article {
   border-color: var(--mainColor);
+}
+
+.experiences-inattendues {
+  border-color: var(--purpleUvibes);
 }
 
 @media screen and (min-width: 768px) {

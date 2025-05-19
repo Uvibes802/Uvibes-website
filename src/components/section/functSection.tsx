@@ -1,13 +1,13 @@
-import FunctCards from "../cards/functCards";
-import "../../styles/section/functSection.css";
 import { BookOpenText, HeartHandshake, MessagesSquare } from "lucide-react";
-import Button from "../button/Button"; // Adjust the path if necessary
 import Link from "next/link";
+import "../../styles/section/functSection.css";
+import Button from "../button/Button"; // Adjust the path if necessary
+import FunctCards from "../cards/functCards";
 
 export default function FunctSection() {
   return (
     <section className="funct-section">
-      <h2 className="title-h2">Les Fonctionnalités</h2>
+      <h2 className="title-h2">Trois ingrédients clés</h2>
       <div className="funct-container">
         <FunctCards
           icone={
@@ -30,7 +30,7 @@ export default function FunctSection() {
             <BookOpenText size="100%" style={{ color: "var(--mainColor)" }} />
           }
           title={"Ressources"}
-          subtitle={"Disposer d'une cité des savoirs sur-mesure"}
+          subtitle={"Accéder à une médiathèque de savoirs sur-mesure "}
         />
       </div>
       <div className="funct-button-container">

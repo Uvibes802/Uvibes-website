@@ -1,16 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import TeamCards from "../cards/teamCards";
 import useTeamByTag from "@/services/team/team";
-import "../../styles/section/TeamSection.css";
 import type { TeamProps } from "@/types/team/teamProps";
+import { useState } from "react";
+import "../../styles/section/TeamSection.css";
+import TeamCards from "../cards/teamCards";
 
 export default function TeamSection() {
   const tabs = [
     { label: "Equipe projet", slug: "equipe-projet" },
     { label: "Comité scientifique", slug: "comite-scientifique" },
-    { label: "Les architectes du code", slug: "les-architectes-du-code" },
+    { label: "Architectes du code", slug: "les-architectes-du-code" },
   ];
 
   const [activeButton, setActiveButton] = useState(tabs[0].slug);

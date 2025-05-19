@@ -3,7 +3,6 @@ import Link from "next/link";
 import iconInsta from "../../../public/images/iconInsta.svg";
 import iconLinkedIn from "../../../public/images/iconLinkedin.svg";
 import "../../styles/footer/footer.css";
-import Button from "../button/Button";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -24,7 +23,6 @@ export default function Footer() {
         </Link>
       </div>
       <div className="footer-buttons">
-        <Button title="Connectez-vous à Uvibes" type="button" />
         <div className="footer-icons">
           <Link href="https://www.linkedin.com/company/uvibes">
             <Image src={iconLinkedIn} alt="LinkedIn" width={60} height={60} />

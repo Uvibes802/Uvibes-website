@@ -11,8 +11,7 @@ import { DotIcon } from "lucide-react";
 import Image from "next/image";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
 import logoEclatense from "../../../public/images/LogoEclatens.png";
-import uvibesTeam from "../../../public/images/uvibesTeam.jpg";
-import uvibesTeamDesktop from "../../../public/images/uvibesTeamDesktop.png";
+import uvibesTeam from "../../../public/images/uvibesteam.png";
 import "../../styles/page/uvibes.css";
 
 export default function uvibes() {
@@ -59,7 +58,7 @@ export default function uvibes() {
             </div>
             <div className="uvibes-list">
               <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">sans danger</li>
+              <li className="text">dans une dynamique bienveillante</li>
             </div>
           </ul>
         </section>
@@ -91,7 +90,7 @@ export default function uvibes() {
           }}
         >
           <Image
-            src={isMobile ? uvibesTeam : uvibesTeamDesktop}
+            src={isMobile ? uvibesTeam : uvibesTeam}
             alt="visuel équipe Uvibes"
             fill
             style={{

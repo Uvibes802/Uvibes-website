@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Loader } from "../loader/loader";
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const router = useRouter();
@@ -47,7 +48,12 @@ export default function ArticleContent({ slug }: { slug: string }) {
     if (slug) fetchArticle();
   }, [slug]);
 
-  if (!articles.length) return <div>Chargement...</div>;
+  if (!articles.length)
+    return (
+      <div className="loader-container">
+        <Loader />
+      </div>
+    );
 
   const article = articles[0];
   if (!article) return <div>Article non trouvé</div>;
@@ -58,9 +64,9 @@ export default function ArticleContent({ slug }: { slug: string }) {
 
   return (
     <main className="article-main">
-      <button onClick={() => router.push("/blog")}>
+      <p className="article-back-button" onClick={() => router.push("/blog")}>
         <ArrowLeft /> Retour
-      </button>
+      </p>
       <article className="article-container">
         {article.featured_image && (
           <Image
@@ -72,9 +78,9 @@ export default function ArticleContent({ slug }: { slug: string }) {
         )}
         <div className="article-content">{parse(article.content.rendered)}</div>
       </article>
-      <button onClick={() => router.push("/blog")}>
+      <p className="article-back-button" onClick={() => router.push("/blog")}>
         <ArrowLeft /> Retour
-      </button>
+      </p>
     </main>
   );
 }
