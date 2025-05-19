@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Loader } from "rsuite";
 export default function ArticleContent({ slug }: { slug: string }) {
   const [articles, setArticles] = useState<Article[]>([]);
   const router = useRouter();
@@ -47,7 +48,12 @@ export default function ArticleContent({ slug }: { slug: string }) {
     if (slug) fetchArticle();
   }, [slug]);
 
-  if (!articles.length) return <div>Chargement...</div>;
+  if (!articles.length)
+    return (
+      <div className="loader-container">
+        <Loader size="lg" />
+      </div>
+    );
 
   const article = articles[0];
   if (!article) return <div>Article non trouvé</div>;
