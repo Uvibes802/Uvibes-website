@@ -92,17 +92,18 @@
 }
 
 .features-video {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  border: 1rem solid var(--mainColor);
+  border: 0.5rem solid var(--mainColor);
   object-fit: cover;
+  object-position: top;
 }
 
 .features-video.playing {
   width: 240px;
   height: 240px;
-  border-width: 1.5rem;
+  border-width: 0.5rem;
 }
 
 .features-video-icon {
@@ -116,7 +117,6 @@
 }
 
 .features-video-icon:hover {
-  transform: scale(1.2);
   opacity: 0.8;
 }
 

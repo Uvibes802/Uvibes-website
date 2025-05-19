@@ -6,12 +6,8 @@ import Footer from "@/components/footer/Footer";
 import FunctOrganisation from "@/components/funct/functOrganisation";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
-import Resize from "@/services/resize/resize";
 import Image from "next/image";
-import mockupFeature from "../../../public/images/mockupFeature.png";
-import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
-import visuelFeature1 from "../../../public/images/visuel-featurespage1.jpg";
-import visuelFeature1Desktop from "../../../public/images/visuel-featurespage1Desktop.jpg";
+import visuelFeature1 from "../../../public/images/Visuel-feature.png";
 
 export default function FeaturesPage() {
   const { isMobile } = Resize();
@@ -39,7 +35,7 @@ export default function FeaturesPage() {
           }}
         >
           <Image
-            src={isMobile ? visuelFeature1 : visuelFeature1Desktop}
+            src={isMobile ? visuelFeature1 : visuelFeature1}
             alt="visuel femme avec téléphone"
             fill
             style={{

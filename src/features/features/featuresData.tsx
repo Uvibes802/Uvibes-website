@@ -12,7 +12,7 @@ export const FeaturesData = [
       },
       { id: 5, item: "Sur un nombre infini de sujets" },
     ],
-    video: "/videos/testTémoignage.mp4",
+    video: "/videos/videoColette1.mp4",
   },
   {
     id: 2,

@@ -1,15 +1,14 @@
 .footer {
-  padding-top: calc(var(--spacing-ref) * 2);
+  padding: calc(var(--spacing-ref) * 2);
   border-top: 2px solid var(--mainColor);
   display: grid;
-  height: calc(var(--spacing-ref) * 5);
+  height: calc(var(--spacing-ref) * 11);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   & h4 {
     font-size: calc(var(--font-size-ref) * 3);
     font-family: var(--title-font);
     color: var(--mainColor);
-    padding-bottom: calc(var(--spacing-ref) * 1);
 
     & a {
       text-decoration: none;
@@ -18,8 +17,7 @@
   }
 
   & p:first-of-type {
-    font-size: calc(var(--font-size-ref) * 1.3);
-    padding-bottom: calc(var(--spacing-ref) * 1);
+    font-size: var(--font-size-text);
     color: var(--mainColor);
     font-weight: bolder;
   }
@@ -39,7 +37,6 @@
 .footer-content {
   display: flex;
   flex-direction: column;
-  padding: calc(var(--spacing-ref) * 0.5);
 
   & p:nth-child(3) {
     font-size: var(--font-size-text);
@@ -61,7 +58,6 @@
 
 .footer-icons-links {
   display: flex;
-  gap: calc(var(--spacing-ref) * 1);
   justify-content: start;
   align-items: center;
 }
@@ -71,7 +67,7 @@
   margin: 0 auto;
   grid-column: span 3;
   grid-row-start: 2;
-  margin-top: calc(var(--spacing-ref) * 1);
+  padding: var(--spacing-ref) 0;
   display: flex;
   gap: calc(var(--spacing-ref) * 0.5);
 
@@ -80,6 +76,7 @@
     font-family: var(--text-font);
     font-size: calc(var(--font-size-ref) * 0.6);
     color: rgba(17, 17, 17, 0.719);
+    padding-bottom: var(--spacing-ref);
   }
 }
 
@@ -101,6 +98,6 @@
 @media screen and (min-width: 768px) {
   .footer {
     align-items: center;
-    padding: calc(var(--spacing-ref) * 5);
+    padding: calc(var(--spacing-ref) * 2);
   }
 }
