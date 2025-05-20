@@ -38,6 +38,11 @@
     align-items: center;
     justify-content: center;
 
+    &:hover {
+      scale: 1.05;
+      transition: all 0.4s ease;
+    }
+
     & p {
       color: var(--mainColor);
     }

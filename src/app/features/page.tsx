@@ -9,7 +9,6 @@ import { AppointmentSection } from "@/components/section/appointmentSection";
 import Resize from "@/services/resize/resize";
 import Image from "next/image";
 import visuelFeature1 from "../../../public/images/Visuel-feature.png";
-import mockupFeature from "../../../public/images/mockupFeature.png";
 import mockupFeatureDesktop from "../../../public/images/mockupFeatureDesktop.png";
 export default function FeaturesPage() {
   const { isMobile } = Resize();
@@ -21,7 +20,7 @@ export default function FeaturesPage() {
           title="Uvibes transforme le quotidien des échanges"
           description="La possibilité d’accéder à des visions nouvelles"
           imageDesktop={mockupFeatureDesktop}
-          imageMobile={mockupFeature}
+          imageMobile={mockupFeatureDesktop}
           alt="Fonctionnalités de l'application"
         />
         <nav>

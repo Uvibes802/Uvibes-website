@@ -6,12 +6,12 @@ export const StyledButton = styled(Button)(`
   background: var(--gradientColor-button);
   color: #F4ECEC;
   border-radius: 2rem;
-  padding: 0.75rem 2rem;
+  padding: var(--spacing-ref);
   border: none;
   min-width: 10rem;
   cursor: pointer;
   height: auto;
-  font-family: var(--title-font);
+  font-family: var(--button-font;
   font-size: calc(var(--font-size-ref) * 1);
   letter-spacing: var(--spacing-letter);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
