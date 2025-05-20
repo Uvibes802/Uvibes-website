@@ -1,7 +1,7 @@
+import { LinkStyled } from "@/styles/button/LinkStyled";
 import { BookOpenText, HeartHandshake, MessagesSquare } from "lucide-react";
-import Link from "next/link";
 import "../../styles/section/functSection.css";
-import Button from "../button/Button"; // Adjust the path if necessary
+import Button from "../button/Button";
 import FunctCards from "../cards/functCards";
 
 export default function FunctSection() {
@@ -34,9 +34,9 @@ export default function FunctSection() {
         />
       </div>
       <div className="funct-button-container">
-        <Link href="/features">
+        <LinkStyled href="/features">
           <Button title="Découvrir les fonctionnalités" type="button" />
-        </Link>
+        </LinkStyled>
       </div>
     </section>
   );
