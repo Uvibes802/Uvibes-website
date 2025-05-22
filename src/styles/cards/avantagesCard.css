@@ -5,10 +5,12 @@
   background: linear-gradient(white, white) padding-box,
     var(--gradientColor) border-box;
   padding: calc(var(--spacing-ref) * 0.5);
+
   & h5 {
     color: var(--secondaryColor);
-    font-size: var(--font-size-title-text);
+    font-size: calc(var(--font-size-title-text) * 0.8);
     text-align: left;
+    padding-bottom: calc(var(--spacing-ref) * 0.5);
     padding-left: calc(var(--spacing-ref) * 0.5);
   }
 
@@ -22,7 +24,7 @@
 
   & div:first-of-type {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
   }
 
