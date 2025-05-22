@@ -86,7 +86,7 @@ export default function uvibes() {
           style={{
             position: "relative",
             width: "100%",
-            aspectRatio: isMobile ? "4/3" : "16/9",
+            height: isMobile ? "auto" : "60vh",
           }}
         >
           <Image
@@ -95,7 +95,7 @@ export default function uvibes() {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center",
+              objectPosition: "center 20%",
             }}
             priority
           />

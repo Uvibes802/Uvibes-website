@@ -34,7 +34,7 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: isMobile ? "4/3" : "16/9",
+          height: isMobile ? "auto" : "60vh",
         }}
       >
         <Image
@@ -43,7 +43,7 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 70%",
           }}
           priority
         />
@@ -56,7 +56,7 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: isMobile ? "4/3" : "16/9",
+          height: isMobile ? "auto" : "60vh",
         }}
       >
         <Image
@@ -65,7 +65,7 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 50%",
           }}
           priority
         />

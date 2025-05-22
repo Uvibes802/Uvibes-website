@@ -33,7 +33,7 @@ export default function Avantages() {
           style={{
             position: "relative",
             width: "100%",
-            aspectRatio: isMobile ? "4/3" : "16/9",
+            height: isMobile ? "auto" : "60vh",
           }}
         >
           <Image

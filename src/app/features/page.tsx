@@ -32,7 +32,7 @@ export default function FeaturesPage() {
           style={{
             position: "relative",
             width: "100%",
-            aspectRatio: isMobile ? "4/3" : "16/9",
+            height: isMobile ? "auto" : "60vh",
           }}
         >
           <Image
@@ -41,7 +41,7 @@ export default function FeaturesPage() {
             fill
             style={{
               objectFit: "cover",
-              objectPosition: "center",
+              objectPosition: "center 30%",
             }}
             priority
           />
