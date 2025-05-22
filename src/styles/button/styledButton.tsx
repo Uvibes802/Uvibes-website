@@ -18,7 +18,7 @@ export const StyledButton = styled(Button)(`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-20px) !important;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     opacity: 0.95;
   }
