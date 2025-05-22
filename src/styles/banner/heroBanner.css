@@ -47,6 +47,7 @@
   z-index: 0;
   pointer-events: none;
   transform: translateY(2rem);
+  overflow: hidden;
 }
 
 .logo_mobile {
@@ -127,5 +128,6 @@
     width: auto;
     max-height: 370px;
     object-fit: contain;
+    overflow: hidden;
   }
 }
