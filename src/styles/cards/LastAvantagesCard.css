@@ -1,7 +1,14 @@
-.avantages-card-container {
+.lastavantages-card-container {
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    var(--gradientColor) border-box;
+  padding: calc(var(--spacing-ref) * 2);
+  margin-top: calc(var(--spacing-ref) * 2);
+
   & h5 {
     color: var(--secondaryColor);
-    font-size: calc(var(--font-size-text) * 1.5);
+    font-size: var(--font-size-title-text);
     text-align: left;
     width: 35ch;
     padding-left: calc(var(--spacing-ref) * 0.5);
@@ -39,7 +46,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .avantages-card-container {
+  .lastavantages-card-container {
+    width: 80%;
     & h5 {
       width: 100%;
     }

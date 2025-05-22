@@ -11,7 +11,7 @@ import { DotIcon } from "lucide-react";
 import Image from "next/image";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
 import logoEclatense from "../../../public/images/LogoEclatens.png";
-import uvibesTeam from "../../../public/images/uvibesteam.png";
+import uvibesTeam from "../../../public/images/TeamUvibes.jpg";
 import "../../styles/page/uvibes.css";
 
 export default function uvibes() {
@@ -69,8 +69,8 @@ export default function uvibes() {
               <Image
                 src={logoEclatense}
                 alt="team-staff"
-                width={390}
-                height={218}
+                width={100}
+                height={100}
                 className="uvibes-eclatens-logo"
               />
               <h3 className="title-h3 uvibes-title">Un modèle non lucratif</h3>
