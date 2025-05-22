@@ -4,7 +4,6 @@ export type HeroBannerProps = {
   title: string;
   subtitle: string;
   description: string;
-  imageDesktop: string | StaticImageData;
-  imageMobile: string | StaticImageData;
+  image: string | StaticImageData;
   alt: string;
 };

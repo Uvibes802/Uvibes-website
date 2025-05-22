@@ -12,8 +12,7 @@ export default function BlogPage() {
         subtitle="Le blog"
         title="Explorez des contenus inspirants"
         description="Une sélection d'actualités et de publications enrichissantes"
-        imageDesktop={mockupBlog}
-        imageMobile={mockupBlog}
+        image={mockupBlog}
         alt="Fonctionnalités de l'application"
       />
       <nav>

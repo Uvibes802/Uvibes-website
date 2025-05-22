@@ -22,8 +22,7 @@ export default function uvibes() {
         subtitle=""
         title="Qui sommes-nous ?"
         description="Découvrez l'histoire de Uvibes, notre vision et les personnes qui donnent vie à cette dynamique innovante de renouveau relationnel"
-        imageDesktop={logoUvibes}
-        imageMobile={logoUvibes}
+        image={logoUvibes}
         alt="Fonctionnalités de l'application"
       />
       <nav>

@@ -20,8 +20,7 @@ export default function Avantages() {
         subtitle="Les avantages"
         title="Uvibes , moteur d’une dynamique positive"
         description="L’application qui répond aux objectifs de votre organisation"
-        imageDesktop={mockupAvantages}
-        imageMobile={mockupAvantages}
+        image={mockupAvantages}
         alt="Fonctionnalités de l'application"
       />
       <nav>
