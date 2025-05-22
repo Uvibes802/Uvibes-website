@@ -4,7 +4,9 @@ import { styled } from "@mui/material/styles";
 export const StyledBottomNavigation = styled(BottomNavigation)(({ theme }) => ({
   position: "fixed",
   width: "auto",
+  maxWidth: "900px",
   height: "80px",
+  margin: "0 auto",
   justifySelf: "center",
   zIndex: 9999,
   bottom: 0,

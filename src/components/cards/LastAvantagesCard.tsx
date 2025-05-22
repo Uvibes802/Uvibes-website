@@ -7,7 +7,7 @@ export default function LastAvantagesCard({
   stats,
 }: LastAvantagesCardProps) {
   return (
-    <article className="avantages-card-container">
+    <article className="lastavantages-card-container">
       <div className="last-avantages-card-title">
         {icone} <h5>{title}</h5>
       </div>

@@ -51,4 +51,18 @@
     padding-right: var(--spacing-ref);
     text-align: center;
   }
+
+  @supports (-webkit-touch-callout: none) {
+    .MuiBottomNavigation-root {
+      position: sticky !important;
+      bottom: 0 !important;
+      backdrop-filter: blur(8px);
+    }
+  }
+
+  @supports (bottom: env(safe-area-inset-bottom)) {
+    .MuiBottomNavigation-root {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
 }

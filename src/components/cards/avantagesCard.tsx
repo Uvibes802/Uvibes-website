@@ -10,7 +10,8 @@ export default function AvantagesCard({
   return (
     <article className="avantages-card-container">
       <div>
-        {icone} <h5>{title}</h5>
+        {icone}
+        <h5>{title}</h5>
       </div>
       <p>{stats}</p>
       <div className="avantages-card-content-container">

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 70vh;
-  background-image: url("../../../public/images/uvibesteam.png");
+  background-image: url("../../../public/images/TeamUvibesHome.jpg");
   background-position: center;
   background-size: cover;
 
@@ -30,13 +30,13 @@
 
 .uvibes-section > * {
   position: relative;
-  z-index: 2; /* pour que le contenu passe par-dessus le voile */
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
   .uvibes-section {
     & img {
-      width: 55%;
+      width: 20%;
       height: auto;
     }
   }

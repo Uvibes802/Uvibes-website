@@ -3,6 +3,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import eklore from "../../../public/images/eklore.png";
 import mutelios from "../../../public/images/mutelios.png";
 import university from "../../../public/images/upvd_logo_hori_rvb.png";
+import fetedesvoisins from "../../../public/images/LogoFeteDesVoisins.png";
 import "../../styles/carousel/PartnerCarousel.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,18 +29,28 @@ export function PartnerCarousel() {
     },
     {
       index: 4,
+      src: fetedesvoisins,
+      alt: "Fête des voisins",
+    },
+    {
+      index: 5,
       src: university,
       alt: "University of Perpignan",
     },
     {
-      index: 5,
+      index: 6,
       src: mutelios,
       alt: "Mutelios",
     },
     {
-      index: 6,
+      index: 7,
       src: eklore,
       alt: "Eklore",
+    },
+    {
+      index: 8,
+      src: fetedesvoisins,
+      alt: "Fête des voisins",
     },
   ];
   return (
