@@ -9,6 +9,8 @@ import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Resize from "@/services/resize/resize";
 import mockupAvantages from "../../../public/images/MockupAvantage.png";
+import visuelfemme from "../../../public/images/visuel-avantagePage.jpg";
+import Image from "next/image";
 
 export default function Avantages() {
   const { isMobile } = Resize();
@@ -27,6 +29,24 @@ export default function Avantages() {
       </nav>
       <main>
         {isMobile ? <AvantagesContent /> : <AvantagesContentDesktop />}
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            aspectRatio: isMobile ? "4/3" : "16/9",
+          }}
+        >
+          <Image
+            src={isMobile ? visuelfemme : visuelfemme}
+            alt="visuel femme téléphone"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            priority
+          />
+        </div>
         <PartnerBanner />
         <AppointmentSection />
         <Footer />

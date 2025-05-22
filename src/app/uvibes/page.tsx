@@ -11,7 +11,7 @@ import { DotIcon } from "lucide-react";
 import Image from "next/image";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
 import logoEclatense from "../../../public/images/LogoEclatens.png";
-import uvibesTeam from "../../../public/images/uvibesteam.png";
+import uvibesTeam from "../../../public/images/TeamUvibes.jpg";
 import "../../styles/page/uvibes.css";
 
 export default function uvibes() {
