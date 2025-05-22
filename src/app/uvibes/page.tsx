@@ -69,8 +69,8 @@ export default function uvibes() {
               <Image
                 src={logoEclatense}
                 alt="team-staff"
-                width={390}
-                height={218}
+                width={100}
+                height={100}
                 className="uvibes-eclatens-logo"
               />
               <h3 className="title-h3 uvibes-title">Un modèle non lucratif</h3>
