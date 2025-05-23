@@ -8,6 +8,7 @@
     font-style: italic;
     text-align: center;
     color: var(--secondaryColor);
+    font-family: var(--text-font);
 
     &::before {
       content: "❝ ";
