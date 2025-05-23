@@ -6,12 +6,9 @@ import Footer from "@/components/footer/Footer";
 import FunctOrganisation from "@/components/funct/functOrganisation";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
-import Resize from "@/services/resize/resize";
-import Image from "next/image";
-import visuelFeature1 from "../../../public/images/Visuel-feature.png";
+
 import mockupFeature from "../../../public/images/mockupFeature.png";
 export default function FeaturesPage() {
-  const { isMobile } = Resize();
   return (
     <>
       <main>
@@ -27,24 +24,6 @@ export default function FeaturesPage() {
         </nav>
 
         <FeaturesCard />
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            height: isMobile ? "auto" : "60vh",
-          }}
-        >
-          <Image
-            src={isMobile ? visuelFeature1 : visuelFeature1}
-            alt="visuel femme avec téléphone"
-            fill
-            style={{
-              objectFit: "cover",
-              objectPosition: "center 30%",
-            }}
-            priority
-          />
-        </div>
         <FunctOrganisation />
         <PartnerBanner />
         <AppointmentSection />

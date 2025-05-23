@@ -64,8 +64,8 @@ export default function Confidentialite() {
         </p>
         <p>
           Pour exercer ces droits, vous pouvez nous contacter à{" "}
-          <a href="mailto:contact@uvibes.fr">contact@uvibes.fr</a>. Nous
-          répondrons à votre demande dans un délai maximum de deux mois.
+          <a href="mailto:contactuvibes@gmail.com">contactuvibes@gmail.com</a>.
+          Nous répondrons à votre demande dans un délai maximum de deux mois.
         </p>
       </section>
 
@@ -118,7 +118,7 @@ export default function Confidentialite() {
         </p>
         <p>
           <strong>Adresse de contact :</strong>{" "}
-          <a href="mailto:contact@uvibes.fr">contact@uvibes.fr</a>
+          <a href="mailto:contactuvibes@gmail.com">contactuvibes@gmail.com</a>
         </p>
       </section>
 
