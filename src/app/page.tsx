@@ -8,6 +8,8 @@ import FloatingMenu from "@/components/menu/Menu";
 import FunctSection from "@/components/section/functSection";
 import InspirationSection from "@/components/section/inspirationSection";
 import Uvibes from "@/components/uvibes/uvibes";
+
+import Testimony from "@/components/testimony/testimony";
 import Resize from "@/services/resize/resize";
 import Image from "next/image";
 import mockupHome from "../../public/images/mochupHome.png";
@@ -50,6 +52,7 @@ export default function Home() {
       <BenefitsHomeSection />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
+      <Testimony />
       <FloatingMenu />
       <div
         style={{
