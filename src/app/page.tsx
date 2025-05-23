@@ -6,7 +6,7 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import FunctSection from "@/components/section/functSection";
-import InspirationSection from "@/components/section/inspirationSection";
+import Testimony from "@/components/testimony/testimony";
 import Uvibes from "@/components/uvibes/uvibes";
 import Resize from "@/services/resize/resize";
 import Image from "next/image";
@@ -48,7 +48,7 @@ export default function Home() {
         />
       </div>
       <BenefitsHomeSection />
-      <InspirationSection />
+      <Testimony />
       {isMobile && <UserNumberCard />}
       <FloatingMenu />
       <div
