@@ -1,0 +1,14 @@
+.testimony {
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    padding-left: calc(var(--spacing-ref) * 2);
+    color: var(--mainColor);
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: 0;
+}

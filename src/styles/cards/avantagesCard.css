@@ -42,11 +42,11 @@
   }
 
   &:nth-child(even) {
-    color: var(--mainColor);
+    color: var(--secondaryColor);
   }
 
   &:nth-child(odd) {
-    color: var(--secondaryColor);
+    color: var(--mainColor);
   }
 }
 

@@ -8,9 +8,11 @@ import FloatingMenu from "@/components/menu/Menu";
 import FunctSection from "@/components/section/functSection";
 import InspirationSection from "@/components/section/inspirationSection";
 import Uvibes from "@/components/uvibes/uvibes";
+
+import Testimony from "@/components/testimony/testimony";
 import Resize from "@/services/resize/resize";
 import Image from "next/image";
-import mockupHome from "../../public/images/mockupHome.png";
+import mockupHome from "../../public/images/mochupHome.png";
 import visuelHome1Mobile from "../../public/images/visuel-homepage1.jpg";
 import visuelHome2Mobile from "../../public/images/visuel-homepage2.jpg";
 import visuelHome1Desktop from "../../public/images/visuelHome1Desktop.jpg";
@@ -25,8 +27,7 @@ export default function Home() {
         subtitle=""
         title="Découvrir des points de vue inattendus"
         description="Voir l’autre et ce que nous vivons autrement"
-        imageMobile={mockupHome}
-        imageDesktop={mockupHome}
+        image={mockupHome}
         alt="visuel application"
       />
       <FunctSection />
@@ -34,7 +35,7 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: isMobile ? "4/3" : "16/9",
+          height: isMobile ? "auto" : "60vh",
         }}
       >
         <Image
@@ -43,7 +44,7 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 70%",
           }}
           priority
         />
@@ -51,12 +52,13 @@ export default function Home() {
       <BenefitsHomeSection />
       <InspirationSection />
       {isMobile && <UserNumberCard />}
+      <Testimony />
       <FloatingMenu />
       <div
         style={{
           position: "relative",
           width: "100%",
-          aspectRatio: isMobile ? "4/3" : "16/9",
+          height: isMobile ? "auto" : "60vh",
         }}
       >
         <Image
@@ -65,7 +67,7 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center 50%",
           }}
           priority
         />
