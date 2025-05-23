@@ -85,7 +85,7 @@ export default function uvibes() {
           style={{
             position: "relative",
             width: "100%",
-            height: isMobile ? "auto" : "60vh",
+            height: isMobile ? "30dvh" : "60vh",
           }}
         >
           <Image
@@ -96,7 +96,7 @@ export default function uvibes() {
               objectFit: "cover",
               objectPosition: "center 20%",
             }}
-            priority
+            loading="lazy"
           />
         </div>
         <section className="uvibes-container">
