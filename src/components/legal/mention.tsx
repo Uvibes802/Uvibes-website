@@ -15,7 +15,7 @@ export default function Mention() {
         </p>
         <p>
           <strong>Adresse de contact :</strong>{" "}
-          <a href="mailto:contact@uvibes.fr">contact@uvibes.fr</a>
+          <a href="mailto:contactuvibes@gmail.com">contactuvibes@gmail.com</a>
         </p>
         <p>
           <strong>Adresse du site :</strong>{" "}

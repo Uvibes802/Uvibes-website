@@ -115,13 +115,13 @@ export default function uvibes() {
           </div>
           <div className="uvibes-contact-button-container">
             <a
-              href="mailto:contact@uvibes.fr"
+              href="mailto:contactuvibes@gmail.com"
               className="uvibes-contact-button"
             >
               Nous contacter
             </a>
             <a
-              href="mailto:contact@uvibes.fr"
+              href="mailto:contactuvibes@gmail.com"
               className="uvibes-contact-button"
             >
               Devenir partenaire
