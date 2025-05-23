@@ -1,10 +1,10 @@
 "use client";
 
-import { Items } from "../../features/menu/MenuData";
-import MenuItem from "./MenuItem";
-import { PopupButton } from "react-calendly";
-import "../../styles/menu/Menu.css";
 import { useEffect, useState } from "react";
+import { PopupButton } from "react-calendly";
+import { Items } from "../../features/menu/MenuData";
+import "../../styles/menu/Menu.css";
+import MenuItem from "./MenuItem";
 
 type MenuListProps = {
   className: string;
