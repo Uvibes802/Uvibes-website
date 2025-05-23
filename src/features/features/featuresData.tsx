@@ -24,7 +24,7 @@ export const FeaturesData = [
       },
       { id: 3, item: "L'émergence de nouvelles réflexions et propositions" },
     ],
-    video: "/videos/testTémoignage.mp4",
+    video: "/videos/video_temoignage_FDV.mp4",
   },
   {
     id: 3,
