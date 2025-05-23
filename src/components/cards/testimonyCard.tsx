@@ -3,7 +3,7 @@ export type TestimonyCardProps = {
   testimony: string;
   auteur_temoignage: string;
   role_et_entreprise_temoignage: string;
-  id: string;
+  id: number;
 };
 export default function TestimonyCard({
   testimony,
