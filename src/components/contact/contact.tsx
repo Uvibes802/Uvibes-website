@@ -13,7 +13,7 @@ export default function Contact() {
         </p>
         <div>
           <Mail size={32} />
-          contact@uvibes.fr
+          contactuvibes@gmail.com
         </div>
       </section>
       <FormContact />
