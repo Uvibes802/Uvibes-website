@@ -37,7 +37,7 @@ export default function Avantages() {
           style={{
             position: "relative",
             width: "100%",
-            height: isMobile ? "auto" : "60vh",
+            height: isMobile ? "40dvh" : "60vh",
           }}
         >
           <Image
@@ -48,7 +48,7 @@ export default function Avantages() {
               objectFit: "cover",
               objectPosition: "center",
             }}
-            priority
+            loading="lazy"
           />
         </div>
         <PartnerBanner />

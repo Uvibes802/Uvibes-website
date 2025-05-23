@@ -26,7 +26,7 @@ export default function Home() {
       <HeroBanner
         subtitle=""
         title="Découvrir des points de vue inattendus"
-        description="Voir l’autre et ce que nous vivons autrement"
+        description="Voir l'autre et ce que nous vivons autrement"
         image={mockupHome}
         alt="visuel application"
       />
@@ -35,7 +35,7 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          height: isMobile ? "auto" : "60vh",
+          height: isMobile ? "30dvh" : "60vh",
         }}
       >
         <Image
@@ -44,9 +44,10 @@ export default function Home() {
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center 70%",
+            width: "100%",
           }}
-          priority
+          loading="lazy"
+          priority={false}
         />
       </div>
       <BenefitsHomeSection />
@@ -58,7 +59,7 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          height: isMobile ? "auto" : "60vh",
+          height: isMobile ? "30dvh" : "60vh",
         }}
       >
         <Image
@@ -69,7 +70,7 @@ export default function Home() {
             objectFit: "cover",
             objectPosition: "center 50%",
           }}
-          priority
+          loading="lazy"
         />
       </div>
       <PartnerCarousel />
