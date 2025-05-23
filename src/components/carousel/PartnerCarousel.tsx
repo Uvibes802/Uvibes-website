@@ -1,14 +1,14 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import eklore from "../../../public/images/eklore.png";
-import mutelios from "../../../public/images/mutelios.png";
-import university from "../../../public/images/upvd_logo_hori_rvb.png";
-import fetedesvoisins from "../../../public/images/LogoFeteDesVoisins.png";
-import "../../styles/carousel/PartnerCarousel.css";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Image from "next/image";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import eklore from "../../../public/images/eklore.png";
+import fetedesvoisins from "../../../public/images/LogoFeteDesVoisins.png";
+import mutelios from "../../../public/images/mutelios.png";
+import university from "../../../public/images/upvd_logo_hori_rvb.png";
+import "../../styles/carousel/PartnerCarousel.css";
 
 export function PartnerCarousel() {
   const partnerLogos = [

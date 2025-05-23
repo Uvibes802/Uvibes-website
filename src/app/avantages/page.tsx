@@ -8,18 +8,23 @@ import Footer from "@/components/footer/Footer";
 import FloatingMenu from "@/components/menu/Menu";
 import { AppointmentSection } from "@/components/section/appointmentSection";
 import Resize from "@/services/resize/resize";
+import Image from "next/image";
 import mockupAvantages from "../../../public/images/MockupAvantage.png";
 import visuelfemme from "../../../public/images/visuel-avantagePage.jpg";
-import Image from "next/image";
 
 export default function Avantages() {
-  const { isMobile } = Resize();
+  const { isMobile, mounted } = Resize();
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <>
       <HeroBanner
         subtitle="Les avantages"
-        title="Uvibes , moteur d’une dynamique positive"
-        description="L’application qui répond aux objectifs de votre organisation"
+        title="Uvibes , moteur d'une dynamique positive"
+        description="L'application qui répond aux objectifs de votre organisation"
         image={mockupAvantages}
         alt="Fonctionnalités de l'application"
       />
