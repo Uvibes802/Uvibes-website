@@ -9,6 +9,7 @@
 
 .features-card {
   width: 100%;
+  max-width: 570px;
   border: 1px solid;
   border-radius: var(--border-radius);
   padding: var(--spacing-ref);
@@ -128,12 +129,13 @@
   transform: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .features-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-items: center;
+    gap: var(--spacing-ref);
   }
 
   .features-card {

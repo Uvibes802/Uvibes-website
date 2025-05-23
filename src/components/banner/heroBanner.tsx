@@ -10,8 +10,7 @@ export function HeroBanner({
   title,
   subtitle,
   description,
-  imageDesktop,
-  imageMobile,
+  image,
   alt,
 }: HeroBannerProps) {
   return (
@@ -25,7 +24,6 @@ export function HeroBanner({
               width={80}
               className="logo_mobile"
             />
-
             <Image
               src={Logo_uVibesDesktop}
               alt="Logo uVibes desktop"
@@ -46,9 +44,10 @@ export function HeroBanner({
             <p className="title-text">{description}</p>
           </section>
 
+          {/* image unique, affichée uniquement en desktop */}
           <figure className="hero-banner-image-container desktop-only">
             <Image
-              src={imageDesktop}
+              src={image}
               alt={alt}
               className="hero-banner-image-desktop"
               width={600}
@@ -59,9 +58,10 @@ export function HeroBanner({
         </div>
       </div>
 
+      {/* image identique, affichée uniquement en mobile */}
       <figure className="hero-banner-image-container mobile-only">
         <Image
-          src={imageMobile}
+          src={image}
           alt={alt}
           className="hero-banner-image"
           width={600}

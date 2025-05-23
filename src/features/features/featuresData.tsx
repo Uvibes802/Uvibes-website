@@ -37,6 +37,6 @@ export const FeaturesData = [
       { id: 2, item: "Portant sur des sujets intéressant votre collectif" },
       { id: 3, item: "Avec une valorisation à la fin" },
     ],
-    video: "/videos/testTémoignage.mp4",
+    video: "/videos/Video_page_fonctionnalites_cite_des_savoirs.mp4",
   },
 ];

@@ -1,7 +1,7 @@
 import BlogExperienceArticle from "@/services/blog/blogExperienceArticle";
 import { getExcerpt } from "@/services/blog/getExcerpt";
 import "@/styles/blog/blogSection.css";
-import { Article } from "@/types/article/article";
+import type { Article } from "@/types/article/article";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -101,6 +101,11 @@ export default function AllArticle() {
           key={article.id}
           className={`blog-article ${article.tags.slug}`}
           onClick={() => router.push(`/blog/${article.slug}`)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              router.push(`/blog/${article.slug}`);
+            }
+          }}
         >
           <Image
             src={article.featured_image}
@@ -121,6 +126,7 @@ export default function AllArticle() {
       ))}
       <div className="pagination-controls">
         <button
+          type="button"
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
@@ -130,6 +136,7 @@ export default function AllArticle() {
           Page {currentPage} sur {totalPages}
         </span>
         <button
+          type="button"
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
