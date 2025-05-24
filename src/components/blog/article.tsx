@@ -76,6 +76,7 @@ export default function ArticleContent({ slug }: { slug: string }) {
             height={400}
           />
         )}
+        <div className="article-title">{article.title.rendered}</div>
         <div className="article-content">{parse(article.content.rendered)}</div>
       </article>
       <p className="article-back-button" onClick={() => router.push("/blog")}>
