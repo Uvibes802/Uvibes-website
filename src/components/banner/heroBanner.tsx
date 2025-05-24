@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo_uVibesDesktop from "../../../public/images/Logo UVIBES.png";
 import Logo_uVibes from "../../../public/images/Logo VI blanc.png";
 import "../../styles/banner/heroBanner.css";
-import WhiteButton from "../button/WhiteButton";
+//import WhiteButton from "../button/WhiteButton";
 
 export function HeroBanner({
   title,
@@ -31,9 +31,9 @@ export function HeroBanner({
               className="logo_desktop"
             />
           </Link>
-          <Link href="http://app.uvibes.fr/" passHref>
+          {/*<Link href="http://app.uvibes.fr/" passHref>
             <WhiteButton title="Connectez-vous à Uvibes" type="button" />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="hero-banner-body">
