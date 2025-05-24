@@ -2,7 +2,6 @@ import Button from "../button/Button";
 import Input from "../input/Input";
 
 import type { FormData } from "@/types/form/form";
-import { Snackbar } from "@mui/material";
 import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import "../../styles/form/formContact.css";
@@ -66,25 +65,15 @@ export default function FormContact() {
         {...register("message", { required: true })}
         htmlFor="message"
       />
-
+      {isValid && <p>Message envoyé avec succès</p>}
       <label className="checkbox-label">
-        <input
-          type="checkbox"
-          {...register("newsletter")}
-          className="checkbox-input"
-        />
         Je m&apos;inscris à la newsletter uVibes
+        <input type="checkbox" {...register("newsletter")} />
       </label>
-      <Snackbar
-        open={isValid}
-        onClose={() => setIsValid(false)}
-        message="Email envoyé avec succès"
-        autoHideDuration={3000}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      />
       <div>
         <Button title="Envoyer" type="submit" />
       </div>
+
       {errors.lastname && <p>Nom est requis</p>}
       {errors.firstname && <p>Prénom est requis</p>}
       {errors.email && <p>Email est requis</p>}
