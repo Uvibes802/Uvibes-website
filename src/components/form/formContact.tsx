@@ -1,9 +1,9 @@
 import Button from "../button/Button";
 import Input from "../input/Input";
 
-import "../../styles/form/formContact.css";
-import { useForm, type SubmitHandler } from "react-hook-form";
 import type { FormData } from "@/types/form/form";
+import { useForm, type SubmitHandler } from "react-hook-form";
+import "../../styles/form/formContact.css";
 
 export default function FormContact() {
   const {
@@ -49,16 +49,10 @@ export default function FormContact() {
         {...register("message", { required: true })}
         htmlFor="message"
       />
-
       <label className="checkbox-label">
-        <input
-          type="checkbox"
-          {...register("newsletter")}
-          className="checkbox-input"
-        />
         Je m&apos;inscris à la newsletter uVibes
+        <input type="checkbox" {...register("newsletter")} />
       </label>
-
       <div>
         <Button title="Envoyer" type="submit" />
       </div>

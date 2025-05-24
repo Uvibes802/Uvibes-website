@@ -55,6 +55,7 @@
 
 .checkbox-label {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
