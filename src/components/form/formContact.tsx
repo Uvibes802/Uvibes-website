@@ -2,6 +2,7 @@ import Button from "../button/Button";
 import Input from "../input/Input";
 
 import type { FormData } from "@/types/form/form";
+import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import "../../styles/form/formContact.css";
 
@@ -12,10 +13,25 @@ export default function FormContact() {
     reset,
     formState: { errors },
   } = useForm<FormData>();
-
-  const onSubmitHandler: SubmitHandler<FormData> = (data) => {
-    console.log("Données du formulaire:", data);
-    reset();
+  const [isValid, setIsValid] = useState(false);
+  const onSubmitHandler: SubmitHandler<FormData> = async (data) => {
+    try {
+      const response = await fetch("api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        reset();
+        setTimeout(() => {
+          setIsValid(true);
+        }, 1000);
+      }
+    } catch (error) {
+      console.error("Erreur lors de l'envoi de l'email:", error);
+    }
   };
 
   return (
@@ -49,6 +65,7 @@ export default function FormContact() {
         {...register("message", { required: true })}
         htmlFor="message"
       />
+      {isValid && <p>Message envoyé avec succès</p>}
       <label className="checkbox-label">
         Je m&apos;inscris à la newsletter uVibes
         <input type="checkbox" {...register("newsletter")} />
@@ -56,6 +73,7 @@ export default function FormContact() {
       <div>
         <Button title="Envoyer" type="submit" />
       </div>
+
       {errors.lastname && <p>Nom est requis</p>}
       {errors.firstname && <p>Prénom est requis</p>}
       {errors.email && <p>Email est requis</p>}

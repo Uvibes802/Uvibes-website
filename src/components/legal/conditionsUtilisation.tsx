@@ -110,7 +110,7 @@ export default function ConditionsDutilisation() {
         </p>
         <p>
           Pour toute question concernant ces CGU, vous pouvez nous contacter à{" "}
-          <a href="mailto:contact@uvibes.fr">contact@uvibes.fr</a>.
+          <a href="mailto:contactuvibes@gmail.com">contactuvibes@gmail.com</a>.
         </p>
       </section>
 

@@ -29,6 +29,13 @@
   }
 }
 
+.article-title {
+  font-size: calc(var(--font-size-h3) * 1.2);
+  font-family: var(--title-font);
+  padding-bottom: calc(var(--spacing-ref) * 2);
+  color: var(--mainColor);
+}
+
 .article-content {
   line-height: 1.5;
   margin-bottom: calc(var(--spacing-ref) * 2);

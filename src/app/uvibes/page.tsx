@@ -10,7 +10,7 @@ import Resize from "@/services/resize/resize";
 import { DotIcon } from "lucide-react";
 import Image from "next/image";
 import logoUvibes from "../../../public/images/Logo VI blanc.png";
-import logoEclatense from "../../../public/images/LogoEclatens.png";
+import logoEclatense from "../../../public/images/LogoEclatens.svg";
 import uvibesTeam from "../../../public/images/TeamUvibes.jpg";
 import "../../styles/page/uvibes.css";
 
@@ -115,13 +115,13 @@ export default function uvibes() {
           </div>
           <div className="uvibes-contact-button-container">
             <a
-              href="mailto:contact@uvibes.fr"
+              href="mailto:contactuvibes@gmail.com"
               className="uvibes-contact-button"
             >
               Nous contacter
             </a>
             <a
-              href="mailto:contact@uvibes.fr"
+              href="mailto:contactuvibes@gmail.com"
               className="uvibes-contact-button"
             >
               Devenir partenaire

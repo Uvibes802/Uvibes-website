@@ -11,7 +11,7 @@ export default function Footer() {
           <Link href="#top">Uvibes</Link>
         </h4>
         <p>Contactez-nous</p>
-        <p>contact@uvibes.fr</p>
+        <p>contactuvibes@gmail.com</p>
       </div>
       <div className="footer-links">
         <Link href="/mention-legale">Mentions légales</Link>
@@ -27,7 +27,7 @@ export default function Footer() {
           <Link href="https://www.linkedin.com/company/uvibes">
             <Image src={iconLinkedIn} alt="LinkedIn" width={60} height={60} />
           </Link>
-          <Link href="https://www.instagram.com/uvibes">
+          <Link href="https://www.instagram.com/vibesinattendues/">
             <Image src={iconInsta} alt="Instagram" width={70} height={70} />
           </Link>
         </div>

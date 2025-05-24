@@ -1,7 +1,7 @@
 import { StyledPartnerGroup } from "@/styles/banner/StyledPartnerGroup";
 import Avatar from "@mui/material/Avatar";
 import eklore from "../../../public/images/eklore.png";
-import mutelios from "../../../public/images/mutelios.png";
+import fetedesvoisins from "../../../public/images/LogoFeteDesVoisins.png";
 import universitéDePerpignan from "../../../public/images/upvd_logo_hori_rvb.png";
 
 export default function PartnerGroup() {
@@ -9,7 +9,7 @@ export default function PartnerGroup() {
     <StyledPartnerGroup max={3}>
       <Avatar alt="Université de Perpignan" src={universitéDePerpignan.src} />
       <Avatar alt="Eklore" src={eklore.src} />
-      <Avatar alt="Mutélios" src={mutelios.src} />
+      <Avatar alt="Fête des voisins" src={fetedesvoisins.src} />
     </StyledPartnerGroup>
   );
 }
