@@ -55,6 +55,11 @@
 
 .checkbox-container {
   color: var(--mainColor);
+  flex-wrap: nowrap;
+
+  & input {
+    width: 0;
+  }
 }
 
 .checkbox-label {
