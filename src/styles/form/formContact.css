@@ -54,10 +54,12 @@
 }
 
 .checkbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--mainColor);
+  flex-wrap: nowrap;
+
+  & input {
+    width: 0;
+  }
 }
 
 .checkbox-label {
