@@ -9,8 +9,4 @@ export const StyledFloatButton = styled(Fab)(({ theme }) => ({
   zIndex: 1000,
   backgroundColor: theme.palette.background.paper,
   dropshadow: theme.shadows[4],
-
-  [theme.breakpoints.up(768)]: {
-    display: "none",
-  },
 }));
