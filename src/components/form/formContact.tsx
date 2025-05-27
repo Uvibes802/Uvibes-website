@@ -68,11 +68,15 @@ export default function FormContact() {
       {isValid && <p>Message envoyé avec succès</p>}
       <div className="checkbox-container">
         <label className="checkbox-label">
+          Je souhaite partager mes informations avec uVibes
+          <input type="checkbox" {...register("share")} />
+        </label>
+        <label className="checkbox-label">
           Je m&apos;inscris à la newsletter uVibes
           <input type="checkbox" {...register("newsletter")} />
         </label>
       </div>
-      <div>
+      <div className="button-container">
         <Button title="Envoyer" type="submit" />
       </div>
 
