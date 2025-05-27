@@ -27,7 +27,7 @@
   width: 100%;
   font-style: italic;
 
-  &input:last-of-type {
+  &input:last-child {
     width: auto;
     padding: var(--spacing-ref);
     accent-color: var(--mainColor) !important;
@@ -56,10 +56,6 @@
 .checkbox-container {
   color: var(--mainColor);
   flex-wrap: nowrap;
-
-  & input {
-    width: 0;
-  }
 }
 
 .checkbox-label {
