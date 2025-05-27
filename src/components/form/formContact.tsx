@@ -62,17 +62,18 @@ export default function FormContact() {
       <Input
         label="Message"
         type="textarea"
+        placeholder="Votre message"
         {...register("message", { required: true })}
         htmlFor="message"
       />
       {isValid && <p>Message envoyé avec succès</p>}
       <div className="checkbox-container">
         <label className="checkbox-label">
-          Je souhaite partager mes informations avec uVibes
-          <input type="checkbox" {...register("share")} />
+          Je souhaite partager mes informations avec Uvibes
+          <input required type="checkbox" {...register("share")} />
         </label>
         <label className="checkbox-label">
-          Je m&apos;inscris à la newsletter uVibes
+          Je m&apos;inscris à la newsletter Uvibes
           <input type="checkbox" {...register("newsletter")} />
         </label>
       </div>
