@@ -9,7 +9,7 @@ import TeamCards from "../cards/teamCards";
 export default function TeamSection() {
   const tabs = [
     { label: "Equipe projet", slug: "equipe-projet" },
-    { label: "Comité scientifique", slug: "comite-scientifique" },
+    { label: "Comité d'expertise", slug: "comite-expertise" },
     { label: "Architectes du code", slug: "les-architectes-du-code" },
   ];
 

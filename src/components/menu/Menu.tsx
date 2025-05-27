@@ -1,4 +1,5 @@
 "use client";
+import Resize from "@/services/resize/resize";
 import { StyledBottomNavigation } from "@/styles/menu/StyledBottomNavigation";
 import { StyledFloatButton } from "@/styles/menu/styledFloatingMenu";
 import { AlignJustify, X } from "lucide-react";
@@ -10,7 +11,7 @@ export default function Menu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isActive, setIsActive] = useState<boolean>(true);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
-
+  const isMobile = Resize();
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -51,6 +52,12 @@ export default function Menu() {
       {isOpen && (
         <nav className="menu-items-container">
           <MenuList className="menu-items" />
+        </nav>
+      )}
+
+      {isOpen && !isMobile && (
+        <nav className="menu-items-desktop-container">
+          <MenuList className="menu-items-desktop" />
         </nav>
       )}
 
