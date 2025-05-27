@@ -27,7 +27,7 @@
   width: 100%;
   font-style: italic;
 
-  &input:last-child {
+  &last-child {
     width: auto;
     padding: var(--spacing-ref);
     accent-color: var(--mainColor) !important;
@@ -44,9 +44,9 @@
 }
 
 .form-contact div {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: start;
 }
 
 .form-contact button {
@@ -54,8 +54,16 @@
 }
 
 .checkbox-container {
+  margin: 0 auto;
+  padding-top: calc(var(--spacing-ref) * 2);
   color: var(--mainColor);
-  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-ref) * 0.5);
+
+  & input {
+    width: auto;
+  }
 }
 
 .checkbox-label {
@@ -64,6 +72,10 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--spacing-ref) * 0.5);
+}
+
+.button-container {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
