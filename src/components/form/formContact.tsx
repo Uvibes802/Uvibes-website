@@ -66,10 +66,12 @@ export default function FormContact() {
         htmlFor="message"
       />
       {isValid && <p>Message envoyé avec succès</p>}
-      <label className="checkbox-label">
-        Je m&apos;inscris à la newsletter uVibes
-        <input type="checkbox" {...register("newsletter")} />
-      </label>
+      <div className="checkbox-container">
+        <label className="checkbox-label">
+          Je m&apos;inscris à la newsletter uVibes
+          <input type="checkbox" {...register("newsletter")} />
+        </label>
+      </div>
       <div>
         <Button title="Envoyer" type="submit" />
       </div>
