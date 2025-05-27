@@ -4,4 +4,5 @@ export type FormData = {
   email: string;
   message: string;
   newsletter: boolean;
+  share: boolean;
 };
