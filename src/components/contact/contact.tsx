@@ -1,6 +1,5 @@
 import "../../styles/contact/contact.css";
 import FormContact from "../form/formContact";
-import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -11,10 +10,6 @@ export default function Contact() {
           Vous avez des questions ou souhaitez en savoir plus sur Uvibes ? Notre
           équipe est à votre disposition pour vous répondre.
         </p>
-        <div>
-          <Mail size={32} />
-          contactuvibes@gmail.com
-        </div>
       </section>
       <FormContact />
     </main>

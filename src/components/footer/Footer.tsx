@@ -10,8 +10,6 @@ export default function Footer() {
         <h4>
           <Link href="#top">Uvibes</Link>
         </h4>
-        <p>Contactez-nous</p>
-        <p>contactuvibes@gmail.com</p>
       </div>
       <div className="footer-links">
         <Link href="/mention-legale">Mentions légales</Link>

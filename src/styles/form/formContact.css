@@ -64,6 +64,11 @@
   & input {
     width: auto;
   }
+
+  & input[type="checkbox"] {
+    width: calc(var(--spacing-ref) * 1);
+    height: calc(var(--spacing-ref) * 1);
+  }
 }
 
 .checkbox-label {
