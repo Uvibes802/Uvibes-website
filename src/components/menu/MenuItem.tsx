@@ -1,7 +1,7 @@
-import "../../styles/menu/MenuItem.css";
 import type { MenuItemProps } from "@/types/menu/MenuItemProps";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import "../../styles/menu/MenuItem.css";
 
 export default function MenuItems({ icon, label, color, link }: MenuItemProps) {
   const pathname = usePathname();
