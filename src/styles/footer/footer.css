@@ -45,14 +45,10 @@
 }
 
 .footer-icons {
-  text-align: center;
   display: flex;
-  gap: calc(var(--spacing-ref) * 1);
-  justify-content: start;
   align-items: center;
 
   & img {
-    width: 100%;
     min-width: 100px;
   }
 }
