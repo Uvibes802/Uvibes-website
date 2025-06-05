@@ -31,11 +31,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({
-  params,
-}: {
+type Props = {
   params: { slug: string };
-}): Promise<JSX.Element> {
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function Page({ params }: Props): Promise<JSX.Element> {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
   );
