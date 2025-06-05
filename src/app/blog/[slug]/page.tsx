@@ -1,17 +1,21 @@
 import ArticleContent from "@/components/blog/article";
-import { JSX } from "react";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-export async function generateMetadata({
-  params,
-}: {
+type Props = {
   params: { slug: string };
-}) {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
   );
   const data = await res.json();
   const post = data[0];
-  const yoast = post?.yoast_head_json;
+
+  if (!post) return { title: "Article introuvable" };
+
+  const yoast = post.yoast_head_json;
 
   return {
     title: yoast?.title,
@@ -31,19 +35,14 @@ export async function generateMetadata({
   };
 }
 
-interface PageProps {
-  params: { slug: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-
-export default async function Page({
-  params,
-}: PageProps): Promise<JSX.Element> {
+export default async function Page({ params }: Props) {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
   );
   const posts = await res.json();
   const post = posts[0];
+
+  if (!post) return notFound();
 
   let featuredImage = null;
   if (post?.featured_media) {
