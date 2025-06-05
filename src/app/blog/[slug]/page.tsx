@@ -1,4 +1,5 @@
 import ArticleContent from "@/components/blog/article";
+import { JSX } from "react";
 
 export async function generateMetadata({
   params,
@@ -30,7 +31,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<JSX.Element> {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
   );
