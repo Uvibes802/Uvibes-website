@@ -3,16 +3,15 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type PageProps = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
+    `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${slug}`
   );
   const data = await res.json();
   const post = data[0];
@@ -40,8 +39,9 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${params.slug}`
+    `${process.env.NEXT_PUBLIC_API_URL}/wp-json/wp/v2/posts?slug=${slug}`
   );
   const posts = await res.json();
   const post = posts[0];
