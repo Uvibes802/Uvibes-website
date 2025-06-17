@@ -31,35 +31,66 @@ export default function uvibes() {
       <main>
         <section className="uvibes-aboutUs uvibes-container">
           <h2 className="title-h2-orange uvibes-title">
-            La naissance de l&apos;idée
+            La naissance de l’idée
           </h2>
           <p className="text">
-            Interagir avec des inconnus nous rend plus heureux et nous maintient
-            en bonne santé physique. <br />
+            Et si on se parlait vraiment ? <br />
             <br />
-            Alors comment lancer cette discussion ? <br />
+            L’étude la plus longue de Harvard révèle que la qualité de nos
+            relations est la clé du bonheur (Vaillant, 2002). Sur les réseaux
+            sociaux traditionnels, les algorithmes nous relient à ceux qui
+            pensent comme nous. Dans la vraie vie, on reste entre groupes
+            familiers, on commente plus qu’on ne dialogue, et petit à petit...
+            on perd la richesse de la diversité humaine. <br />
             <br />
-            Après 300 enquêtes de terrain, notre solution voit le jour, amènant
-            à des échanges :
+            Chez Uvibes, on croit à :
           </p>
           <ul>
             <div className="uvibes-list">
               <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">inattendus</li>
+              <li className="text">La magie des témoignages</li>
             </div>
             <div className="uvibes-list">
               <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">brefs</li>
+              <li className="text">Au partage des expériences personnelles</li>
             </div>
             <div className="uvibes-list">
               <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">ludiques et inspirants</li>
-            </div>
-            <div className="uvibes-list">
-              <DotIcon size={24} style={{ color: "var(--mainColor)" }} />
-              <li className="text">dans une dynamique bienveillante</li>
+              <li className="text">Et à la richesse des visions nouvelles.</li>
             </div>
           </ul>
+          <p className="text" style={{ paddingTop: 10 }}>
+            Au sein d’une université, d’une entreprise, ou de tout autre
+            collectif, beaucoup aimeraient échanger ainsi, mais n’osent pas.{" "}
+            <br />
+            Uvibes facilite ces rencontres inattendues, par un jeu de questions
+            ouvertes et positives.
+            <br />
+            Parce que c’est en allant vers l’inconnu que naissent les plus
+            belles conversations.
+          </p>
+
+          <h2 className="title-h2-orange uvibes-title">
+            Notre engagement éthique
+          </h2>
+          <ul style={{ paddingLeft: 20 }}>
+            <li className="text" style={{ paddingBottom: 5 }}>
+              Un service digital respectueux, pensé pour la qualité des
+              discussions, l’inclusion et la confidentialité des données.
+            </li>
+            <li className="text" style={{ paddingBottom: 5 }}>
+              Une conduite de projet alignée avec nos valeurs, basée sur
+              l’écoute, la collaboration, et la responsabilité environnementale.
+            </li>
+            <li className="text" style={{ paddingBottom: 5 }}>
+              Des partenariats responsables, choisis pour leur transparence,
+              leur impact positif et leur engagement sociétal.
+            </li>
+          </ul>
+          <p className="text" style={{ paddingTop: 5 }}>
+            Explore la rubrique « Uvibes » de notre blog pour en savoir plus sur
+            nos principes éthiques et leur mise en œuvre concrète.
+          </p>
         </section>
         <section className="uvibes-container ">
           <h2 className="title-h2-orange uvibes-title">Le portage du projet</h2>

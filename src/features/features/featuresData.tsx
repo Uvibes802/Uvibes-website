@@ -1,18 +1,18 @@
 export const FeaturesData = [
   {
     id: 1,
-    title: "Un voyage conversationnel",
+    title: "Bien être : un voyage conversationnel",
     items: [
       { id: 1, item: "Un échange de un à un" },
       { id: 2, item: "En vidéo" },
       { id: 3, item: "Sur un temps court, de 6 à 20 minutes" },
       { id: 4, item: "Sur un nombre infini de sujets" },
     ],
-    video: "/videos/videoColette1.mp4",
+    video: "/videos/retraitée.mp4",
   },
   {
     id: 2,
-    title: "Une meilleure prise en compte du collectif",
+    title: "Collectif : une meilleure prise en compte de votre organisation",
     items: [
       {
         id: 1,
@@ -24,11 +24,11 @@ export const FeaturesData = [
       },
       { id: 3, item: "L'émergence de nouvelles réflexions et propositions" },
     ],
-    video: "/videos/video_temoignage_FDV.mp4",
+    video: "/videos/entreprise.mp4",
   },
   {
     id: 3,
-    title: "Un sur-mesure de ressources à explorer",
+    title: "Excellence : un sur-mesure de ressources à explorer",
     items: [
       {
         id: 1,
@@ -37,6 +37,6 @@ export const FeaturesData = [
       { id: 2, item: "Portant sur des sujets intéressant votre collectif" },
       { id: 3, item: "Avec une valorisation à la fin" },
     ],
-    video: "/videos/Video_page_fonctionnalites_cite_des_savoirs.mp4",
+    video: "/videos/étudiante.mp4",
   },
 ];

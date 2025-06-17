@@ -16,18 +16,18 @@ export const Items = [
     link: "/",
   },
   {
-    id: 2,
-    icon: <Puzzle size={32} color="#D90A5C" />,
-    label: "Fonctionnalités",
-    color: "#D90A5C",
-    link: "/features",
-  },
-  {
     id: 3,
     icon: <ListCheck size={32} color="#32BDCA" />,
     label: "Avantages",
     color: "#32BDCA",
     link: "/avantages",
+  },
+  {
+    id: 2,
+    icon: <Puzzle size={32} color="#D90A5C" />,
+    label: "Fonctionnement",
+    color: "#D90A5C",
+    link: "/features",
   },
   {
     id: 4,
