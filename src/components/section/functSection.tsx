@@ -7,7 +7,7 @@ import FunctCards from "../cards/functCards";
 export default function FunctSection() {
   return (
     <section className="funct-section">
-      <h2 className="title-h2">Trois ingrédients clés</h2>
+      <h2 className="title-h2">Découvrir des points de vue inattendus</h2>
       <div className="funct-container">
         <FunctCards
           icone={
@@ -35,7 +35,7 @@ export default function FunctSection() {
       </div>
       <div className="funct-button-container">
         <LinkStyled href="/features">
-          <Button title="Découvrir les fonctionnalités" type="button" />
+          <Button title="Une expérience engageante" type="button" />
         </LinkStyled>
       </div>
     </section>

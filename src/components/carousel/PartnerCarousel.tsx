@@ -63,7 +63,7 @@ export function PartnerCarousel() {
         spaceBetween={10}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 500,
           disableOnInteraction: false,
         }}
         speed={2000}

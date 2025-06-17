@@ -14,7 +14,7 @@ export default function Uvibes() {
         style={{ width: "30%", height: "auto" }}
       />
       <Link href={"/uvibes"}>
-        <Button title="Découvrir Uvibes" type="button" />
+        <Button title="Une solution éthique" type="button" />
       </Link>
     </section>
   );
