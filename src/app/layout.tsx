@@ -33,19 +33,10 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-N068M873WC', {
-                debug_mode: true,
-                send_page_view: true,
-                cookie_flags: 'SameSite=None;Secure'
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied'
               });
-              console.log('Google Analytics initialized with config');
-              
-              // Test event
-              gtag('event', 'test_event', {
-                'event_category': 'testing',
-                'event_label': 'initialization_test'
-              });
-              console.log('Test event sent');
+              console.log('Google Analytics default consent set to denied');
             `,
           }}
         />
