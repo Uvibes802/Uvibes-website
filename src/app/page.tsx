@@ -25,8 +25,10 @@ export default function Home() {
     <main>
       <HeroBanner
         subtitle=""
-        title="Découvrir des points de vue inattendus"
-        description="Voir l'autre et ce que nous vivons autrement"
+        title="L’alternative éthique et pleine de vie aux réseaux sociaux
+        habituels"
+        description="Au sein d’un collectif, voir l’autre et ce que nous
+        vivons autrement"
         image={mockupHome}
         alt="visuel application"
       />

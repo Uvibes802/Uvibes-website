@@ -1,9 +1,9 @@
-import type { HeroBannerProps } from "../../types/banner/heroBanner";
 import Image from "next/image";
 import Link from "next/link";
 import Logo_uVibesDesktop from "../../../public/images/Logo UVIBES.png";
 import Logo_uVibes from "../../../public/images/Logo VI blanc.png";
 import "../../styles/banner/heroBanner.css";
+import type { HeroBannerProps } from "../../types/banner/heroBanner";
 //import WhiteButton from "../button/WhiteButton";
 
 export function HeroBanner({
@@ -64,7 +64,7 @@ export function HeroBanner({
           src={image}
           alt={alt}
           className="hero-banner-image"
-          width={600}
+          width={800}
           height={900}
           priority
         />
