@@ -6,7 +6,6 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import eklore from "../../../public/images/eklore.png";
 import fetedesvoisins from "../../../public/images/LogoFeteDesVoisins.png";
-import mutelios from "../../../public/images/mutelios.png";
 import university from "../../../public/images/upvd_logo_hori_rvb.png";
 import "../../styles/carousel/PartnerCarousel.css";
 
@@ -17,11 +16,7 @@ export function PartnerCarousel() {
       src: university,
       alt: "University of Perpignan",
     },
-    {
-      index: 2,
-      src: mutelios,
-      alt: "Mutelios",
-    },
+
     {
       index: 3,
       src: eklore,
@@ -37,11 +32,7 @@ export function PartnerCarousel() {
       src: university,
       alt: "University of Perpignan",
     },
-    {
-      index: 6,
-      src: mutelios,
-      alt: "Mutelios",
-    },
+
     {
       index: 7,
       src: eklore,
